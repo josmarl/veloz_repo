@@ -1,0 +1,61 @@
+<div class="container">
+    <h3>{{headingTitle}}</h3>
+    <a href="#/usuario/new/" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp;Nuevo Usuario</a>
+    <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Usuario</th>
+            <th>Área</th>
+            <th>Estado</th>
+            <th>Opciones</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr ng-repeat="usuario in usuarios">
+            <td>{{$index+1}}</td>
+            <td>{{usuario.username}}</td>
+            <td>{{usuario.areas[0].nombre}}</td>
+            <td>{{usuario.estado}}</td>
+            <td>
+                <div class="btn-group">
+                    <a ng-href="#/usuario/edit/{{usuario.id}}" class="btn btn-sm btn-success btn-primary"
+                       data-toggle="tooltip" title="Editar Usuario">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                    <a ng-click="confirmDeleteModalUsuario(usuario.id)" class="btn btn-sm btn-danger btn-primary"
+                       data-toggle="tooltip" title="Eliminar Usuario">
+                        <span class="glyphicon glyphicon-trash"></span></a>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <div id="deleteModal" class="modal fade" role='dialog'>
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Eliminar </h4>
+                </div>
+                <div class="modal-body">
+                    <p>Realmente quiere Eliminar?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="deleteButton" class="btn btn-danger"><i
+                            class="glyphicon glyphicon-trash"></i>&nbsp;Eliminar
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                            class="glyphicon glyphicon-remove"></i>&nbsp;Cancelar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

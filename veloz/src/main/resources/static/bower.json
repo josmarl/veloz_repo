@@ -1,0 +1,33 @@
+{
+  "name": "smsweb",
+  "description": "app web",
+  "main": "index.js",
+  "authors": [
+    "josmarl"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular"
+  ],
+  "homepage": "login.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.5.8",
+    "angular": "^1.5.5",
+    "angular-resource": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-momentjs": "^0.2.2",
+    "angular-toastr": "^2.1.1",
+    "moment": "^2.14.1",
+    "bootstrap": "~3.3.7",
+    "flat-ui": "^2.3.0",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.43",
+    "bootstrap-fileinput": "^4.3.5"
+  }
+}

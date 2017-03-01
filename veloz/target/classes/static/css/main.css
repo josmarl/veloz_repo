@@ -1,0 +1,18 @@
+.breadcrumb-arrow li.active a {
+    font-weight: bold;
+}
+
+div.btn.btn-primary.btn-file {
+    background-color: #2ecc71 !important;
+    color: #ffffff !important;
+}
+
+button.btn.btn-default.fileinput-remove.fileinput-remove-button {
+    background-color: #e74c3c !important;
+    color: #ffffff !important;
+}
+
+button.btn.btn-default.fileinput-upload.fileinput-upload-button {
+    background-color: #f0ad4e !important;
+    color: #ffffff !important;
+}

@@ -1,0 +1,16 @@
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/domain/Role.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/domain/Usuario.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/controller/UsuarioController.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/controller/RoleController.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/service/RoleService.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/SmsApplication.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/controller/filter/RestConfiguration.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/service/UsuarioService.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/mapper/RoleMapper.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/mapper/UsuarioMapper.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/domain/dto/UsuarioDTO.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/domain/Persona.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/service/RoleServiceImpl.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/service/UsuarioServiceImpl.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/constants/AppStatics.java
+/media/josmarl/01D1E7843B973680/dev/proyectos/veloz_repo/veloz/veloz/src/main/java/pe/com/veloz/constants/Roles.java

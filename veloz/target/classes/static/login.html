@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bower_components/flat-ui/docs/assets/css/demo.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="login">
+        <div class="login-screen">
+            <div class="login-icon">
+                <img src="bower_components/flat-ui/img/login/icon.png" alt="Welcome to Mail App">
+                <h4>Bienvenido a
+                    <small>Librería Veloz</small>
+                </h4>
+            </div>
+            <div class="login-form">
+                <div class="alert alert-danger" ng-show="controller.error">
+                    There was a problem logging in. Please try again.
+                </div>
+                <form role="form" ng-submit="controller.login()">
+                    <div class="form-group">
+                        <input id="username" name="username" ng-model="controller.credentials.username"
+                               class="form-control login-field" placeholder="Ingrese su usuario" type="text">
+                        <label class="login-field-icon fui-user" for="username"></label>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="password" name="password" ng-model="controller.credentials.password"
+                               class="form-control login-field" placeholder="Ingrese su contraseña" type="password">
+                        <label class="login-field-icon fui-lock" for="password"></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Ingresar</button>
+                    <a class="login-link" href="#">Olvidó su contraseña?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
