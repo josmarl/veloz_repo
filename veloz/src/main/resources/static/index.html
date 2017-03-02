@@ -39,21 +39,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand"><i class="glyphicon glyphicon-envelope"></i>&nbsp;SMS Americana</a>
+            <a class="navbar-brand"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Veloz</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse" ng-controller="navigation as nav">
             <ul class="nav navbar-nav">
                 <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a href="#/home"><i
                         class="glyphicon glyphicon-home"></i>&nbsp;Home</a></li>
                 <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a
-                        ng-href="#/campaign"><i class="glyphicon glyphicon-alert"></i>&nbsp;Campañas</a></li>
-                <li ng-show="authenticatedAdmin" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/area"><i
-                        class="glyphicon glyphicon-tree-deciduous"></i>&nbsp;Areas</a>
+                        ng-href="#/venta"><i class="glyphicon glyphicon-alert"></i>&nbsp;Ventas</a></li>
+                <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/almacen"><i
+                        class="glyphicon glyphicon-tree-deciduous"></i>&nbsp;Almacèn</a>
                 </li>
-                <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/celular"><i
-                        class="glyphicon glyphicon-phone"></i>&nbsp;Celular</a>
+                <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/producto"><i
+                        class="glyphicon glyphicon-phone"></i>&nbsp;Productos</a>
                 </li>
-                <li ng-show="authenticatedAdmin" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/usuario"><i
+                <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/usuario"><i
                         class="glyphicon glyphicon-user"></i>&nbsp;Usuario</a>
                 </li>
                 <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a
@@ -71,7 +71,7 @@
 </nav>
 
 
-<div ng-view ng-controller="mainController">
+<div ng-view ng-controller="mainController" class="container">
 
 </div>
 

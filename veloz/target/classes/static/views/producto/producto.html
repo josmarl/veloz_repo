@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Codigo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="pr in productos">
+            <td>{{pr.nombre}}</td>
+            <td>{{pr.descripcion}}</td>
+            <td>{{pr.estado}}</td>
+            <td><button type="button" ng-click="editar()">editar</button></td>
+
+        </tr>
+
+    </tbody>
+</table>
