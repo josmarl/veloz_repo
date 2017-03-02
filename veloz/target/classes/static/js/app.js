@@ -33,6 +33,10 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($r
             templateUrl: 'views/usuario/usuario_edit.html',
             controller: 'usuarioController'
         })
+        .when('/producto', {
+            templateUrl: 'views/producto/producto.html',
+            controller: 'productoController'
+        })
 
         .otherwise('/login');
 

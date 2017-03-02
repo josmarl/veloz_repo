@@ -111,7 +111,7 @@ public class SmsApplication {
                     .httpBasic().and()
                     .authorizeRequests()
                     .antMatchers("/index.html", "/login.html", "/", "/bower_components/**").permitAll()
-                    //.antMatchers("/area/**").hasRole(Roles.ADMIN.getRoleSubString())
+                    .antMatchers("/producto/**").hasRole(Roles.ADMIN.getRoleSubString())
                     .antMatchers("/usuario/**").hasRole(Roles.ADMIN.getRoleSubString())
                     //.antMatchers("/app/**").permitAll()
                     .anyRequest().fullyAuthenticated().and().formLogin().loginPage("/login.html")
