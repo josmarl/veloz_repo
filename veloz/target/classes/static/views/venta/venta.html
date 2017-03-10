@@ -1,25 +1,55 @@
+<h3>{{headingTitle}}</h3>
 <div class="form-group">
-    <label>Ingrese nombre del cliente</label>
-    <input type="text" class="form-control" placeholder="Ingrese nombre del cliente...">
+    <div class="row">
+        <div class="col-md-12">
+            <label>Cliente: </label>
+            <input type="text" class="form-control" placeholder="Ingrese nombre del cliente...">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-1">
+            <label>Cant.</label>
+            <input type="text" class="form-control" placeholder="Cant.">
+        </div>
+        <div class="col-md-10">
+            <label>Producto:</label>
+            <select class="form-control">
+                <option ng-repeat="product in productos">
+                    {{product.nombre}}
+                </option>
+            </select>
+            <!--<input type="text" class="form-control" placeholder="Ingrese nombre del producto">-->
+        </div>
+        <div class="col-md-1">
+            <label>Opt.</label><br>
+            <button class="btn btn-primary btn-embossed" ng-click="addCar()"><i
+                    class="glyphicon glyphicon-floppy-disk"></i>
+            </button>
+        </div>
+    </div>
 </div>
 
-<table class="table">
-    <thead>
-    <tr>
-        <th>#</th>
-        <th>Cant.</th>
-        <th>Producto</th>
-        <th>P.U</th>
-        <th>Importe</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Cant.</th>
+            <th>Producto</th>
+            <th>P.U</th>
+            <th>Importe</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
