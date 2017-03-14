@@ -11,7 +11,7 @@ var SERVER = 'http://localhost:8083';
 
 var ACTIVE = '1';
 var INACTIVE = '0';
-app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
+app.config(['$routeProvider', '$locationProvider', '$httpProvider', function($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
         .when('/login', {
             templateUrl: 'login.html',
@@ -36,6 +36,19 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($r
         .when('/producto', {
             templateUrl: 'views/producto/producto.html',
             controller: 'productoController'
+        })
+        .when('/producto/new', {
+            templateUrl: 'views/producto/producto_form.html',
+            controller: 'productoController'
+        })
+        .when('/producto/edit/:id', {
+            templateUrl: 'views/producto/producto_edit.html',
+            controller: 'productoController'
+        })
+        
+        .when('/persona', {
+            templateUrl: 'views/persona/persona.html',
+            controller: 'personaController'
         })
 
         .otherwise('/login');

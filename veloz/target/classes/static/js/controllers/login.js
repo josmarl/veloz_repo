@@ -2,25 +2,25 @@
 
 'use strict';
 
-app.controller('navigation', function ($scope, $rootScope, $http, $location, $route) {
+app.controller('navigation', function($scope, $rootScope, $http, $location, $route) {
 
     var self = this;
 
-    self.tab = function (route) {
+    self.tab = function(route) {
         return $route.current && route === $route.current.controller;
     };
 
-    var authenticate = function (credentials, callback) {
+    var authenticate = function(credentials, callback) {
 
         var headers = credentials ? {
-            authorization: "Basic "
-            + btoa(credentials.username + ":"
-                + credentials.password)
+            authorization: "Basic " +
+                btoa(credentials.username + ":" +
+                    credentials.password)
         } : {};
 
         $http.get(SERVER + '/user', {
             headers: headers
-        }).then(function (response) {
+        }).then(function(response) {
             if (response.data.name) {
                 $rootScope.userName = response.data.name;
                 $rootScope.authenticated = true;
@@ -34,7 +34,7 @@ app.controller('navigation', function ($scope, $rootScope, $http, $location, $ro
                 $rootScope.authenticated = false;
             }
             callback && callback($rootScope.authenticated);
-        }, function () {
+        }, function() {
             $rootScope.authenticated = false;
             callback && callback(false);
         });
@@ -44,8 +44,8 @@ app.controller('navigation', function ($scope, $rootScope, $http, $location, $ro
     authenticate();
 
     self.credentials = {};
-    self.login = function () {
-        authenticate(self.credentials, function (authenticated) {
+    self.login = function() {
+        authenticate(self.credentials, function(authenticated) {
             if (authenticated) {
                 console.log("Login succeeded")
                 $location.path("/home");
@@ -60,8 +60,8 @@ app.controller('navigation', function ($scope, $rootScope, $http, $location, $ro
         })
     };
 
-    self.logout = function () {
-        $http.post(SERVER + '/logout', {}).finally(function () {
+    self.logout = function() {
+        $http.post(SERVER + '/logout', {}).finally(function() {
             $rootScope.authenticated = false;
             $rootScope.authenticatedAdmin = false;
             $location.path("/login");

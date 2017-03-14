@@ -2,7 +2,7 @@
 
 'use strict';
 
-app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location', '$routeParams', function ($scope, $rootScope, $http, $location, $routeParams) {
+app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location', '$routeParams', function($scope, $rootScope, $http, $location, $routeParams) {
 
     $scope.headingTitle = "Configuración de Usuarios";
 
@@ -11,7 +11,7 @@ app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location
     $scope.roles = {};
     $scope.idUsuario = $routeParams.id;
 
-    $scope.initialize = function () {
+    $scope.initialize = function() {
         $scope.loadData();
         $scope.listRoles();
         if ($scope.idUsuario) {
@@ -21,7 +21,7 @@ app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location
         }
     };
 
-    $scope.saveUsuario = function () {
+    $scope.saveUsuario = function() {
         console.log($scope.roles);
         console.log($scope.usuario);
         $http({
@@ -31,26 +31,28 @@ app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location
                 roles: $scope.roles
             },
             method: "POST",
-            headers: {'Content-Type': 'application/json; charset=UTF-8'}
-        }).success(function (data) {
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        }).success(function(data) {
             $location.path("/usuario");
-        }).error(function (err) {
+        }).error(function(err) {
             console.log(err);
         });
     };
 
-    $scope.loadData = function () {
+    $scope.loadData = function() {
         $http({
             url: SERVER + "/usuario/all",
             method: "GET"
-        }).success(function (response) {
+        }).success(function(response) {
             $scope.usuarios = response;
-        }).error(function (err) {
+        }).error(function(err) {
             console.log(err);
         });
     };
 
-    $scope.editUsuario = function () {
+    $scope.editUsuario = function() {
         $http({
             url: SERVER + '/usuario/edit',
             data: {
@@ -58,75 +60,79 @@ app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location
                 roles: $scope.roles
             },
             method: "POST",
-            headers: {'Content-Type': 'application/json; charset=UTF-8'}
-        }).success(function (data) {
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        }).success(function(data) {
             $location.path("/usuario");
-        }).error(function (err) {
+        }).error(function(err) {
             console.log(err);
         });
     };
 
-    $scope.confirmDeleteUsuario = function (id) {
+    $scope.confirmDeleteUsuario = function(id) {
         $('#deleteModal').modal();
-        $("#deleteButton").click(function () {
+        $("#deleteButton").click(function() {
             $scope.removeUsuario(id);
             $('#deleteModal').modal('hide');
         });
     };
 
-    $scope.removeUsuario = function (id) {
+    $scope.removeUsuario = function(id) {
         $http({
             url: SERVER + "/usuario/remove/" + id,
             method: "DELETE"
-        }).success(function (response) {
+        }).success(function(response) {
             $scope.loadData();
-        }).error(function (err) {
+        }).error(function(err) {
             console.log(err);
         });
     };
 
-    $scope.findUsuario = function () {
+    $scope.findUsuario = function() {
         $http({
             url: SERVER + "/usuario/find/" + $scope.idUsuario,
             method: "GET",
-            headers: {'Content-Type': 'application/json; charset=UTF-8'}
-        }).success(function (response) {
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        }).success(function(response) {
             $scope.usuario = response;
-        }).error(function (err) {
+        }).error(function(err) {
             console.log(err);
         });
     };
 
 
-    $scope.confirmDeleteModalUsuario = function (id) {
+    $scope.confirmDeleteModalUsuario = function(id) {
         $('#deleteModal').modal();
-        $("#deleteButton").click(function () {
+        $("#deleteButton").click(function() {
             $scope.removeUsuario(id);
             $('#deleteModal').modal('hide');
         });
     };
 
 
-    $scope.listRoles = function () {
+    $scope.listRoles = function() {
         $http({
             url: SERVER + "/usuario/role/all",
             method: "GET"
-        }).success(function (response) {
+        }).success(function(response) {
             $scope.roles = response;
             console.log($scope.roles);
-        }).error(function (err) {
+        }).error(function(err) {
             console.log(err);
         });
     };
 
-    $scope.listRolesByUsuario = function () {
+    $scope.listRolesByUsuario = function() {
         $http({
             url: SERVER + "/usuario/role/" + $scope.idUsuario,
             method: "GET"
-        }).success(function (response) {
+        }).success(function(response) {
             $scope.roles = response;
             console.log($scope.roles);
-        }).error(function (err) {
+        }).error(function(err) {
             console.log(err);
         });
     };

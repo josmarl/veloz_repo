@@ -4,34 +4,32 @@
     <br>
     <table class="table">
         <thead>
-        <tr>
-            <th>#</th>
-            <th>Usuario</th>
-            <th>Área</th>
-            <th>Estado</th>
-            <th>Opciones</th>
-        </tr>
+            <tr>
+                <th>#</th>
+                <th>Usuario</th>
+                <th>Área</th>
+                <th>Estado</th>
+                <th>Opciones</th>
+            </tr>
         </thead>
 
         <tbody>
 
-        <tr ng-repeat="usuario in usuarios">
-            <td>{{$index+1}}</td>
-            <td>{{usuario.username}}</td>
-            <td>{{usuario.areas[0].nombre}}</td>
-            <td>{{usuario.estado}}</td>
-            <td>
-                <div class="btn-group">
-                    <a ng-href="#/usuario/edit/{{usuario.id}}" class="btn btn-sm btn-success btn-primary"
-                       data-toggle="tooltip" title="Editar Usuario">
-                        <span class="glyphicon glyphicon-pencil"></span>
-                    </a>
-                    <a ng-click="confirmDeleteModalUsuario(usuario.id)" class="btn btn-sm btn-danger btn-primary"
-                       data-toggle="tooltip" title="Eliminar Usuario">
-                        <span class="glyphicon glyphicon-trash"></span></a>
-                </div>
-            </td>
-        </tr>
+            <tr ng-repeat="usuario in usuarios">
+                <td>{{$index+1}}</td>
+                <td>{{usuario.username}}</td>
+                <td>{{usuario.areas[0].nombre}}</td>
+                <td>{{usuario.estado}}</td>
+                <td>
+                    <div class="btn-group">
+                        <a ng-href="#/usuario/edit/{{usuario.id}}" class="btn btn-sm btn-success btn-primary" data-toggle="tooltip" title="Editar Usuario">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </a>
+                        <a ng-click="confirmDeleteModalUsuario(usuario.id)" class="btn btn-sm btn-danger btn-primary" data-toggle="tooltip" title="Eliminar Usuario">
+                            <span class="glyphicon glyphicon-trash"></span></a>
+                    </div>
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>

@@ -15,16 +15,50 @@ import pe.com.veloz.mapper.ProductoMapper;
  *
  * @author eddy
  */
-
 @Service("productoService")
-public class ProductoServicioImpl implements ProductoService{
+public class ProductoServicioImpl implements ProductoService {
 
     @Autowired
     private ProductoMapper productoMapper;
-    
+
     @Override
-    public List<Producto> findProductos() {
-        return productoMapper.findProductos();
+    public List<Producto> listProductos() {
+        return productoMapper.listProducto();
     }
-    
+
+    @Override
+    public void removeProducto(Long id) {
+        productoMapper.removeProducto(id);
+    }
+
+    @Override
+    public void updateProducto(Producto producto) {
+        productoMapper.updateProducto(producto);
+    }
+
+    @Override
+    public Producto findProductoById(Long id) {
+        return productoMapper.findProductoById(id);
+    }
+
+    @Override
+    public Producto findProductoByNombre(String nombre) {
+         return productoMapper.findProductoByNombre(nombre);
+    }
+
+    @Override
+    public void saveProducto(Producto producto) {
+        productoMapper.saveProducto(producto);
+    }
+
+    @Override
+    public Producto findProductoByMarca(String marca) {
+        return productoMapper.findProductoByMarca(marca);
+    }
+
+    @Override
+    public Producto findProductoByCode(String code) {
+       return productoMapper.findProductoByCode(code);
+    }
+
 }

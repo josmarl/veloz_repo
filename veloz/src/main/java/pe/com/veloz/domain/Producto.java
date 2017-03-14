@@ -10,6 +10,7 @@ package pe.com.veloz.domain;
  * @author eddy
  */
 public class Producto {
+
     private static final long serialVersionUID = 1L;
     private int id;
     private String nombre;
@@ -22,6 +23,8 @@ public class Producto {
     private double precioVenta;
     private String estado;
     private int stock;
+    private String marca;
+    private String code;
 
     public int getId() {
         return id;
@@ -110,7 +113,24 @@ public class Producto {
     public void setStock(int stock) {
         this.stock = stock;
     }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
     
     
     
+
 }

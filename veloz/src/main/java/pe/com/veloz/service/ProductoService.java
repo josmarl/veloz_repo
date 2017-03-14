@@ -13,5 +13,20 @@ import pe.com.veloz.domain.Producto;
  * @author eddy
  */
 public interface ProductoService {
-    List<Producto> findProductos();
-    }
+
+    List<Producto> listProductos();
+
+    void removeProducto(Long id);
+
+    void updateProducto(Producto producto);
+
+    Producto findProductoById(Long id);
+    
+    Producto findProductoByNombre(String nombre);
+    
+    Producto findProductoByMarca(String marca);
+    
+    Producto findProductoByCode(String code);
+
+    void saveProducto(Producto producto);
+}
