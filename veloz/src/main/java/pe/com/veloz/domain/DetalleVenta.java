@@ -1,0 +1,108 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pe.com.veloz.domain;
+
+import java.io.Serializable;
+
+/**
+ *
+ * @author server-itecs
+ */
+public class DetalleVenta implements Serializable, Cloneable {
+
+    private static final long serialVersionUID = 1L;
+
+    private Long id;
+    private Producto productoObj;
+    private Long producto;
+    private int cantidad;
+    private double total;
+    private double baseImponible;
+    private double igv;
+    private Venta ventaObj;
+    private Long venta;
+
+    public DetalleVenta() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Producto getProductoObj() {
+        return productoObj;
+    }
+
+    public void setProductoObj(Producto productoObj) {
+        this.productoObj = productoObj;
+    }
+
+    public Long getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Long producto) {
+        this.producto = producto;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public double getBaseImponible() {
+        return baseImponible;
+    }
+
+    public void setBaseImponible(double baseImponible) {
+        this.baseImponible = baseImponible;
+    }
+
+    public double getIgv() {
+        return igv;
+    }
+
+    public void setIgv(double igv) {
+        this.igv = igv;
+    }
+
+    public Venta getVentaObj() {
+        return ventaObj;
+    }
+
+    public void setVentaObj(Venta ventaObj) {
+        this.ventaObj = ventaObj;
+    }
+
+    public Long getVenta() {
+        return venta;
+    }
+
+    public void setVenta(Long venta) {
+        this.venta = venta;
+    }
+
+    @Override
+    public String toString() {
+        return "DetalleVenta{" + "id=" + id + ", productoObj=" + productoObj + ", producto=" + producto + ", cantidad=" + cantidad + ", total=" + total + ", baseImponible=" + baseImponible + ", igv=" + igv + ", ventaObj=" + ventaObj + ", venta=" + venta + '}';
+    }
+
+}

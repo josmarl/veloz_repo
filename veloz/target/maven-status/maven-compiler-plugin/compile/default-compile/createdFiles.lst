@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pe/com/veloz/service/RoleService.class
 pe/com/veloz/mapper/ProductoMapper.class
 pe/com/veloz/service/RoleServiceImpl.class
@@ -26,3 +27,42 @@ pe/com/veloz/SmsApplication.class
 pe/com/veloz/domain/dto/UsuarioDTO.class
 pe/com/veloz/domain/Usuario.class
 pe/com/veloz/service/ProductoServicioImpl.class
+=======
+<<<<<<< HEAD
+=======
+pe\com\veloz\domain\Venta.class
+>>>>>>> 3e5b189e4dc8106b6a6e50e9c86d6646b7bcfc8e
+pe\com\veloz\service\ProductoService.class
+pe\com\veloz\mapper\RoleMapper.class
+pe\com\veloz\domain\Producto.class
+pe\com\veloz\mapper\PersonaMapper.class
+pe\com\veloz\domain\Role.class
+pe\com\veloz\mapper\UsuarioMapper.class
+pe\com\veloz\mapper\ProductoMapper.class
+pe\com\veloz\domain\Persona.class
+<<<<<<< HEAD
+=======
+pe\com\veloz\mapper\DetalleVentaMapper.class
+>>>>>>> 3e5b189e4dc8106b6a6e50e9c86d6646b7bcfc8e
+pe\com\veloz\controller\UsuarioController.class
+pe\com\veloz\controller\ProductoController.class
+pe\com\veloz\controller\RoleController.class
+pe\com\veloz\service\UsuarioService.class
+pe\com\veloz\service\RoleService.class
+pe\com\veloz\service\ProductoServicioImpl.class
+pe\com\veloz\SmsApplication$SecurityConfiguration.class
+pe\com\veloz\service\UsuarioServiceImpl.class
+pe\com\veloz\controller\filter\RestConfiguration.class
+pe\com\veloz\domain\dto\UsuarioDTO.class
+pe\com\veloz\constants\AppStatics.class
+pe\com\veloz\SmsApplication.class
+pe\com\veloz\constants\Roles.class
+pe\com\veloz\mapper\VentaMapper.class
+<<<<<<< HEAD
+=======
+pe\com\veloz\domain\DetalleVenta.class
+>>>>>>> 3e5b189e4dc8106b6a6e50e9c86d6646b7bcfc8e
+pe\com\veloz\service\RoleServiceImpl.class
+pe\com\veloz\SmsApplication$1.class
+pe\com\veloz\domain\Usuario.class
+>>>>>>> 22bf59d7a206bfc53d4243bf20e9fde442ec059f

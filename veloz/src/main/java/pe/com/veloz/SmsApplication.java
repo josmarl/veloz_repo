@@ -113,6 +113,7 @@ public class SmsApplication {
                     .antMatchers("/index.html", "/login.html", "/", "/bower_components/**").permitAll()
                     .antMatchers("/producto/**").hasRole(Roles.ADMIN.getRoleSubString())
                     .antMatchers("/usuario/**").hasRole(Roles.ADMIN.getRoleSubString())
+                    .antMatchers("/venta/**").hasRole(Roles.USER.getRoleSubString())
                     //.antMatchers("/app/**").permitAll()
                     .anyRequest().fullyAuthenticated().and().formLogin().loginPage("/login.html")
                     .and()
