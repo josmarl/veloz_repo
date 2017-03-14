@@ -7,7 +7,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
     $scope.headingTitle = "Ventas";
 
     $scope.productos = [];
-    $scope.producto = {};
+    $scope.producto = '';
     $scope.ventas = [];
 
     $scope.initialize = function () {
@@ -27,9 +27,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
     $scope.addCar = function () {
 
-        for(){
-
-        }
 
     };
 

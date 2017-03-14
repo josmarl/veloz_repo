@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="" />
+    <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/SmsApplication$1.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/SmsApplication$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/SmsApplication$SecurityConfiguration.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/SmsApplication$SecurityConfiguration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/controller/ProductoController.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/controller/ProductoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/DetalleVenta.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/DetalleVenta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/Producto.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/Producto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/Venta.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/Venta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/DetalleVentaMapper.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/DetalleVentaMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/PersonaMapper.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/PersonaMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/ProductoMapper.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/ProductoMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/service/ProductoService.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/service/ProductoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/service/ProductoServicioImpl.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/service/ProductoServicioImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/veloz-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../../../../target/veloz-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/veloz-0.0.1-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/../../../../target/veloz-0.0.1-SNAPSHOT.jar.original" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/venta.js" afterPath="$PROJECT_DIR$/js/controllers/venta.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../../target/classes/static/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/js/app.js" afterPath="$PROJECT_DIR$/../../../../target/classes/static/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/js/controllers/producto.js" afterPath="$PROJECT_DIR$/../../../../target/classes/static/js/controllers/producto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/js/controllers/venta.js" afterPath="$PROJECT_DIR$/../../../../target/classes/static/js/controllers/venta.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/views/producto/producto.html" afterPath="$PROJECT_DIR$/../../../../target/classes/static/views/producto/producto.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/views/producto/producto_edit.html" afterPath="$PROJECT_DIR$/../../../../target/classes/static/views/producto/producto_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,56 +49,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+            <state relative-caret-position="478">
+              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="venta.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
+      <file leaf-file-name="producto.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/producto/producto.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="-454">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            <state relative-caret-position="430">
+              <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usuario.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controllers/usuario.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="venta.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <marker date="1489480214656" expanded="true" signature="750:756" ph="{...}" />
-                <marker date="1489480214656" expanded="true" signature="750:787" ph="{...}" />
-                <marker date="1489480214656" expanded="true" signature="750:788" ph="[...]" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -85,6 +89,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -97,11 +104,12 @@
         <option value="$PROJECT_DIR$/js/controllers/usuario.js" />
         <option value="$PROJECT_DIR$/js/controllers/main.js" />
         <option value="$PROJECT_DIR$/login.html" />
-        <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/controllers/venta.js" />
         <option value="$PROJECT_DIR$/views/venta/venta.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/controllers/venta.js" />
+        <option value="$PROJECT_DIR$/js/controllers/producto.js" />
+        <option value="$PROJECT_DIR$/home.html" />
       </list>
     </option>
   </component>
@@ -117,6 +125,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -173,6 +182,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="producto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,6 +279,12 @@
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
       <envs />
@@ -339,12 +372,12 @@
       <workItem from="1488343918967" duration="1366000" />
       <workItem from="1488478312419" duration="2162000" />
       <workItem from="1488481131536" duration="1270000" />
-      <workItem from="1489478848988" duration="602000" />
+      <workItem from="1489478848988" duration="3177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22810000" />
+    <option name="totallyTimeSpent" value="25385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -353,7 +386,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1830161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -387,14 +420,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="17" lean-forward="false" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -661,45 +686,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/producto/producto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/usuario.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <caret line="14" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="459">
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding>
-            <marker date="1489480214656" expanded="true" signature="750:756" ph="{...}" />
-            <marker date="1489480214656" expanded="true" signature="750:787" ph="{...}" />
-            <marker date="1489480214656" expanded="true" signature="750:788" ph="[...]" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/producto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1489482679191" expanded="true" signature="81:468" ph="[...]" />
+            <marker date="1489482679191" expanded="true" signature="205:468" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,8 +734,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+        <state relative-caret-position="478">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/producto/producto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
           <folding />
         </state>
       </provider>
