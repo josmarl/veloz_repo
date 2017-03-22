@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/SmsApplication$1.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/SmsApplication$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/SmsApplication$SecurityConfiguration.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/SmsApplication$SecurityConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/controller/ProductoController.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/controller/ProductoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/DetalleVenta.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/DetalleVenta.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/Producto.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/Producto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/Venta.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/domain/Venta.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/DetalleVentaMapper.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/DetalleVentaMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/PersonaMapper.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/PersonaMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/ProductoMapper.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/mapper/ProductoMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/service/ProductoService.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/service/ProductoService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/service/ProductoServicioImpl.class" afterPath="$PROJECT_DIR$/../../../../target/classes/pe/com/veloz/service/ProductoServicioImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/veloz-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../../../../target/veloz-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/veloz-0.0.1-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/../../../../target/veloz-0.0.1-SNAPSHOT.jar.original" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Almacen.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Almacen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/venta.js" afterPath="$PROJECT_DIR$/js/controllers/venta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../../target/classes/static/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/js/app.js" afterPath="$PROJECT_DIR$/../../../../target/classes/static/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/js/controllers/producto.js" afterPath="$PROJECT_DIR$/../../../../target/classes/static/js/controllers/producto.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/js/controllers/venta.js" afterPath="$PROJECT_DIR$/../../../../target/classes/static/js/controllers/venta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/views/producto/producto.html" afterPath="$PROJECT_DIR$/../../../../target/classes/static/views/producto/producto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/classes/static/views/producto/producto_edit.html" afterPath="$PROJECT_DIR$/../../../../target/classes/static/views/producto/producto_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/venta/venta.html" afterPath="$PROJECT_DIR$/views/venta/venta.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,32 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="venta.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="24" column="94" lean-forward="true" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="producto.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/producto/producto.html">
+      <file leaf-file-name="venta.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-454">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="338">
+              <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="37" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,11 +74,11 @@
         <option value="$PROJECT_DIR$/js/controllers/main.js" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/views/venta/venta.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/controllers/venta.js" />
         <option value="$PROJECT_DIR$/js/controllers/producto.js" />
         <option value="$PROJECT_DIR$/home.html" />
+        <option value="$PROJECT_DIR$/js/controllers/venta.js" />
+        <option value="$PROJECT_DIR$/views/venta/venta.html" />
       </list>
     </option>
   </component>
@@ -141,6 +110,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,24 +166,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="producto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -237,8 +190,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,10 +207,7 @@
       <recent name="D:\dev\proyectos\Campaign\sms\src\main\resources\static\js" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.thumbnails.html">
-    <configuration default="false" name="forms.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:49385/static/bower_components/flat-ui/docs/examples/forms.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.venta.html">
     <configuration default="false" name="tiles.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/static/bower_components/flat-ui/docs/examples/tiles.html">
       <method />
     </configuration>
@@ -270,6 +218,9 @@
       <method />
     </configuration>
     <configuration default="false" name="thumbnails.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/static/bower_components/flat-ui/docs/examples/thumbnails.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="venta.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:65302/static/views/venta/venta.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -332,19 +283,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.forms.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.tiles.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.tagsinput.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.forms.html (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.thumbnails.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tiles.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.tagsinput.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.forms.html (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.thumbnails.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.venta.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.thumbnails.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.forms.html (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.tagsinput.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.tiles.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.forms.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.venta.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.thumbnails.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.forms.html (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.tagsinput.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tiles.html" />
       </list>
     </recent_temporary>
   </component>
@@ -372,12 +323,14 @@
       <workItem from="1488343918967" duration="1366000" />
       <workItem from="1488478312419" duration="2162000" />
       <workItem from="1488481131536" duration="1270000" />
-      <workItem from="1489478848988" duration="3177000" />
+      <workItem from="1489478848988" duration="5122000" />
+      <workItem from="1489913797370" duration="1198000" />
+      <workItem from="1490146411102" duration="8784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25385000" />
+    <option name="totallyTimeSpent" value="37312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -387,18 +340,18 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -439,7 +391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -447,9 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -457,7 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,7 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,7 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,9 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -498,7 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -513,7 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,7 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -529,9 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,7 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,7 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -562,7 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -570,9 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
           <caret line="77" column="73" lean-forward="false" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -590,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,7 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="105" lean-forward="false" selection-start-line="2" selection-start-column="105" selection-end-line="2" selection-end-column="105" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -651,9 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="62" column="31" lean-forward="false" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -690,29 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/producto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1489482679191" expanded="true" signature="81:468" ph="[...]" />
-            <marker date="1489482679191" expanded="true" signature="205:468" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,15 +619,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
+    <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -736,22 +633,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/producto/producto.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
+        <state relative-caret-position="17">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/js/controllers/producto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state relative-caret-position="-1193">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="94" lean-forward="true" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
           <folding />
         </state>
       </provider>

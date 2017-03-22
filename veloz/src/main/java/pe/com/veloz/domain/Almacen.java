@@ -10,7 +10,7 @@ package pe.com.veloz.domain;
  * @author eddy
  */
 public class Almacen {
-    
-     private static final long serialVersionUID = 1L;
-    
+
+    private static final long serialVersionUID = 1L;
+
 }
