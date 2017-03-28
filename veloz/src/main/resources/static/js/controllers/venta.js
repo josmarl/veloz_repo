@@ -8,7 +8,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
     $scope.productos = [];
     $scope.ventas = [];
     $scope.detalles = [];
-    $scope.detalle = {};
+    $scope.prod = {};
 
     $scope.initialize = function () {
         $scope.getProductos();
@@ -27,17 +27,15 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
     $scope.agregar = function () {
 
+        var detalle = {};
 
-        $scope.detalles.push(
-            {
-                producto: $scope.prod,
-                cantidad: $scope.cantidad
-            }
-        );
+        detalle.producto = $scope.prod;
+        detalle.cantidad = $scope.cantidad;
 
-        for (var j = 0; j < $scope.detalles.length; j++) {
-            console.log($scope.detalles[j].producto.nombre);
-        }
+        console.log(detalle.producto.id)
+
+        $scope.detalles.push(detalle);
+
     };
 
 

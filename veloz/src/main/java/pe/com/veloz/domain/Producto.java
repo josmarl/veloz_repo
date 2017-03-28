@@ -5,11 +5,13 @@
  */
 package pe.com.veloz.domain;
 
+import java.io.Serializable;
+
 /**
  *
  * @author eddy
  */
-public class Producto {
+public class Producto implements Serializable, Cloneable {
 
     private static final long serialVersionUID = 1L;
     private int id;
@@ -129,8 +131,10 @@ public class Producto {
     public void setCode(String code) {
         this.code = code;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Producto{" + "id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", precioUnit=" + precioUnit + ", precioDocena=" + precioDocena + ", precioCiento=" + precioCiento + ", precioCincuenta=" + precioCincuenta + ", precioCompra=" + precioCompra + ", precioVenta=" + precioVenta + ", estado=" + estado + ", stock=" + stock + ", marca=" + marca + ", code=" + code + '}';
+    }
 
 }
