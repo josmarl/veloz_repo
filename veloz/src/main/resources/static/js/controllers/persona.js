@@ -2,17 +2,17 @@
 
 'use strict';
 
-app.controller('productoController', ['$scope', '$rootScope', '$http', '$location', '$routeParams', function($scope, $rootScope, $http, $location, $routeParams) {
+app.controller('personaController', ['$scope', '$rootScope', '$http', '$location', '$routeParams', function($scope, $rootScope, $http, $location, $routeParams) {
 
-    $scope.headingTitle = "Configuración de Productos";
-    $scope.productos = [];
-    $scope.producto = {};
-    $scope.idProducto = $routeParams.id;
+    $scope.headingTitle = "Configuración de Personas";
+      $scope.personas = [];
+    $scope.persona = {};
+    $scope.idPersona = $routeParams.id;
 
     $scope.initialize = function() {
         $scope.loadData();
-        if ($scope.idProducto) {
-            $scope.findProducto();
+        if ($scope.idPersona) {
+            //$scope.findUsuario();
             //$scope.listRolesByUsuario();
         }
     };
@@ -39,10 +39,10 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
     */
     $scope.loadData = function() {
         $http({
-            url: SERVER + "/producto/all",
+            url: SERVER + "/persona/all",
             method: "GET"
         }).success(function(response) {
-            $scope.productos = response;
+            $scope.personas = response;
         }).error(function(err) {
             console.log(err);
         });
@@ -65,9 +65,18 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
               console.log(err);
           });*/
 
-    $scope.removeProducto = function(id) {
+
+    //$scope.confirmDeleteUsuario = function(id) {
+    //  $('#deleteModal').modal();
+    //$("#deleteButton").click(function() {
+    //  $scope.removeUsuario(id);
+    //$('#deleteModal').modal('hide');
+    //});
+    //};
+
+    /* $scope.removeUsuario = function(id) {
         $http({
-            url: SERVER + "/producto/remove/" + id,
+            url: SERVER + "/usuario/remove/" + id,
             method: "DELETE"
         }).success(function(response) {
             $scope.loadData();
@@ -76,54 +85,54 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
         });
     };
 
-    $scope.findProducto = function() {
+    $scope.findUsuario = function() {
         $http({
-            url: SERVER + "/producto/find/" + $scope.idProducto,
+            url: SERVER + "/usuario/find/" + $scope.idUsuario,
             method: "GET",
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8'
             }
         }).success(function(response) {
-            $scope.producto = response;
+            $scope.usuario = response;
         }).error(function(err) {
             console.log(err);
         });
     };
 
 
-    $scope.confirmDeleteModalProducto = function(id) {
+    $scope.confirmDeleteModalUsuario = function(id) {
         $('#deleteModal').modal();
         $("#deleteButton").click(function() {
-            $scope.removeProducto(id);
+            $scope.removeUsuario(id);
             $('#deleteModal').modal('hide');
         });
     };
 
-    /*
-        $scope.listRoles = function() {
-            $http({
-                url: SERVER + "/usuario/role/all",
-                method: "GET"
-            }).success(function(response) {
-                $scope.roles = response;
-                console.log($scope.roles);
-            }).error(function(err) {
-                console.log(err);
-            });
-        };
 
-        $scope.listRolesByUsuario = function() {
-            $http({
-                url: SERVER + "/usuario/role/" + $scope.idUsuario,
-                method: "GET"
-            }).success(function(response) {
-                $scope.roles = response;
-                console.log($scope.roles);
-            }).error(function(err) {
-                console.log(err);
-            });
-        };
-    */
+    $scope.listRoles = function() {
+        $http({
+            url: SERVER + "/usuario/role/all",
+            method: "GET"
+        }).success(function(response) {
+            $scope.roles = response;
+            console.log($scope.roles);
+        }).error(function(err) {
+            console.log(err);
+        });
+    };
+
+    $scope.listRolesByUsuario = function() {
+        $http({
+            url: SERVER + "/usuario/role/" + $scope.idUsuario,
+            method: "GET"
+        }).success(function(response) {
+            $scope.roles = response;
+            console.log($scope.roles);
+        }).error(function(err) {
+            console.log(err);
+        });
+    };
+*/
 
     $scope.initialize();
 

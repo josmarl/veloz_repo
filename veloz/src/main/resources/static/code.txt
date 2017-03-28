@@ -1,0 +1,10 @@
+<li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/celular"><i
+        class="glyphicon glyphicon-phone"></i>&nbsp;Celular</a>
+</li>
+
+<li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a
+        ng-href="#/reporte"><i class="glyphicon glyphicon-print"></i>&nbsp;Reportes</a>
+</li>
+
+<li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a
+        ng-href="#/campaign"><i class="glyphicon glyphicon-alert"></i>&nbsp;Campañas</a></li>

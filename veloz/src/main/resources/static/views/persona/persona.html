@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="css/list.css" />
+
+<style>
+    body {
+        background-image: url(img/det.jpg);
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+        font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+    }
+</style>
+
+<table class="table">
+    <thead>
+        <caption><h1>{{headingTitle}}</h1></caption>
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>DNI</th>
+            <th>Celular</th>
+            <th>Dirección</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="pe in personas">
+            <td>{{pe.nombres}}</td>
+            <td>{{pe.apellidos}}</td>
+            <td>{{pe.dni}}</td>
+            <td>{{pe.celular}}</td>
+            <td>{{pe.direccion}}</td>
+            <td><a href="#/usuario/new/" class="btn btn-primary"><i class="glyphicon glyphicon-edit"></i>&nbsp;Modificar</a></td>
+        </tr>
+
+    </tbody>
+</table>

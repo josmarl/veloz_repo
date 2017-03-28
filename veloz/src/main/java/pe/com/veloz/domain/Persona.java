@@ -19,7 +19,7 @@ public class Persona implements Serializable, Cloneable {
     private String nombres;
     private String apellidos;
     private String dni;
-    private int celular;
+    private String celular;
     private String direccion;
 
     public Persona() {
@@ -57,11 +57,11 @@ public class Persona implements Serializable, Cloneable {
         this.dni = dni;
     }
 
-    public int getCelular() {
+    public String getCelular() {
         return celular;
     }
 
-    public void setCelular(int celular) {
+    public void setCelular(String celular) {
         this.celular = celular;
     }
 
