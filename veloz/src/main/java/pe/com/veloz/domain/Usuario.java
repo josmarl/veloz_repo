@@ -24,6 +24,8 @@ public class Usuario implements Serializable, Cloneable, UserDetails {
     private Long persona;
     private Persona personaObj;
     private String estado;
+    private Long empresa;
+    private Empresa empresaObj;
     private Long authoritie;
 
 
@@ -34,13 +36,15 @@ public class Usuario implements Serializable, Cloneable, UserDetails {
     private boolean credentialsNonExpired = true;
     private boolean enabled = true;
 
-    public Usuario(Long id, String username, String password, Long persona, Persona personaObj, String estado, Long authoritie, List<Role> authorities) {
+    public Usuario(Long id, String username, String password, Long persona, Persona personaObj, String estado, Long empresa, Empresa empresaObj, Long authoritie, List<Role> authorities) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.persona = persona;
         this.personaObj = personaObj;
         this.estado = estado;
+        this.empresa = empresa;
+        this.empresaObj = empresaObj;
         this.authoritie = authoritie;
         this.authorities = authorities;
     }
@@ -116,6 +120,22 @@ public class Usuario implements Serializable, Cloneable, UserDetails {
         this.personaObj = personaObj;
     }
 
+    public Long getEmpresa() {
+        return empresa;
+    }
+
+    public void setEmpresa(Long empresa) {
+        this.empresa = empresa;
+    }
+
+    public Empresa getEmpresaObj() {
+        return empresaObj;
+    }
+
+    public void setEmpresaObj(Empresa empresaObj) {
+        this.empresaObj = empresaObj;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return this.authorities;
@@ -153,7 +173,7 @@ public class Usuario implements Serializable, Cloneable, UserDetails {
 
     @Override
     public String toString() {
-        return "Usuario{" + "id=" + id + ", username=" + username + ", password=" + password + ", persona=" + persona + ", personaObj=" + personaObj + ", estado=" + estado + ", authoritie=" + authoritie + ", authorities=" + authorities + ", accountNonExpired=" + accountNonExpired + ", accountNonLocked=" + accountNonLocked + ", credentialsNonExpired=" + credentialsNonExpired + ", enabled=" + enabled + '}';
+        return "Usuario{" + "id=" + id + ", username=" + username + ", password=" + password + ", persona=" + persona + ", personaObj=" + personaObj + ", estado=" + estado + ", empresa=" + empresa + ", empresaObj=" + empresaObj + ", authoritie=" + authoritie + ", authorities=" + authorities + ", accountNonExpired=" + accountNonExpired + ", accountNonLocked=" + accountNonLocked + ", credentialsNonExpired=" + credentialsNonExpired + ", enabled=" + enabled + '}';
     }
 
 }

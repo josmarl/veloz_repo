@@ -14,6 +14,9 @@ import java.util.List;
 public class DetalleProductoDTO {
 
     private List<ProductoVentaDTO> detalles;
+    private double baseImponible;
+    private double igv;
+    private double total;
 
     public DetalleProductoDTO() {
     }
@@ -26,9 +29,33 @@ public class DetalleProductoDTO {
         this.detalles = detalles;
     }
 
+    public double getBaseImponible() {
+        return baseImponible;
+    }
+
+    public void setBaseImponible(double baseImponible) {
+        this.baseImponible = baseImponible;
+    }
+
+    public double getIgv() {
+        return igv;
+    }
+
+    public void setIgv(double igv) {
+        this.igv = igv;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
     @Override
     public String toString() {
-        return "DetalleProductoDTO{" + "detalles=" + detalles + '}';
+        return "DetalleProductoDTO{" + "detalles=" + detalles + ", baseImponible=" + baseImponible + ", igv=" + igv + ", total=" + total + '}';
     }
 
 }

@@ -19,9 +19,7 @@ public class DetalleVenta implements Serializable, Cloneable {
     private Producto productoObj;
     private Long producto;
     private int cantidad;
-    private double total;
-    private double baseImponible;
-    private double igv;
+    private double importe;
     private Venta ventaObj;
     private Long venta;
 
@@ -60,28 +58,12 @@ public class DetalleVenta implements Serializable, Cloneable {
         this.cantidad = cantidad;
     }
 
-    public double getTotal() {
-        return total;
+    public double getImporte() {
+        return importe;
     }
 
-    public void setTotal(double total) {
-        this.total = total;
-    }
-
-    public double getBaseImponible() {
-        return baseImponible;
-    }
-
-    public void setBaseImponible(double baseImponible) {
-        this.baseImponible = baseImponible;
-    }
-
-    public double getIgv() {
-        return igv;
-    }
-
-    public void setIgv(double igv) {
-        this.igv = igv;
+    public void setImporte(double importe) {
+        this.importe = importe;
     }
 
     public Venta getVentaObj() {
@@ -102,7 +84,7 @@ public class DetalleVenta implements Serializable, Cloneable {
 
     @Override
     public String toString() {
-        return "DetalleVenta{" + "id=" + id + ", productoObj=" + productoObj + ", producto=" + producto + ", cantidad=" + cantidad + ", total=" + total + ", baseImponible=" + baseImponible + ", igv=" + igv + ", ventaObj=" + ventaObj + ", venta=" + venta + '}';
+        return "DetalleVenta{" + "id=" + id + ", productoObj=" + productoObj + ", producto=" + producto + ", cantidad=" + cantidad + ", importe=" + importe + ", ventaObj=" + ventaObj + ", venta=" + venta + '}';
     }
 
 }

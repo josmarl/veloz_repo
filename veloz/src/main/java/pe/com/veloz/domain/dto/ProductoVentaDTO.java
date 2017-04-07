@@ -5,7 +5,6 @@
  */
 package pe.com.veloz.domain.dto;
 
-import java.util.List;
 import pe.com.veloz.domain.Producto;
 
 /**
@@ -16,6 +15,7 @@ public class ProductoVentaDTO {
 
     private Producto producto;
     private int cantidad;
+    private double precioUnitario;
     private double importe;
 
     public ProductoVentaDTO() {
@@ -37,6 +37,14 @@ public class ProductoVentaDTO {
         this.cantidad = cantidad;
     }
 
+    public double getPrecioUnitario() {
+        return precioUnitario;
+    }
+
+    public void setPrecioUnitario(double precioUnitario) {
+        this.precioUnitario = precioUnitario;
+    }
+
     public double getImporte() {
         return importe;
     }
@@ -47,7 +55,7 @@ public class ProductoVentaDTO {
 
     @Override
     public String toString() {
-        return "ProductoVentaDTO{" + "producto=" + producto + ", cantidad=" + cantidad + ", importe=" + importe + '}';
+        return "ProductoVentaDTO{" + "producto=" + producto + ", cantidad=" + cantidad + ", precioUnitario=" + precioUnitario + ", importe=" + importe + '}';
     }
 
 }
