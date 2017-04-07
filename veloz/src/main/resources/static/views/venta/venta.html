@@ -40,12 +40,12 @@
         </thead>
         <tbody>
 
-        <tr ng-repeat="det in detalles">
+        <tr ng-repeat="det in detallesProducto">
             <td>{{$index +1}}</td>
             <td>{{det.cantidad}}</td>
             <td>{{det.producto.nombre}}</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>{{det.producto.precioUnit}}</td>
+            <td>{{det.importe}}</td>
         </tr>
         </tbody>
     </table>
