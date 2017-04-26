@@ -6,6 +6,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
     $scope.headingTitle = "Ventas";
     $scope.productos = [];
+    $scope.tipoComprobantes = [];
     $scope.ventas = [];
     $scope.detalles = [];
     $scope.detallesProducto = [];
@@ -13,6 +14,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
     $scope.initialize = function () {
         $scope.getProductos();
+        $scope.getTipoComprobantes();
     };
 
     $scope.getProductos = function () {
@@ -26,11 +28,24 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         });
     };
 
+
+    $scope.getTipoComprobantes = function () {
+        $http({
+            url: SERVER + "/tipoComprobante/all",
+            method: "GET"
+        }).success(function (response) {
+            $scope.tipoComprobantes = response;
+            console.log($scope.tipoComprobantes)
+        }).error(function (err) {
+            console.log(err);
+        });
+    };
+
     $scope.agregar = function () {
 
         var detalle = {};
 
-        detalle.producto = $scope.prod;
+        detalle.producto = $scope.prod.originalObject;
         detalle.cantidad = $scope.cantidad;
         detalle.precioUnitario = 0;
 
@@ -48,7 +63,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                     nExiste = parseInt(nExiste) + 1;
                 }
             }
-
         }
 
         if (existe == 0) {
@@ -56,7 +70,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                 $scope.detalles.push(detalle);
             }
         }
-
 
         $http({
             url: SERVER + '/venta/add',
@@ -74,9 +87,13 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         }).error(function (err) {
             console.log(err);
         });
-
-
     };
+
+    $scope.deleteDetalle = function (detalle) {
+        var index = $scope.detallesProducto.indexOf(detalle);
+        $scope.detallesProducto.splice(index, 1);
+        $scope.detalles.splice(index, 1);
+    }
 
 
     $scope.initialize();

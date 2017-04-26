@@ -18,8 +18,8 @@ import pe.com.veloz.domain.Venta;
 @Mapper
 public interface VentaMapper {
 
-    @Insert("insert into venta(cliente, usuario) values(#{venta.cliente},#{venta.usuario})")
+    @Insert("insert into venta(cliente,usuario,base_imponible,igv,total) "
+            + "values(#{venta.cliente},#{venta.usuario},#{venta.baseImponible},#{venta.igv},#{venta.total})")
     @Options(useGeneratedKeys = true, keyProperty = "venta.id", keyColumn = "id")
     void saveVenta(@Param("venta") Venta venta);
-
 }

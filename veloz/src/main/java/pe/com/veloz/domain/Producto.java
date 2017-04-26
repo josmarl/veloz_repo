@@ -23,7 +23,7 @@ public class Producto implements Serializable, Cloneable {
     private double precioCincuenta;
     private double precioCompra;
     private double precioVenta;
-    private String estado;
+    private int estado;
     private int stock;
     private String marca;
     private String code;
@@ -100,11 +100,11 @@ public class Producto implements Serializable, Cloneable {
         this.precioVenta = precioVenta;
     }
 
-    public String getEstado() {
+    public int getEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(int estado) {
         this.estado = estado;
     }
 

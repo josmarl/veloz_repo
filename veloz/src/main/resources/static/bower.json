@@ -28,6 +28,7 @@
     "bootstrap": "~3.3.7",
     "flat-ui": "^2.3.0",
     "eonasdan-bootstrap-datetimepicker": "^4.17.43",
-    "bootstrap-fileinput": "^4.3.5"
+    "bootstrap-fileinput": "^4.3.5",
+    "angucomplete": "*"
   }
 }

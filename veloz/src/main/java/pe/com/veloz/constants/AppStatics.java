@@ -11,10 +11,8 @@ package pe.com.veloz.constants;
  */
 public class AppStatics {
 
-    public static final String SCHEME = "JOSMARL";
-    public static final String STATUS_ACTIVE = "1";
-    public static final String STATUS_INACTIVE = "0";
-    public static final String STATUS_SENDED = "2";
-    public static final String STATUS_FAILED = "3";
+    public static final String SCHEME = "veloz_db";
+    public static final int STATUS_ACTIVE = 1;
+    public static final int STATUS_INACTIVE = 0;
 
 }

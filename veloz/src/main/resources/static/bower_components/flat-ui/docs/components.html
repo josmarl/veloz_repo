@@ -642,6 +642,20 @@ $(':radio').on('change.radiocheck', function() {
 &lt;/div&gt;
 </pre>
 
+    
+          <p class="ptl mtl">
+            You'll need to add some Javascript code in order to append icons (on left position) like search icon above
+          </p>
+
+<pre class="prettyprint">
+// Focus state for append/prepend inputs
+$('.input-group').on('focus', '.form-control', function () {
+  $(this).closest('.input-group, .form-group').addClass('focus');
+}).on('blur', '.form-control', function () {
+  $(this).closest('.input-group, .form-group').removeClass('focus');
+});
+</pre>
+
           <div id="fui-navbar"></div>
         </div> <!-- /.demo-content -->
       </div> <!-- /.demo-row -->
@@ -1476,7 +1490,7 @@ $('#label-switch').bootstrapSwitch('offText', 'Ag');
 &lt;/div&gt;
 </pre>
 
-          <p class="mbl">For more technical details read the <a href="http://bootstrap-switch.org">original documentation</a>.</p>
+          <p class="mbl">For more technical details read the <a href="http://www.bootstrap-switch.org">original documentation</a>.</p>
 
           <p class="mbl pbl"><strong>Note:</strong> <span class="text-info">Label text</span> and <span class="text-info">switch sizing</span> are not supported.</p>
 
@@ -1527,7 +1541,7 @@ $('#label-switch').bootstrapSwitch('offText', 'Ag');
 $(".tagsinput").tagsinput();
 </pre>
 
-          <p class="mbl pbl">For more technical details read the <a href="http://timschlechter.github.io/bootstrap-tagsinput/examples/bootstrap3/">official plugin&nbsp;documentation</a>.</p>
+          <p class="mbl pbl">For more technical details read the <a href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/">official plugin&nbsp;documentation</a>.</p>
 
           <div id="fui-tooltip"></div>
         </div> <!-- /.demo-content -->

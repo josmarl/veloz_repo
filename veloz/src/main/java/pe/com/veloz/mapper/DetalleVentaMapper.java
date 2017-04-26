@@ -17,12 +17,10 @@ import pe.com.veloz.domain.DetalleVenta;
 @Mapper
 public interface DetalleVentaMapper {
 
-    @Insert("insert into detalle_venta(producto,cantidad,total,base_imponible,igv,venta) "
+    @Insert("insert into detalle_venta(producto,cantidad,importe,venta) "
             + "values (#{detalleVenta.producto},"
             + "#{detalleVenta.cantidad},"
-            + "#{detalleVenta.total},"
-            + "#{detalleVenta.baseImponible},"
-            + "#{detalleVenta.igv},"
+            + "#{detalleVenta.importe},"
             + "#{detalleVenta.venta})")
     void insertDetalleVenta(@Param("detalleVenta") DetalleVenta detalleVenta);
 

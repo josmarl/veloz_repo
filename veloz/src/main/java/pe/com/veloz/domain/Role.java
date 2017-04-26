@@ -19,7 +19,7 @@ public class Role implements Serializable, Cloneable, GrantedAuthority {
     private String name;
     private Usuario usuarioObj;
     private Long usuario;
-    private String estado;
+    private int estado;
     private boolean status;
 
     @Override
@@ -75,11 +75,11 @@ public class Role implements Serializable, Cloneable, GrantedAuthority {
         this.status = status;
     }
 
-    public String getEstado() {
+    public int getEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(int estado) {
         this.estado = estado;
     }
 

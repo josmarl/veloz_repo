@@ -8,15 +8,33 @@
     </div>
     <br>
     <div class="row">
+        <div class="col-md-12">
+            <label>Tipo de Documento:</label>
+            <select data-toggle="select" class="form-control select select-primary mrs mbm"
+                    ng-model="tipoComprobante"
+                    ng-options="tipoComprobante.nombre for tipoComprobante in tipoComprobantes">
+                <option value="">-- Seleccione Tipo de comprobante--</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-1">
             <label>Cant.</label>
             <input type="text" class="form-control" placeholder="Cant." ng-model="cantidad">
         </div>
         <div class="col-md-10">
             <label>Producto:</label>
-            <select class="form-control" ng-model="prod" ng-options="producto.nombre for producto in productos">
-
-            </select>
+            <angucomplete id="ex1"
+                          placeholder="Buscar producto..."
+                          pause="100"
+                          selectedobject="prod"
+                          localdata="productos"
+                          searchfields="nombre"
+                          titlefield="nombre,marca"
+                          descriptionfield="descripcion"
+                          minlength="1"
+                          inputclass="form-control form-control-small"
+                          class="ng-isolate-scope"/>
         </div>
         <div class="col-md-1">
             <label>Opt.</label><br>
@@ -36,6 +54,7 @@
             <th>Producto</th>
             <th>P.U</th>
             <th>Importe</th>
+            <th>Elim.</th>
         </tr>
         </thead>
         <tbody>
@@ -46,8 +65,14 @@
             <td>{{det.producto.nombre}}</td>
             <td>{{det.precioUnitario}}</td>
             <td>{{det.importe}}</td>
+            <td>
+                <button class="btn btn-danger" ng-click="deleteDetalle(det)"><i
+                        class="glyphicon glyphicon-remove"></i></button>
+            </td>
         </tr>
         </tbody>
     </table>
 </div>
+
+<script src="bower_components/flat-ui/docs/assets/js/application.js"></script>
 
