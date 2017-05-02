@@ -7,22 +7,22 @@ package pe.com.veloz.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pe.com.veloz.domain.Venta;
-import pe.com.veloz.mapper.VentaMapper;
+import pe.com.veloz.domain.DetalleVenta;
+import pe.com.veloz.mapper.DetalleVentaMapper;
 
 /**
  *
  * @author josmarl
  */
-@Service("ventaService")
-public class VentaServiceImpl implements VentaService {
+@Service("detalleVentaService")
+public class DetalleVentaServiceImpl implements DetalleVentaService {
 
     @Autowired
-    public VentaMapper ventaMapper;
+    public DetalleVentaMapper detalleVentaMapper;
 
     @Override
-    public void saveVenta(Venta venta) {
-        ventaMapper.saveVenta(venta);
+    public void saveDetalleVenta(DetalleVenta detalleVenta) {
+        detalleVentaMapper.saveDetalleVenta(detalleVenta);
     }
 
 }

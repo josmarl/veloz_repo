@@ -5,14 +5,17 @@
  */
 package pe.com.veloz.service;
 
-import pe.com.veloz.domain.Venta;
+import java.util.List;
+import pe.com.veloz.domain.Cliente;
 
 /**
  *
  * @author josmarl
  */
-public interface VentaService {
+public interface ClienteService {
 
-    void saveVenta(Venta venta);
+    void saveCliente(Cliente cliente);
+
+    List<Cliente> findAllClientes();
 
 }

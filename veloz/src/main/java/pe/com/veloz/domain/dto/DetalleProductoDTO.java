@@ -6,6 +6,7 @@
 package pe.com.veloz.domain.dto;
 
 import java.util.List;
+import pe.com.veloz.domain.TipoComprobante;
 
 /**
  *
@@ -14,9 +15,7 @@ import java.util.List;
 public class DetalleProductoDTO {
 
     private List<ProductoVentaDTO> detalles;
-    private double baseImponible;
-    private double igv;
-    private double total;
+    private TipoComprobante tipoComprobante;
 
     public DetalleProductoDTO() {
     }
@@ -29,33 +28,17 @@ public class DetalleProductoDTO {
         this.detalles = detalles;
     }
 
-    public double getBaseImponible() {
-        return baseImponible;
+    public TipoComprobante getTipoComprobante() {
+        return tipoComprobante;
     }
 
-    public void setBaseImponible(double baseImponible) {
-        this.baseImponible = baseImponible;
-    }
-
-    public double getIgv() {
-        return igv;
-    }
-
-    public void setIgv(double igv) {
-        this.igv = igv;
-    }
-
-    public double getTotal() {
-        return total;
-    }
-
-    public void setTotal(double total) {
-        this.total = total;
+    public void setTipoComprobante(TipoComprobante tipoComprobante) {
+        this.tipoComprobante = tipoComprobante;
     }
 
     @Override
     public String toString() {
-        return "DetalleProductoDTO{" + "detalles=" + detalles + ", baseImponible=" + baseImponible + ", igv=" + igv + ", total=" + total + '}';
+        return "DetalleProductoDTO{" + "detalles=" + detalles + ", tipoComprobante=" + tipoComprobante + '}';
     }
 
 }

@@ -1,23 +1,6 @@
 <h3>{{headingTitle}}</h3>
 <div class="form-group">
     <div class="row">
-        <div class="col-md-12">
-            <label>Cliente: </label>
-            <input type="text" class="form-control" placeholder="Ingrese nombre del cliente...">
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-md-12">
-            <label>Tipo de Documento:</label>
-            <select data-toggle="select" class="form-control select select-primary mrs mbm"
-                    ng-model="tipoComprobante"
-                    ng-options="tipoComprobante.nombre for tipoComprobante in tipoComprobantes">
-                <option value="">-- Seleccione Tipo de comprobante--</option>
-            </select>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-md-1">
             <label>Cant.</label>
             <input type="text" class="form-control" placeholder="Cant." ng-model="cantidad">
@@ -63,8 +46,8 @@
             <td>{{$index +1}}</td>
             <td>{{det.cantidad}}</td>
             <td>{{det.producto.nombre}}</td>
-            <td>{{det.precioUnitario}}</td>
-            <td>{{det.importe}}</td>
+            <td>S/.{{det.precioUnitario}}</td>
+            <td>S/.{{det.importe}}</td>
             <td>
                 <button class="btn btn-danger" ng-click="deleteDetalle(det)"><i
                         class="glyphicon glyphicon-remove"></i></button>
@@ -72,6 +55,83 @@
         </tr>
         </tbody>
     </table>
+    <button class="btn btn-primary btn-embossed" ng-click="seleccionarTipoComp()" ng-disabled="validarDetalleVenta()">
+        Guardar
+        Venta
+    </button>
+</div>
+
+
+<div class="container">
+    <div id="seleccionarTipCompModal" class="modal fade" role='dialog'>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Confirmación </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Seleccione Tipo de Documento:</label>
+                        <select data-toggle="select" class="form-control select select-primary mrs mbm"
+                                ng-model="tipoComprobante"
+                                ng-options="tipoComprobante.nombre for tipoComprobante in tipoComprobantes"
+                                ng-change="getDatosTipoComprobante()">
+                            <option value="">-- Seleccione Tipo de comprobante--</option>
+                        </select>
+
+                        <label>Base Imponible</label>
+                        <div class="input-group focus">
+                            <span class="input-group-addon">S/.</span>
+                            <input type="text" ng-model="datosTipoComprobante.baseImponible"
+                                   class="form-control text-inverse"
+                                   aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                        <label>IGV</label>
+                        <div class="input-group focus">
+                            <span class="input-group-addon">S/.</span>
+                            <input type="text" ng-model="datosTipoComprobante.igv"
+                                   class="form-control"
+                                   aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                        <label>Total</label>
+                        <div class="input-group focus">
+                            <span class="input-group-addon">S/.</span>
+                            <input type="text" ng-model="datosTipoComprobante.total"
+                                   class="form-control"
+                                   aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Cliente: </label>
+                        <angucomplete id="ex2"
+                                      placeholder="Ingrese nombre del cliente..."
+                                      pause="100"
+                                      selectedobject="cliente"
+                                      localdata="clientes"
+                                      searchfields="razonSocial"
+                                      titlefield="razonSocial"
+                                      descriptionfield="razonSocial"
+                                      minlength="1"
+                                      inputclass="form-control form-control-small"
+                                      class="ng-isolate-scope"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="guardarButton" ng-disabled="validarVenta()" ng-click="guardarVenta()"
+                            class="btn btn-danger"><i
+                            class="glyphicon glyphicon-trash"></i>&nbsp;Guardar
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                            class="glyphicon glyphicon-remove"></i>&nbsp;Cancelar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="bower_components/flat-ui/docs/assets/js/application.js"></script>

@@ -7,12 +7,17 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
     $scope.headingTitle = "Ventas";
     $scope.productos = [];
     $scope.tipoComprobantes = [];
+    $scope.clientes = [];
     $scope.ventas = [];
     $scope.detalles = [];
     $scope.detallesProducto = [];
     $scope.prod = {};
+    $scope.tipoComprobante = {};
+    $scope.datosTipoComprobante = {};
+    $scope.cliente = {};
 
     $scope.initialize = function () {
+        $scope.getClientes();
         $scope.getProductos();
         $scope.getTipoComprobantes();
     };
@@ -35,7 +40,19 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             method: "GET"
         }).success(function (response) {
             $scope.tipoComprobantes = response;
-            console.log($scope.tipoComprobantes)
+        }).error(function (err) {
+            console.log(err);
+        });
+    };
+
+
+    $scope.getClientes = function () {
+        $http({
+            url: SERVER + "/cliente/all",
+            method: "GET"
+        }).success(function (response) {
+            $scope.clientes = response;
+            console.log($scope.clientes)
         }).error(function (err) {
             console.log(err);
         });
@@ -81,7 +98,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                 'Content-Type': 'application/json; charset=UTF-8'
             }
         }).success(function (data) {
-            console.log(data)
             $scope.detallesProducto = data;
             $location.path("/venta");
         }).error(function (err) {
@@ -95,6 +111,81 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         $scope.detalles.splice(index, 1);
     }
 
+    $scope.validarDetalleVenta = function () {
+        if ($scope.detallesProducto.length > 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    $scope.getDatosTipoComprobante = function () {
+
+        $http({
+            url: SERVER + '/venta/tipocomp/totales',
+            data: {
+                detalles: $scope.detallesProducto,
+                tipoComprobante: $scope.tipoComprobante
+            },
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        }).success(function (data) {
+            $scope.datosTipoComprobante = data;
+            console.log($scope.datosTipoComprobante);
+            $location.path("/venta");
+        }).error(function (err) {
+            console.log(err);
+        });
+    }
+
+    $scope.guardarVenta = function () {
+
+        if ($scope.cliente.originalObject.id == undefined
+            || $scope.cliente.originalObject.razonSocial != $("#ex2_value").val()) {
+
+            $scope.cliente.originalObject.id = undefined;
+            $scope.cliente.originalObject.razonSocial = $("#ex2_value").val();
+        }
+
+        $http({
+            url: SERVER + '/venta/save',
+            data: {
+                baseImponible: $scope.datosTipoComprobante.baseImponible,
+                igv: $scope.datosTipoComprobante.igv,
+                total: $scope.datosTipoComprobante.total,
+                detalles: $scope.detallesProducto,
+                tipoComprobante: $scope.tipoComprobante,
+                cliente: $scope.cliente.originalObject
+            },
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        }).success(function (data) {
+            $location.path("/venta");
+        }).error(function (err) {
+            console.log(err);
+        });
+
+    }
+
+
+    $scope.seleccionarTipoComp = function () {
+        $('#seleccionarTipCompModal').modal();
+        $("#guardarButton").click(function () {
+            $('#seleccionarTipCompModal').modal('hide');
+        });
+    };
+
+    $scope.validarVenta = function () {
+        if ($scope.datosTipoComprobante.total > 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 
     $scope.initialize();
 

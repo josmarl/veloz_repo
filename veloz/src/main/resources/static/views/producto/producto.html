@@ -1,65 +1,50 @@
-<link rel="stylesheet" href="css/list.css" />
-
-<style>
-    body {
-        background-image: url(img/det.jpg);
-        background-size: 100% 200%;
-        background-repeat: no-repeat;
-        font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-        text-align: center;
-    }
-
-    h1 {
-        color: white;
-    }
-</style>
 <table class="table">
     <caption>
-        <h1>{{headingTitle}}</h1></caption>
+        <h3>{{headingTitle}}</h3></caption>
     <a href="#/producto/new/" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp;Nuevo Producto</a>
     <thead>
-        <tr>
-            <th>Código</th>
-            <th>Nombre</th>
-            <th>Marca</th>
-            <th>Cantidad</th>
-            <th>Descripción</th>
-            <th>Precio de Venta</th>
-            <th>Precio de Compra</th>
-            <th>Venta por Unidad</th>
-            <th>Venta por Docena</th>
-            <th>Venta por Cincuenta</th>
-            <th>Venta por Ciento</th>
-            <th>Estado del Producto</th>
-            <th>ID del Producto</th>
-            <th>Opciones</th>
-        </tr>
+    <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Marca</th>
+        <th>Cantidad</th>
+        <th>Descripción</th>
+        <th>Precio de Venta</th>
+        <th>Precio de Compra</th>
+        <th>Venta por Unidad</th>
+        <th>Venta por Docena</th>
+        <th>Venta por Cincuenta</th>
+        <th>Venta por Ciento</th>
+        <th>Estado</th>
+        <th>Opciones</th>
+    </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="pr in productos">
-            <td>{{pr.code}}</td>
-            <td>{{pr.nombre}}</td>
-            <td>{{pr.marca}}</td>
-            <td>{{pr.stock}}</td>
-            <td>{{pr.descripcion}}</td>
-            <td>{{pr.precioVenta}}</td>
-            <td>{{pr.precioCompra}}</td>
-            <td>{{pr.precioUnit}}</td>
-            <td>{{pr.precioDocena}}</td>
-            <td>{{pr.precioCincuenta}}</td>
-            <td>{{pr.precioCiento}}</td>
-            <td>{{pr.estado}}</td>
-            <td>{{pr.id}}</td>
-            <td>
-                <div class="btn-group">
-                    <a ng-href="#/producto/edit/{{pr.id}}" class="btn btn-sm btn-success btn-primary" data-toggle="tooltip" title="Editar Producto">
-                        <span class="glyphicon glyphicon-pencil"></span>
-                    </a>
-                    <a ng-click="confirmDeleteModalProducto(pr.id)" class="btn btn-sm btn-danger btn-primary" data-toggle="tooltip" title="Eliminar Producto">
-                        <span class="glyphicon glyphicon-trash"></span></a>
-                </div>
-            </td>
-        </tr>
+    <tr ng-repeat="pr in productos">
+        <td>{{pr.code}}</td>
+        <td>{{pr.nombre}}</td>
+        <td>{{pr.marca}}</td>
+        <td>{{pr.stock}}</td>
+        <td>{{pr.descripcion}}</td>
+        <td>{{pr.precioVenta}}</td>
+        <td>{{pr.precioCompra}}</td>
+        <td>{{pr.precioUnit}}</td>
+        <td>{{pr.precioDocena}}</td>
+        <td>{{pr.precioCincuenta}}</td>
+        <td>{{pr.precioCiento}}</td>
+        <td>{{pr.estado}}</td>
+        <td>
+            <div class="btn-group">
+                <a ng-href="#/producto/edit/{{pr.id}}" class="btn btn-sm btn-success btn-primary" data-toggle="tooltip"
+                   title="Editar Producto">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+                <a ng-click="confirmDeleteModalProducto(pr.id)" class="btn btn-sm btn-danger btn-primary"
+                   data-toggle="tooltip" title="Eliminar Producto">
+                    <span class="glyphicon glyphicon-trash"></span></a>
+            </div>
+        </td>
+    </tr>
 
     </tbody>
 </table>
@@ -77,11 +62,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" id="deleteButton" class="btn btn-danger"><i
-                                class="glyphicon glyphicon-trash"></i>&nbsp;Eliminar
-                        </button>
+                            class="glyphicon glyphicon-trash"></i>&nbsp;Eliminar
+                    </button>
                     <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                class="glyphicon glyphicon-remove"></i>&nbsp;Cancelar
-                        </button>
+                            class="glyphicon glyphicon-remove"></i>&nbsp;Cancelar
+                    </button>
                 </div>
             </div>
         </div>

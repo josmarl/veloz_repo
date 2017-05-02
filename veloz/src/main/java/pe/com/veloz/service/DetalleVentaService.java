@@ -5,14 +5,14 @@
  */
 package pe.com.veloz.service;
 
-import pe.com.veloz.domain.Venta;
+import pe.com.veloz.domain.DetalleVenta;
 
 /**
  *
  * @author josmarl
  */
-public interface VentaService {
+public interface DetalleVentaService {
 
-    void saveVenta(Venta venta);
+    public void saveDetalleVenta(DetalleVenta detalleVenta);
 
 }

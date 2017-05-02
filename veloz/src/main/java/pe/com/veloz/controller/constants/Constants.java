@@ -15,5 +15,6 @@ public class Constants {
     public static int CINCUENTA = 50;
     public static int CIENTO = 100;
     public static int UNITARIO = 1;
+    public static double IGV_ACTUAL = 0.18;
 
 }

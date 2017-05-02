@@ -2,146 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/flat-ui/.bower.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/constants/AppStatics.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/constants/AppStatics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/SmsApplication.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/SmsApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/VentaController.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/VentaController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Producto.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Producto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Role.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Role.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/constants/Constants.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/constants/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Cliente.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Cliente.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Venta.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Venta.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/dto/DetalleProductoDTO.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/dto/DetalleProductoDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/enums/TipoComprobanteEnum.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/enums/TipoComprobanteEnum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/DetalleVentaMapper.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/DetalleVentaMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/VentaMapper.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/VentaMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../application.properties" afterPath="$PROJECT_DIR$/../application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/service/VentaService.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/service/VentaService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/service/VentaServiceImpl.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/service/VentaServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/CHANGELOG.md" afterPath="$PROJECT_DIR$/bower_components/flat-ui/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/Gruntfile.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/README.md" afterPath="$PROJECT_DIR$/bower_components/flat-ui/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/bower.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.min.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/vendor/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/glyphicons/flat-ui-icons-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/glyphicons/flat-ui-icons-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/glyphicons/selection.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/glyphicons/selection.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-black.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-black.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-bold.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-bolditalic.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-bolditalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-italic.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-italic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-light.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-light.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/clocks.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/clocks.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/loop.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/loop.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/ribbon.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/ribbon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/index.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/flat-ui.min.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/flat-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/html5shiv.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/html5shiv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/respond.min.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/respond.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/video.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/demo.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/demo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/docs.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/docs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/demo.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/demo.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/docs.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/docs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/prettyprint.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/prettyprint.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/js/application.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/js/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/js/prettify.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/js/prettify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/components.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/components.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/buttons.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/dropdowns.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/dropdowns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/forms.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/forms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbar-fixed-top.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbar-fixed-top.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbar-static-top.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbar-static-top.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbars-with-elements.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbars-with-elements.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbars.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbars.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/pagination.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/pagination.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/radiocheck.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/radiocheck.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/select.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/select.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/switches.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/switches.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tagsinput.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tagsinput.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/thumbnails.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/thumbnails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tiles.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tiles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/todo-list.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/todo-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tooltips.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tooltips.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/typography.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/typography.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/vertical-slider.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/vertical-slider.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/getting-started.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/getting-started.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/template.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/glyphicons/flat-ui-icons-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/glyphicons/flat-ui-icons-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/glyphicons/selection.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/glyphicons/selection.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-black.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-black.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-bold.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-bolditalic.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-bolditalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-italic.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-italic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-light.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-light.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/clocks.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/clocks.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/loop.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/loop.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/ribbon.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/ribbon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/index.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/index.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/js/radiocheck.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/js/radiocheck.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/flat-ui.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/flat-ui.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/background-clip.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/background-clip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/background-variant.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/background-variant.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/border-radius.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/border-radius.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/buttons.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/center-block.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/center-block.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/clearfix.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/clearfix.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/forms.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/gradients.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/gradients.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/grid.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/hide-text.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/hide-text.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/image.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/image.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/nav-divider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/navbar-vertical-align.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/navbar-vertical-align.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/opacity.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/opacity.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/pagination.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/pallets.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/pallets.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/reset-filter.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/resize.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/resize.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/responsive-visibility.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/select.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/select.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/size.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/size.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/switches.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/switches.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/tab-focus.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/text-emphasis.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/text-overflow.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/vendor-prefixes.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/button-groups.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/button-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/buttons.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/code.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/code.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/dropdowns.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/footer.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/footer.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/forms.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/glyphicons.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/glyphicons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/input-groups.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/input-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/local-fonts.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/local-fonts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/login.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/login.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/navbar.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/pager.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/pager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/pagination.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/palette.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/palette.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/print.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/print.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/progress-bars.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/progress-bars.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/radiocheck.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/radiocheck.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/scaffolding.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/scaffolding.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/select.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/select.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/share.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/share.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/slider.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/slider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/switch.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/switch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tagsinput.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tagsinput.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/thumbnails.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/thumbnails.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tiles.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tiles.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/todo-list.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/todo-list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tooltip.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tooltip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/type.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/type.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/typeahead.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/typeahead.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/video.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/video.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/spaces.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/spaces.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/variables.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/package.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/venta.js" afterPath="$PROJECT_DIR$/js/controllers/venta.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/producto/producto.html" afterPath="$PROJECT_DIR$/views/producto/producto.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/venta/venta.html" afterPath="$PROJECT_DIR$/views/venta/venta.html" />
@@ -165,14 +37,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="venta.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="venta.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="144" column="41" lean-forward="false" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,19 +50,13 @@
       <file leaf-file-name="venta.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angucomplete.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bower_components/angucomplete/angucomplete.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="195">
+              <caret line="123" column="104" lean-forward="true" selection-start-line="123" selection-start-column="104" selection-end-line="123" selection-end-column="104" />
+              <folding>
+                <element signature="e#2433#2440#0" expanded="true" />
+                <element signature="e#5817#5823#0" expanded="true" />
+                <element signature="e#6018#6024#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,6 +79,11 @@
       <find>.form-group .select</find>
       <find>.form-control</find>
       <find>bower_components/an</find>
+      <find>console.log</find>
+      <find>console</find>
+      <find>clientes</find>
+      <find>getClientes</find>
+      <find>guardarVenta</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,14 +104,14 @@
         <option value="$PROJECT_DIR$/js/controllers/producto.js" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/views/producto/producto.html" />
         <option value="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/forms.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.css" />
-        <option value="$PROJECT_DIR$/js/controllers/venta.js" />
-        <option value="$PROJECT_DIR$/views/venta/venta.html" />
         <option value="$PROJECT_DIR$/bower_components/angucomplete/angucomplete.css" />
+        <option value="$PROJECT_DIR$/views/producto/producto.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/views/venta/venta.html" />
+        <option value="$PROJECT_DIR$/js/controllers/venta.js" />
       </list>
     </option>
   </component>
@@ -274,7 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -369,41 +237,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angucomplete" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,12 +396,19 @@
       <workItem from="1493172588350" duration="1818000" />
       <workItem from="1493246253057" duration="1596000" />
       <workItem from="1493256100002" duration="9817000" />
-      <workItem from="1493249094241" duration="216000" />
+      <workItem from="1493249094241" duration="1553000" />
+      <workItem from="1493329598173" duration="8547000" />
+      <workItem from="1493327997520" duration="5969000" />
+      <workItem from="1493341581898" duration="1191000" />
+      <workItem from="1493352631096" duration="1663000" />
+      <workItem from="1493516588926" duration="674000" />
+      <workItem from="1493684372830" duration="1873000" />
+      <workItem from="1493686865929" duration="2254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102602000" />
+    <option name="totallyTimeSpent" value="126110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,18 +427,18 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,13 +462,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -791,13 +628,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/angular-auto-complete/bower.json" />
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -823,13 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="151" column="70" lean-forward="true" selection-start-line="151" selection-start-column="70" selection-end-line="151" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/producto/producto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -875,35 +698,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angucomplete/angucomplete.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/producto/producto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="150">
           <caret line="87" column="71" lean-forward="false" selection-start-line="87" selection-start-column="71" selection-end-line="87" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angucomplete/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="123" column="104" lean-forward="true" selection-start-line="123" selection-start-column="104" selection-end-line="123" selection-end-column="104" />
+          <folding>
+            <element signature="e#2433#2440#0" expanded="true" />
+            <element signature="e#5817#5823#0" expanded="true" />
+            <element signature="e#6018#6024#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/angucomplete/angucomplete.css">
+    <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="171">
+          <caret line="144" column="41" lean-forward="false" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="41" />
           <folding />
         </state>
       </provider>

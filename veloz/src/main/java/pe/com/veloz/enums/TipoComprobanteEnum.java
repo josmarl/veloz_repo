@@ -11,8 +11,8 @@ package pe.com.veloz.enums;
  */
 public enum TipoComprobanteEnum {
 
-    TIPO_BOLETA(1l, "Comprobante", "01", 1l),
-    TIPO_FACTURA(2l, "Boleta", "02", 1l);
+    TIPO_BOLETA(1l, "Boleta", "01", 1l),
+    TIPO_FACTURA(2l, "Factura", "02", 1l);
 
     private Long id;
     private String nombre;

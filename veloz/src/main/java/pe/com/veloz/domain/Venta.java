@@ -16,7 +16,8 @@ public class Venta implements Serializable, Cloneable {
     private static final long serialVersionUID = 1L;
 
     private Long id;
-    private String cliente;
+    private Long cliente;
+    private Cliente clienteObj;
     private Long usuario;
     private Usuario usuarioObj;
     private double baseImponible;
@@ -34,12 +35,20 @@ public class Venta implements Serializable, Cloneable {
         this.id = id;
     }
 
-    public String getCliente() {
+    public Long getCliente() {
         return cliente;
     }
 
-    public void setCliente(String cliente) {
+    public void setCliente(Long cliente) {
         this.cliente = cliente;
+    }
+
+    public Cliente getClienteObj() {
+        return clienteObj;
+    }
+
+    public void setClienteObj(Cliente clienteObj) {
+        this.clienteObj = clienteObj;
     }
 
     public Long getUsuario() {
@@ -84,7 +93,7 @@ public class Venta implements Serializable, Cloneable {
 
     @Override
     public String toString() {
-        return "Venta{" + "id=" + id + ", cliente=" + cliente + ", usuario=" + usuario + ", usuarioObj=" + usuarioObj + ", baseImponible=" + baseImponible + ", igv=" + igv + ", total=" + total + '}';
+        return "Venta{" + "id=" + id + ", cliente=" + cliente + ", clienteObj=" + clienteObj + ", usuario=" + usuario + ", usuarioObj=" + usuarioObj + ", baseImponible=" + baseImponible + ", igv=" + igv + ", total=" + total + '}';
     }
 
 }

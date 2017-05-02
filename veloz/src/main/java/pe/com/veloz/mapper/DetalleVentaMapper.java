@@ -22,6 +22,6 @@ public interface DetalleVentaMapper {
             + "#{detalleVenta.cantidad},"
             + "#{detalleVenta.importe},"
             + "#{detalleVenta.venta})")
-    void insertDetalleVenta(@Param("detalleVenta") DetalleVenta detalleVenta);
+    void saveDetalleVenta(@Param("detalleVenta") DetalleVenta detalleVenta);
 
 }

@@ -17,8 +17,8 @@ public class Cliente implements Serializable, Cloneable {
 
     private Long id;
     private String razonSocial;
-    private int ruc;
-    private int dni;
+    private Long ruc;
+    private Long dni;
     private String direccion;
 
     public Cliente() {
@@ -40,19 +40,19 @@ public class Cliente implements Serializable, Cloneable {
         this.razonSocial = razonSocial;
     }
 
-    public int getRuc() {
+    public Long getRuc() {
         return ruc;
     }
 
-    public void setRuc(int ruc) {
+    public void setRuc(Long ruc) {
         this.ruc = ruc;
     }
 
-    public int getDni() {
+    public Long getDni() {
         return dni;
     }
 
-    public void setDni(int dni) {
+    public void setDni(Long dni) {
         this.dni = dni;
     }
 
