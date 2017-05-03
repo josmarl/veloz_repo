@@ -11,6 +11,8 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
     $scope.almacenes = [];
     $scope.detalles = [];
     $scope.almacen = {};
+    $scope.cliente = {};
+    $scope.cliente.originalObject = {};
     $scope.idAlmacen = $routeParams.id;
 
     $scope.initialize = function () {
@@ -51,7 +53,6 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
             method: "GET"
         }).success(function (response) {
             $scope.clientes = response;
-            console.log($scope.clientes)
         }).error(function (err) {
             console.log(err);
         });
@@ -104,16 +105,17 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
 
     $scope.guardarAlmacen = function () {
 
-        console.log($scope.almacen);
-        console.log($scope.detalles);
+        console.log($scope.cliente.originalObject);
 
-        if ($scope.cliente.originalObject.id == undefined
-            || $scope.cliente.originalObject.razonSocial != $("#ex2_value").val()) {
+        if ($scope.cliente.originalObject == undefined
+            || $scope.cliente.originalObject.id == undefined
+            || $scope.cliente.originalObject.razonSocial != $("#ex4_value").val()) {
 
             $scope.cliente.originalObject.id = undefined;
-            $scope.cliente.originalObject.razonSocial = $("#ex2_value").val();
+            $scope.cliente.originalObject.razonSocial = $("#ex4_value").val();
 
         }
+
 
         $http({
             url: SERVER + '/almacen/save',
@@ -137,6 +139,7 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
             console.log(err);
         });
 
+
     }
 
     $scope.seleccionarNroDoc = function () {
@@ -147,7 +150,7 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
     };
 
     $scope.validarAlmacen = function () {
-        if ($("#ex2_value").val() != undefined) {
+        if ($("#ex4_value").val() != undefined) {
             return false;
         } else {
             return true;

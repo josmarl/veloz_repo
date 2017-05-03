@@ -25,4 +25,10 @@ public class AlmacenServiceImpl implements AlmacenService {
     public List<Almacen> findAllAlmacen() {
         return almacenMapper.findAllAlmacen();
     }
+
+    @Override
+    public void saveAlmacen(Almacen almacen) {
+        almacenMapper.saveAlmacen(almacen);
+    }
+
 }

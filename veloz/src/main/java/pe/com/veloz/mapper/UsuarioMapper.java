@@ -26,7 +26,7 @@ import pe.com.veloz.domain.Usuario;
 @Mapper
 public interface UsuarioMapper {
 
-    @Select("SELECT id,username,estado,area FROM usuario "
+    @Select("SELECT id,username,estado,persona,empresa FROM usuario "
             + "order by id desc")
     List<Usuario> findUsuarios();
 
@@ -34,8 +34,8 @@ public interface UsuarioMapper {
             + "where usuario=#{id}")
     List<Role> findRolesById(Long id);
 
-    @Insert("INSERT INTO usuario(username,password,estado) "
-            + "values(#{usuario.username},#{usuario.password},#{usuario.estado})")
+    @Insert("INSERT INTO usuario(username,password,estado,persona,empresa) "
+            + "values(#{usuario.username},#{usuario.password},#{usuario.estado},#{usuario.persona},#{usuario.empresa})")
     @Options(useGeneratedKeys = true, keyProperty = "usuario.id", keyColumn = "id")
     void saveUsuario(@Param("usuario") Usuario usuario);
 
@@ -46,7 +46,9 @@ public interface UsuarioMapper {
     @Update("UPDATE usuario "
             + "set username=#{usuario.username}, "
             + "password=#{usuario.password}, "
-            + "estado=#{usuario.estado} "
+            + "estado=#{usuario.estado}, "
+            + "persona=#{usuario.persona}, "
+            + "empresa=#{usuario.empresa} "
             + "where id=#{usuario.id}")
     void updateUsuario(@Param("usuario") Usuario usuario);
 

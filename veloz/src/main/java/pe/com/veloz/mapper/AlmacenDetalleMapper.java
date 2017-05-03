@@ -5,7 +5,10 @@
  */
 package pe.com.veloz.mapper;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import pe.com.veloz.domain.AlmacenDetalle;
 
 /**
  *
@@ -13,5 +16,11 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface AlmacenDetalleMapper {
+
+    @Insert("insert into almacen_detalle(producto,cantidad,almacen) values("
+            + "#{almacenDetalle.producto},"
+            + "#{almacenDetalle.cantidad},"
+            + "#{almacenDetalle.almacen})")
+    void saveAlmacenDetalle(@Param("almacenDetalle") AlmacenDetalle almacenDetalle);
 
 }

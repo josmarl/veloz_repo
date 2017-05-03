@@ -5,10 +5,14 @@
  */
 package pe.com.veloz.service;
 
+import pe.com.veloz.domain.AlmacenDetalle;
+
 /**
  *
  * @author josmarl
  */
 public interface AlmacenDetalleService {
-    
+
+    void saveAlmacenDetalle(AlmacenDetalle almacenDetalle);
+
 }

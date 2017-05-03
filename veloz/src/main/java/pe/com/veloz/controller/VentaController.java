@@ -107,8 +107,6 @@ public class VentaController {
 
     @RequestMapping(value = "/save", method = {RequestMethod.GET, RequestMethod.POST})
     public void guardarVenta(@RequestBody VentaDTO data) {
-        
-        System.out.println("jose : " +data.toString());
 
         Usuario userDetails = (Usuario) request.getSession().getAttribute("userDetails");
         Venta venta = new Venta();
@@ -137,7 +135,7 @@ public class VentaController {
             DetalleVenta detalleVenta = new DetalleVenta();
             detalleVenta.setCantidad(detalle.getCantidad());
             detalleVenta.setImporte(detalle.getImporte());
-            detalleVenta.setProducto(Long.valueOf(detalle.getProducto().getId()));
+            detalleVenta.setProducto(detalle.getProducto().getId());
             detalleVenta.setVenta(venta.getId());
             detalleVentaService.saveDetalleVenta(detalleVenta);
         }

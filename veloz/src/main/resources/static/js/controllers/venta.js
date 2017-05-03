@@ -15,6 +15,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
     $scope.tipoComprobante = {};
     $scope.datosTipoComprobante = {};
     $scope.cliente = {};
+    $scope.cliente.originalObject = {};
 
     $scope.initialize = function () {
         $scope.getClientes();
@@ -142,7 +143,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
     $scope.guardarVenta = function () {
 
-        if ($scope.cliente.originalObject.id == undefined
+        if ($scope.cliente.originalObject == undefined
+            || $scope.cliente.originalObject.id == undefined
             || $scope.cliente.originalObject.razonSocial != $("#ex2_value").val()) {
 
             $scope.cliente.originalObject.id = undefined;

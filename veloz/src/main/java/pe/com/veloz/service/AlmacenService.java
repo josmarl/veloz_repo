@@ -16,4 +16,6 @@ public interface AlmacenService {
 
     List<Almacen> findAllAlmacen();
 
+    void saveAlmacen(Almacen almacen);
+
 }

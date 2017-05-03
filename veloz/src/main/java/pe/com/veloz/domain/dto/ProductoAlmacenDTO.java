@@ -14,7 +14,7 @@ import pe.com.veloz.domain.Producto;
 public class ProductoAlmacenDTO {
 
     private Producto producto;
-    private int cantidad;
+    private Long cantidad;
 
     public ProductoAlmacenDTO() {
     }
@@ -27,11 +27,11 @@ public class ProductoAlmacenDTO {
         this.producto = producto;
     }
 
-    public int getCantidad() {
+    public Long getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(Long cantidad) {
         this.cantidad = cantidad;
     }
 

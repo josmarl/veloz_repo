@@ -5,10 +5,24 @@
  */
 package pe.com.veloz.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import pe.com.veloz.domain.AlmacenDetalle;
+import pe.com.veloz.mapper.AlmacenDetalleMapper;
+
 /**
  *
  * @author josmarl
  */
-public class AlmacenDetalleServiceImpl {
+@Service("almacenDetalleService")
+public class AlmacenDetalleServiceImpl implements AlmacenDetalleService {
+
+    @Autowired
+    public AlmacenDetalleMapper almacenDetalleMapper;
+
+    @Override
+    public void saveAlmacenDetalle(AlmacenDetalle almacenDetalle) {
+        almacenDetalleMapper.saveAlmacenDetalle(almacenDetalle);
+    }
 
 }
