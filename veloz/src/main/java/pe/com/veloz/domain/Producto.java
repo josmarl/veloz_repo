@@ -6,6 +6,7 @@
 package pe.com.veloz.domain;
 
 import java.io.Serializable;
+import pe.com.veloz.utils.AppUtils;
 
 /**
  *
@@ -23,7 +24,8 @@ public class Producto implements Serializable, Cloneable {
     private double precioCincuenta;
     private double precioCompra;
     private double precioVenta;
-    private int estado;
+    private Long estado;
+    private boolean estadoBoolean;
     private int stock;
     private String marca;
     private String code;
@@ -100,11 +102,11 @@ public class Producto implements Serializable, Cloneable {
         this.precioVenta = precioVenta;
     }
 
-    public int getEstado() {
+    public Long getEstado() {
         return estado;
     }
 
-    public void setEstado(int estado) {
+    public void setEstado(Long estado) {
         this.estado = estado;
     }
 
@@ -132,9 +134,17 @@ public class Producto implements Serializable, Cloneable {
         this.code = code;
     }
 
+    public boolean isEstadoBoolean() {
+        return estadoBoolean;
+    }
+
+    public void setEstadoBoolean(boolean estadoBoolean) {
+        this.estadoBoolean = estadoBoolean;
+    }
+
     @Override
     public String toString() {
-        return "Producto{" + "id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", precioUnit=" + precioUnit + ", precioDocena=" + precioDocena + ", precioCiento=" + precioCiento + ", precioCincuenta=" + precioCincuenta + ", precioCompra=" + precioCompra + ", precioVenta=" + precioVenta + ", estado=" + estado + ", stock=" + stock + ", marca=" + marca + ", code=" + code + '}';
+        return "Producto{" + "id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", precioUnit=" + precioUnit + ", precioDocena=" + precioDocena + ", precioCiento=" + precioCiento + ", precioCincuenta=" + precioCincuenta + ", precioCompra=" + precioCompra + ", precioVenta=" + precioVenta + ", estado=" + estado + ", estadoBoolean=" + estadoBoolean + ", stock=" + stock + ", marca=" + marca + ", code=" + code + '}';
     }
 
 }

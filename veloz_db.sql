@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : my_itecs_conn
+Source Server         : my_pruebas
 Source Server Version : 50624
-Source Host           : localhost:3306
-Source Database       : veloz_db
+Source Host           : 127.0.0.1:3306
+Source Database       : veloz
 
 Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-04-07 17:49:25
+Date: 2017-05-02 10:36:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -23,8 +23,11 @@ CREATE TABLE `almacen` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nro_doc` varchar(60) DEFAULT NULL,
   `usuario` int(11) DEFAULT NULL,
+  `cliente` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `ALMACEN_USER_FK` (`usuario`) USING BTREE,
+  KEY `ALMACEN_CLI` (`cliente`),
+  CONSTRAINT `ALMACEN_CLI` FOREIGN KEY (`cliente`) REFERENCES `cliente` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `ALMACEN_USER_FK` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
@@ -57,15 +60,20 @@ DROP TABLE IF EXISTS `cliente`;
 CREATE TABLE `cliente` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `razon_social` varchar(200) DEFAULT NULL,
-  `ruc` int(11) DEFAULT NULL,
+  `ruc` int(60) DEFAULT NULL,
   `dni` int(11) DEFAULT NULL,
   `direccion` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of cliente
 -- ----------------------------
+INSERT INTO `cliente` VALUES ('1', 'Loro EIRL', '1045454545', null, 'ok');
+INSERT INTO `cliente` VALUES ('2', 'Artesco EIRL', '12121212', null, 'ok');
+INSERT INTO `cliente` VALUES ('3', 'Jose Limachi', null, '45454545', 'ok');
+INSERT INTO `cliente` VALUES ('4', 'Juan Perez', null, '12121212', 'ok');
+INSERT INTO `cliente` VALUES ('13', 'dsadsadsa', '0', '0', '');
 
 -- ----------------------------
 -- Table structure for detalle_venta
@@ -82,11 +90,24 @@ CREATE TABLE `detalle_venta` (
   KEY `DET_VENT_FK` (`venta`) USING BTREE,
   CONSTRAINT `DET_PROD_FK` FOREIGN KEY (`producto`) REFERENCES `producto` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `DET_VENT_FK` FOREIGN KEY (`venta`) REFERENCES `venta` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of detalle_venta
 -- ----------------------------
+INSERT INTO `detalle_venta` VALUES ('15', '2', '5', '5', '10');
+INSERT INTO `detalle_venta` VALUES ('16', '2', '5', '5', '11');
+INSERT INTO `detalle_venta` VALUES ('17', '2', '5', '5', '12');
+INSERT INTO `detalle_venta` VALUES ('18', '2', '5', '5', '13');
+INSERT INTO `detalle_venta` VALUES ('19', '2', '5', '5', '14');
+INSERT INTO `detalle_venta` VALUES ('20', '2', '5', '5', '15');
+INSERT INTO `detalle_venta` VALUES ('21', '2', '4', '4', '16');
+INSERT INTO `detalle_venta` VALUES ('22', '1', '20', '48', '16');
+INSERT INTO `detalle_venta` VALUES ('23', '1', '40', '96', '17');
+INSERT INTO `detalle_venta` VALUES ('24', '2', '30', '27', '17');
+INSERT INTO `detalle_venta` VALUES ('25', '1', '30', '72', '18');
+INSERT INTO `detalle_venta` VALUES ('26', '2', '10', '10', '19');
+INSERT INTO `detalle_venta` VALUES ('27', '2', '4', '4', '20');
 
 -- ----------------------------
 -- Table structure for empresa
@@ -148,13 +169,14 @@ CREATE TABLE `producto` (
   `marca` varchar(60) DEFAULT NULL,
   `code` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of producto
 -- ----------------------------
-INSERT INTO `producto` VALUES ('1', 'cuaderno', 'cuaderno', '2.5', '2.4', '2.2', '2.3', '2', '2.5', '1', '400', 'loro', '001');
-INSERT INTO `producto` VALUES ('2', 'lapicero', 'lapicero', '1', '0.9', '0.7', '0.8', '0.5', '1', '1', '300', 'faber castell', '002');
+INSERT INTO `producto` VALUES ('1', 'cuaderno', '100 hojas', '2.5', '2.4', '2.2', '2.3', '2', '2.5', '1', '400', 'loro', '001');
+INSERT INTO `producto` VALUES ('2', 'lapicero', 'azul', '1', '0.9', '0.7', '0.8', '0.5', '1', '1', '300', 'faber castell', '002');
+INSERT INTO `producto` VALUES ('3', 'libro', 'matemàtica', '60', '55', '45', '50', '40', '60', '1', '30', 'artesco', '003');
 
 -- ----------------------------
 -- Table structure for role
@@ -190,9 +212,10 @@ CREATE TABLE `usuario` (
   `empresa` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `USUARIO_PER_FK` (`persona`) USING BTREE,
+  KEY `USUARIO_EMPRESA_FK` (`empresa`),
   CONSTRAINT `USUARIO_EMPRESA_FK` FOREIGN KEY (`empresa`) REFERENCES `empresa` (`id`),
   CONSTRAINT `USUARIO_PER_FK` FOREIGN KEY (`persona`) REFERENCES `persona` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of usuario
@@ -213,10 +236,22 @@ CREATE TABLE `venta` (
   `total` double DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `VENTA_USER_FK` (`usuario`) USING BTREE,
+  KEY `VENTA_CLIENTE_FK` (`cliente`),
   CONSTRAINT `VENTA_CLIENTE_FK` FOREIGN KEY (`cliente`) REFERENCES `cliente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `VENTA_USER_FK` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of venta
 -- ----------------------------
+INSERT INTO `venta` VALUES ('10', '1', '1', '4.1', '0.9', '5');
+INSERT INTO `venta` VALUES ('11', '1', '1', '4.1', '0.9', '5');
+INSERT INTO `venta` VALUES ('12', '1', '1', '4.1', '0.9', '5');
+INSERT INTO `venta` VALUES ('13', '3', '1', '4.1', '0.9', '5');
+INSERT INTO `venta` VALUES ('14', '2', '1', '4.1', '0.9', '5');
+INSERT INTO `venta` VALUES ('15', '13', '1', '4.1', '0.9', '5');
+INSERT INTO `venta` VALUES ('16', '3', '1', '0', '0', '52');
+INSERT INTO `venta` VALUES ('17', '3', '1', '0', '0', '123');
+INSERT INTO `venta` VALUES ('18', '2', '1', '0', '0', '72');
+INSERT INTO `venta` VALUES ('19', '3', '1', '8.2', '1.8', '10');
+INSERT INTO `venta` VALUES ('20', '3', '1', '3.28', '0.72', '4');

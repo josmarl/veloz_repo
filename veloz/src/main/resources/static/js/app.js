@@ -46,7 +46,6 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($r
             templateUrl: 'views/producto/producto_edit.html',
             controller: 'productoController'
         })
-
         .when('/persona', {
             templateUrl: 'views/persona/persona.html',
             controller: 'personaController'
@@ -54,6 +53,18 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($r
         .when('/venta', {
             templateUrl: 'views/venta/venta.html',
             controller: 'ventaController'
+        })
+        .when('/almacen', {
+            templateUrl: 'views/almacen/almacen.html',
+            controller: 'almacenController'
+        })
+        .when('/almacen/new', {
+            templateUrl: 'views/almacen/almacen_form.html',
+            controller: 'almacenController'
+        })
+        .when('/almacen/edit/:id', {
+            templateUrl: 'views/almacen/almacen_edit.html',
+            controller: 'almacenController'
         })
 
         .otherwise('/login');

@@ -1,6 +1,5 @@
 package pe.com.veloz;
 
-import java.io.File;
 import java.io.IOException;
 import java.security.Principal;
 import java.util.Collection;

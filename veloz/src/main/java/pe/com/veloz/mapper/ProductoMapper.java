@@ -21,7 +21,7 @@ import pe.com.veloz.domain.Producto;
 @Mapper
 public interface ProductoMapper {
 
-    @Select("select id, nombre, descripcion, precio_unit as precioUnit, precio_docena as precioDocena, precio_ciento as precioCiento, precio_cincuenta as precioCincuenta, precio_compra as precioCompra, precio_venta as precioVenta, estado, stock, marca, code from producto")
+    @Select("select id,nombre,descripcion,precio_unit as precioUnit,precio_docena as precioDocena, precio_ciento as precioCiento, precio_cincuenta as precioCincuenta,precio_compra as precioCompra,precio_venta as precioVenta,estado,stock,marca,code from producto")
     List<Producto> listProducto();
 
     @Delete("delete from producto where id = #{id}")
@@ -34,18 +34,25 @@ public interface ProductoMapper {
             + "precio_unit=#{producto.precioUnit}, "
             + "precio_docena=#{producto.precioDocena}, "
             + "precio_ciento=#{producto.precioCiento}, "
-            + "precio_cincuenta=#{producto.precioCiencuenta}, "
+            + "precio_cincuenta=#{producto.precioCincuenta}, "
             + "precio_compra=#{producto.precioCompra}, "
             + "precio_venta=#{producto.precioVenta}, "
             + "estado=#{producto.estado}, "
             + "stock=#{producto.stock}, "
             + "marca=#{producto.marca}, "
-            + "marca=#{producto.code} "
-            + "where id =#{producto.id}"
+            + "code=#{producto.code} "
+            + "where id=#{producto.id}"
     )
     void updateProducto(@Param("producto") Producto product);
 
-    @Select("SELECT * FROM producto where id = #{id}")
+    @Select("SELECT id,nombre,descripcion,"
+            + "precio_unit as precioUnit,"
+            + "precio_docena as precioDocena,"
+            + "precio_cincuenta as precioCincuenta,"
+            + "precio_ciento as precioCiento,"
+            + "precio_compra as precioCompra,"
+            + "precio_venta as precioVenta,"
+            + "estado,stock,marca,code FROM producto where id = #{id}")
     Producto findProductoById(@Param("id") Long id);
 
     @Select("SELECT * FROM producto where nombre = #{nombre}")
@@ -57,18 +64,17 @@ public interface ProductoMapper {
     @Select("SELECT * FROM producto where code = #{code}")
     Producto findProductoByCode(@Param("code") String code);
 
-    @Insert("insert into producto(nombre, descripcion, precio_unit as precioUnit, precio_docena as precioDocena, precio_ciento as precioCiento, precio_cincuenta as precioCincuenta, precio_compra as precioCompra, precio_venta as precioVenta, estado, stock, marca, code)"
+    @Insert("insert into producto(nombre,descripcion,precio_unit,precio_docena,precio_ciento,precio_cincuenta,precio_compra,precio_venta,estado,marca,code)"
             + "values(#{producto.nombre},"
             + "#{producto.descripcion},"
             + "#{producto.precioUnit},"
             + "#{producto.precioDocena},"
             + "#{producto.precioCiento},"
-            + "#{producto.precioCiencuenta},"
+            + "#{producto.precioCincuenta},"
             + "#{producto.precioCompra},"
             + "#{producto.precioVenta},"
             + "#{producto.estado},"
-            + "#{producto.stock}),"
-            + "#{producto.marca}),"
+            + "#{producto.marca},"
             + "#{producto.code})")
     void saveProducto(@Param("producto") Producto producto);
 

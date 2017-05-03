@@ -2,7 +2,7 @@
 
 'use strict';
 
-app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location', '$routeParams', function ($scope, $rootScope, $http, $location, $routeParams) {
+app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location', '$routeParams', 'toastr', function ($scope, $rootScope, $http, $location, $routeParams, toastr) {
 
     $scope.headingTitle = "Ventas";
     $scope.productos = [];
@@ -164,6 +164,12 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                 'Content-Type': 'application/json; charset=UTF-8'
             }
         }).success(function (data) {
+            toastr.success('Venta procesada correctamente!', 'Mensaje!');
+            $scope.detallesProducto = [];
+            $scope.tipoComprobante = {};
+            $scope.cliente.originalObject = '';
+            $scope.cantidad = 0;
+            $scope.prod.originalObject = '';
             $location.path("/venta");
         }).error(function (err) {
             console.log(err);

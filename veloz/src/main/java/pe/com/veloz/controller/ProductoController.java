@@ -35,9 +35,14 @@ public class ProductoController {
         return productoService.listProductos();
     }
 
+    @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})
+    public void saveProducto(@RequestBody Producto data) {
+        productoService.saveProducto(data);
+    }
+
     @RequestMapping(value = "/edit", method = {RequestMethod.GET, RequestMethod.POST})
-    public void editProducto(@RequestBody Producto producto) {
-        productoService.updateProducto(producto);
+    public void editProducto(@RequestBody Producto data) {
+        productoService.updateProducto(data);
     }
 
     @RequestMapping(value = "/remove/{id}", method = RequestMethod.DELETE)
@@ -45,32 +50,9 @@ public class ProductoController {
         productoService.removeProducto(id);
     }
 
-    @RequestMapping(value = "/find{id}", method = {RequestMethod.GET})
+    @RequestMapping(value = "/find/{id}", method = {RequestMethod.GET})
     public Producto findProductoId(@PathVariable Long id) {
-        productoService.findProductoById(id);
         return productoService.findProductoById(id);
     }
 
-    @RequestMapping(value = "/find{nombre}", method = {RequestMethod.GET})
-    public Producto findProductoNombre(@PathVariable String nombre) {
-        productoService.findProductoByNombre(nombre);
-        return productoService.findProductoByNombre(nombre);
-    }
-
-    @RequestMapping(value = "/find{marca}", method = {RequestMethod.GET})
-    public Producto findProductoMarca(@PathVariable String marca) {
-        productoService.findProductoByMarca(marca);
-        return productoService.findProductoByMarca(marca);
-    }
-
-    @RequestMapping(value = "/find{code}", method = {RequestMethod.GET})
-    public Producto findProductoCode(@PathVariable String code) {
-        productoService.findProductoByCode(code);
-        return productoService.findProductoByCode(code);
-    }
-
-    @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})
-    public void saveProducto(@RequestBody Producto producto) {
-        productoService.saveProducto(producto);
-    }
 }

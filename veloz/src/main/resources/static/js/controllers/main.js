@@ -7,6 +7,4 @@ app.controller('mainController', ['$scope', '$rootScope', '$http', function ($sc
             container: 'table'
         });
     });
-
-    console.log("jose manuel " + $rootScope.authenticated);
 }]);
