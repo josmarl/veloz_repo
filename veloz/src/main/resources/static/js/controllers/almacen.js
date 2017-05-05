@@ -20,7 +20,7 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
         $scope.getProductos();
         $scope.getClientes();
         if ($scope.idAlmacen) {
-            /*$scope.findAlmacen();*/
+            $scope.findAlmacen();
         }
     };
 
@@ -142,6 +142,47 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
 
     }
 
+    $scope.findAlmacen = function () {
+        $http({
+            url: SERVER + "/almacen/find/" + $scope.idAlmacen,
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        }).success(function (response) {
+            $scope.almacen = response;
+        }).error(function (err) {
+            console.log(err);
+        });
+    };
+
+    $scope.editAlmacen = function () {
+
+        $http({
+            url: SERVER + '/almacen/edit',
+            data: $scope.almacen,
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        }).success(function (data) {
+            $location.path("/almacen");
+        }).error(function (err) {
+            console.log(err);
+        });
+    };
+
+    $scope.removeAlmacen = function (id) {
+        $http({
+            url: SERVER + "/almacen/remove/" + id,
+            method: "DELETE"
+        }).success(function (response) {
+            $scope.loadData();
+        }).error(function (err) {
+            console.log(err);
+        });
+    };
+
     $scope.seleccionarNroDoc = function () {
         $('#seleccionarNroDocModal').modal();
         $("#guardarButton").click(function () {
@@ -156,6 +197,14 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
             return true;
         }
     }
+
+    $scope.confirmDeleteModalAlmacen = function (id) {
+        $('#deleteModal').modal();
+        $("#deleteButton").click(function () {
+            $scope.removeAlmacen(id);
+            $('#deleteModal').modal('hide');
+        });
+    };
 
 
     $scope.initialize();

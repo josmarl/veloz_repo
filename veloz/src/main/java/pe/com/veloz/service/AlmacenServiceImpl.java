@@ -31,4 +31,19 @@ public class AlmacenServiceImpl implements AlmacenService {
         almacenMapper.saveAlmacen(almacen);
     }
 
+    @Override
+    public void removeAlmacen(Long id) {
+        almacenMapper.removeAlmacen(id);
+    }
+
+    @Override
+    public void updateAlmacen(Almacen almacen) {
+        almacenMapper.updateAlmacen(almacen);
+    }
+
+    @Override
+    public Almacen findAlmacenById(Long id) {
+        return almacenMapper.findAlmacenById(id);
+    }
+
 }

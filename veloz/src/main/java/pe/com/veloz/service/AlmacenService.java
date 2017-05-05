@@ -18,4 +18,10 @@ public interface AlmacenService {
 
     void saveAlmacen(Almacen almacen);
 
+    void removeAlmacen(Long id);
+
+    void updateAlmacen(Almacen almacen);
+
+    Almacen findAlmacenById(Long id);
+
 }

@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,7 +21,6 @@ import pe.com.veloz.domain.Cliente;
 import pe.com.veloz.domain.Usuario;
 import pe.com.veloz.domain.dto.AlmacenDTO;
 import pe.com.veloz.domain.dto.ProductoAlmacenDTO;
-import pe.com.veloz.domain.dto.ProductoVentaDTO;
 import pe.com.veloz.service.AlmacenDetalleService;
 import pe.com.veloz.service.AlmacenService;
 import pe.com.veloz.service.ClienteService;
@@ -84,5 +84,20 @@ public class AlmacenController {
             almacenDetalleService.saveAlmacenDetalle(almacenDetalle);
         }
 
+    }
+
+    @RequestMapping(value = "/remove/{id}", method = RequestMethod.DELETE)
+    public void removeAlmacen(@PathVariable Long id) {
+        almacenService.removeAlmacen(id);
+    }
+
+    @RequestMapping(value = "/find/{id}")
+    public Almacen findAlmacenById(@PathVariable Long id) {
+        return almacenService.findAlmacenById(id);
+    }
+
+    @RequestMapping(value = "/edit", method = RequestMethod.POST)
+    public void updateAlmacen(@RequestBody Almacen data) {
+        almacenService.updateAlmacen(data);
     }
 }

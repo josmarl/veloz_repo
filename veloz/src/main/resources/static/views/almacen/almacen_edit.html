@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="section container">
+    <h3>Actualización de Almacén</h3>
+    <form method="post" ng-submit="editAlmacen()">
+        <div class="form-group">
+            <label>Nro de Guía de remisión</label>
+            <input type="text" ng-model="almacen.nroDoc" class="form-control" required/>
+        </div>
+        <div class="form-group">
+            <label>Cliente Proveedor</label>
+            <select class="form-control" ng-model="almacen.cliente">
+                <option value="{{cli.id}}" ng-repeat="cli in clientes" ng-selected="cli.id === almacen.cliente">
+                    {{cli.razonSocial}}
+                </option>
+            </select>
+        </div>
 
-</body>
-</html>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-floppy-disk"></i>&nbsp;Guardar
+            </button>
+            <a href="#/almacen/" class="btn btn-primary"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancelar</a>
+        </div>
+    </form>
+</div>
+
+<script src="bower_components/flat-ui/js/radiocheck.js"></script>
+<script src="bower_components/flat-ui/docs/assets/js/application.js."></script>

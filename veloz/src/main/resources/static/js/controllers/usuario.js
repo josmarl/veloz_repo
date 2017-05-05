@@ -15,15 +15,12 @@ app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location
         $scope.loadData();
         $scope.listRoles();
         if ($scope.idUsuario) {
-            console.log($scope.idUsuario)
             $scope.findUsuario();
             $scope.listRolesByUsuario();
         }
     };
 
     $scope.saveUsuario = function () {
-        console.log($scope.roles);
-        console.log($scope.usuario);
         $http({
             url: SERVER + '/usuario/add',
             data: {
@@ -136,7 +133,6 @@ app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location
             console.log(err);
         });
     };
-
 
     $scope.initialize();
 
