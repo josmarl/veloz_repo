@@ -31,4 +31,19 @@ public class ClienteServiceImpl implements ClienteService {
         clienteMapper.saveCliente(cliente);
     }
 
+    @Override
+    public void removeCliente(Long id) {
+        clienteMapper.removeCliente(id);
+    }
+
+    @Override
+    public void updateCliente(Cliente cliente) {
+        clienteMapper.updateCliente(cliente);
+    }
+
+    @Override
+    public Cliente findClienteById(Long id) {
+        return clienteMapper.findClienteById(id);
+    }
+
 }

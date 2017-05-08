@@ -53,7 +53,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             method: "GET"
         }).success(function (response) {
             $scope.clientes = response;
-            console.log($scope.clientes)
         }).error(function (err) {
             console.log(err);
         });
@@ -134,7 +133,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             }
         }).success(function (data) {
             $scope.datosTipoComprobante = data;
-            console.log($scope.datosTipoComprobante);
             $location.path("/venta");
         }).error(function (err) {
             console.log(err);

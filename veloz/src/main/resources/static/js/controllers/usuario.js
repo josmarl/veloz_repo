@@ -116,7 +116,6 @@ app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location
             method: "GET"
         }).success(function (response) {
             $scope.roles = response;
-            console.log($scope.roles);
         }).error(function (err) {
             console.log(err);
         });
@@ -128,7 +127,6 @@ app.controller('usuarioController', ['$scope', '$rootScope', '$http', '$location
             method: "GET"
         }).success(function (response) {
             $scope.roles = response;
-            console.log($scope.roles);
         }).error(function (err) {
             console.log(err);
         });

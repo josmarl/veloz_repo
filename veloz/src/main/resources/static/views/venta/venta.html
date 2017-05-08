@@ -72,8 +72,23 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
+                        <label>Cliente: </label>
+                        <angucomplete id="ex2"
+                                      placeholder="Ingrese nombre del cliente..."
+                                      pause="100"
+                                      selectedobject="cliente"
+                                      localdata="clientes"
+                                      searchfields="razonSocial"
+                                      titlefield="razonSocial"
+                                      descriptionfield="razonSocial"
+                                      minlength="1"
+                                      inputclass="form-control form-control-small"
+                                      class="ng-isolate-scope"
+                                      required="true"/>
+                    </div>
+                    <div class="form-group">
                         <label>Seleccione Tipo de Documento:</label>
-                        <select data-toggle="select" class="form-control select select-primary mrs mbm"
+                        <select data-toggle="select" class="form-control"
                                 ng-model="tipoComprobante"
                                 ng-options="tipoComprobante.nombre for tipoComprobante in tipoComprobantes"
                                 ng-change="getDatosTipoComprobante()">
@@ -104,21 +119,6 @@
                                    aria-label="Amount (to the nearest dollar)">
                             <span class="input-group-addon">.00</span>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Cliente: </label>
-                        <angucomplete id="ex2"
-                                      placeholder="Ingrese nombre del cliente..."
-                                      pause="100"
-                                      selectedobject="cliente"
-                                      localdata="clientes"
-                                      searchfields="razonSocial"
-                                      titlefield="razonSocial"
-                                      descriptionfield="razonSocial"
-                                      minlength="1"
-                                      inputclass="form-control form-control-small"
-                                      class="ng-isolate-scope"
-                                      required="true"/>
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -66,6 +66,18 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($r
             templateUrl: 'views/almacen/almacen_edit.html',
             controller: 'almacenController'
         })
+        .when('/cliente', {
+            templateUrl: 'views/cliente/cliente.html',
+            controller: 'clienteController'
+        })
+        .when('/cliente/new', {
+            templateUrl: 'views/cliente/cliente_form.html',
+            controller: 'clienteController'
+        })
+        .when('/cliente/edit/:id', {
+            templateUrl: 'views/cliente/cliente_edit.html',
+            controller: 'clienteController'
+        })
 
         .otherwise('/login');
 

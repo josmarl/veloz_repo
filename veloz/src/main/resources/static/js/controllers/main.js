@@ -7,4 +7,5 @@ app.controller('mainController', ['$scope', '$rootScope', '$http', function ($sc
             container: 'table'
         });
     });
+
 }]);

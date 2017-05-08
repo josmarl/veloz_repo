@@ -18,4 +18,10 @@ public interface ClienteService {
 
     List<Cliente> findAllClientes();
 
+    void removeCliente(Long id);
+
+    void updateCliente(Cliente cliente);
+
+    Cliente findClienteById(Long id);
+
 }

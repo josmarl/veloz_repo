@@ -48,26 +48,37 @@
             </button>
             <a class="navbar-brand"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Veloz</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse" ng-controller="navigation as nav">
+        <div id="navbar-collapse-6" class="navbar-collapse collapse" ng-controller="navigation as nav">
             <ul class="nav navbar-nav">
                 <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a href="#/home"><i
                         class="glyphicon glyphicon-home"></i>&nbsp;Home</a></li>
                 <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a
                         ng-href="#/venta"><i class="glyphicon glyphicon-alert"></i>&nbsp;Ventas</a></li>
                 <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/almacen"><i
-                        class="glyphicon glyphicon-tree-deciduous"></i>&nbsp;Almacèn</a>
+                        class="glyphicon glyphicon-tree-deciduous"></i>&nbsp;Almacén</a>
                 </li>
-                <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/producto"><i
-                        class="glyphicon glyphicon-phone"></i>&nbsp;Productos</a>
-                </li>
-                <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/usuario"><i
-                        class="glyphicon glyphicon-user"></i>&nbsp;Usuario</a>
-                </li>
+
                 <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a
                         ng-href="#/reporte"><i class="glyphicon glyphicon-print"></i>&nbsp;Reportes</a>
                 </li>
+                <li ng-show="authenticated" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Administrar <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/producto"><i
+                                class="glyphicon glyphicon-phone"></i>&nbsp;Productos</a>
+                        </li>
+                        <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/cliente"><i
+                                class="glyphicon glyphicon-user"></i>&nbsp;Clientes</a>
+                        </li>
+                        <li ng-show="authenticated" ng-class="{active:nav.tab('navigation')}"><a ng-href="#/usuario"><i
+                                class="glyphicon glyphicon-user"></i>&nbsp;Usuarios</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+
+
                 <li ng-show="!authenticated" ng-class="{active:nav.tab('navigation')}"><a href="#/login">login</a></li>
                 <li ng-show="authenticated"><a href="" ng-click="nav.logout()"><i
                         class="glyphicon glyphicon-log-out"></i>&nbsp;[{{userName}}]&nbsp;Salir</a>
@@ -85,7 +96,8 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/bootstrap/js/tooltip.js"></script>
-<script src="bower_components/flat-ui/dist/js/flat-ui.min.js"></script>
+<!--<script src="bower_components/flat-ui/dist/js/flat-ui.min.js"></script>-->
+<script src="bower_components/flat-ui/docs/assets/js/application.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-resource/angular-resource.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
@@ -103,5 +115,6 @@
 <script src="js/controllers/producto.js"></script>
 <script src="js/controllers/venta.js"></script>
 <script src="js/controllers/almacen.js"></script>
+<script src="js/controllers/cliente.js"></script>
 </body>
 </html>
