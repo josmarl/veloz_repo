@@ -139,6 +139,22 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         });
     }
 
+    $scope.imprimir = function () {
+        $http({
+            url: SERVER + "/app/print",
+            data: {ip: SERVER_IP},
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        }).success(function (response) {
+            $scope.response = response;
+            toastr.success($scope.response.msg, 'Mensaje!');
+        }).error(function (err) {
+            console.log(err);
+        });
+    }
+
     $scope.guardarVenta = function () {
 
         if ($scope.cliente.originalObject == undefined
@@ -174,6 +190,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         }).error(function (err) {
             console.log(err);
         });
+
+        $scope.imprimir();
 
     }
 

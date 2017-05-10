@@ -7,8 +7,9 @@ var app = angular.module('app', [
     'angucomplete'
 ]);
 
-//var SERVER = 'http://192.168.42.188:8083';
-var SERVER = 'http://localhost:8083';
+var SERVER = 'http://192.168.1.132:8083';
+var SERVER_IP = '192.168.1.132';
+//var SERVER = 'http://localhost:8083';
 
 var ACTIVE = '1';
 var INACTIVE = '0';

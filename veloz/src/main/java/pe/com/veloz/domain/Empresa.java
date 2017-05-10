@@ -23,6 +23,7 @@ public class Empresa implements Serializable, Cloneable {
     private String direccion;
     private String owner;
     private Long tipo;
+    private Long estado;
 
     public Empresa() {
     }
@@ -91,9 +92,17 @@ public class Empresa implements Serializable, Cloneable {
         this.tipo = tipo;
     }
 
+    public Long getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Long estado) {
+        this.estado = estado;
+    }
+
     @Override
     public String toString() {
-        return "Empresa{" + "id=" + id + ", razonSocial=" + razonSocial + ", ruc=" + ruc + ", serie=" + serie + ", correlativo=" + correlativo + ", direccion=" + direccion + ", owner=" + owner + ", tipo=" + tipo + '}';
+        return "Empresa{" + "id=" + id + ", razonSocial=" + razonSocial + ", ruc=" + ruc + ", serie=" + serie + ", correlativo=" + correlativo + ", direccion=" + direccion + ", owner=" + owner + ", tipo=" + tipo + ", estado=" + estado + '}';
     }
 
 }
