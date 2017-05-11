@@ -32,7 +32,7 @@ public class ProductoController {
 
     @RequestMapping(value = "/all", method = RequestMethod.GET)
     public List<Producto> allProductos() {
-        return productoService.listProductos();
+        return productoService.findAll();
     }
 
     @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})

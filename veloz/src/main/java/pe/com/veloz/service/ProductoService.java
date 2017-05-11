@@ -14,18 +14,18 @@ import pe.com.veloz.domain.Producto;
  */
 public interface ProductoService {
 
-    List<Producto> listProductos();
+    List<Producto> findAll();
 
     void removeProducto(Long id);
 
     void updateProducto(Producto producto);
 
     Producto findProductoById(Long id);
-    
+
     Producto findProductoByNombre(String nombre);
-    
+
     Producto findProductoByMarca(String marca);
-    
+
     Producto findProductoByCode(String code);
 
     void saveProducto(Producto producto);

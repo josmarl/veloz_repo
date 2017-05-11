@@ -22,8 +22,8 @@ public class ProductoServicioImpl implements ProductoService {
     private ProductoMapper productoMapper;
 
     @Override
-    public List<Producto> listProductos() {
-        return productoMapper.listProducto();
+    public List<Producto> findAll() {
+        return productoMapper.findAll();
     }
 
     @Override
@@ -43,7 +43,7 @@ public class ProductoServicioImpl implements ProductoService {
 
     @Override
     public Producto findProductoByNombre(String nombre) {
-         return productoMapper.findProductoByNombre(nombre);
+        return productoMapper.findProductoByNombre(nombre);
     }
 
     @Override
@@ -58,7 +58,7 @@ public class ProductoServicioImpl implements ProductoService {
 
     @Override
     public Producto findProductoByCode(String code) {
-       return productoMapper.findProductoByCode(code);
+        return productoMapper.findProductoByCode(code);
     }
 
 }

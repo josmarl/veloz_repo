@@ -21,8 +21,8 @@ import pe.com.veloz.domain.Producto;
 @Mapper
 public interface ProductoMapper {
 
-    @Select("select id,nombre,descripcion,precio_unit as precioUnit,precio_docena as precioDocena, precio_ciento as precioCiento, precio_cincuenta as precioCincuenta,precio_compra as precioCompra,precio_venta as precioVenta,estado,stock,marca,code from producto")
-    List<Producto> listProducto();
+    @Select("select id,nombre,descripcion,precio_unit as precioUnit,precio_docena as precioDocena, precio_ciento as precioCiento, precio_cincuenta as precioCincuenta,precio_compra as precioCompra,precio_venta as precioVenta,estado,marca,code from producto")
+    List<Producto> findAll();
 
     @Delete("delete from producto where id = #{id}")
     void removeProducto(@Param("id") Long id);
@@ -38,12 +38,11 @@ public interface ProductoMapper {
             + "precio_compra=#{producto.precioCompra}, "
             + "precio_venta=#{producto.precioVenta}, "
             + "estado=#{producto.estado}, "
-            + "stock=#{producto.stock}, "
             + "marca=#{producto.marca}, "
             + "code=#{producto.code} "
             + "where id=#{producto.id}"
     )
-    void updateProducto(@Param("producto") Producto product);
+    void updateProducto(@Param("producto") Producto producto);
 
     @Select("SELECT id,nombre,descripcion,"
             + "precio_unit as precioUnit,"
@@ -52,7 +51,7 @@ public interface ProductoMapper {
             + "precio_ciento as precioCiento,"
             + "precio_compra as precioCompra,"
             + "precio_venta as precioVenta,"
-            + "estado,stock,marca,code FROM producto where id = #{id}")
+            + "estado,marca,code FROM producto where id = #{id}")
     Producto findProductoById(@Param("id") Long id);
 
     @Select("SELECT * FROM producto where nombre = #{nombre}")

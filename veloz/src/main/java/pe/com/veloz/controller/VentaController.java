@@ -26,6 +26,7 @@ import pe.com.veloz.domain.dto.VentaDTO;
 import pe.com.veloz.enums.TipoComprobanteEnum;
 import pe.com.veloz.service.ClienteService;
 import pe.com.veloz.service.DetalleVentaService;
+import pe.com.veloz.service.ProductoService;
 import pe.com.veloz.service.VentaService;
 import pe.com.veloz.utils.AppUtils;
 
@@ -47,6 +48,9 @@ public class VentaController {
 
     @Autowired
     private ClienteService clienteService;
+
+    @Autowired
+    private ProductoService productoService;
 
     @Autowired
     private HttpServletRequest request;

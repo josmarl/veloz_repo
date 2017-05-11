@@ -26,7 +26,6 @@ public class Producto implements Serializable, Cloneable {
     private double precioVenta;
     private Long estado;
     private boolean estadoBoolean;
-    private int stock;
     private String marca;
     private String code;
 
@@ -110,14 +109,6 @@ public class Producto implements Serializable, Cloneable {
         this.estado = estado;
     }
 
-    public int getStock() {
-        return stock;
-    }
-
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
-
     public String getMarca() {
         return marca;
     }
@@ -144,7 +135,7 @@ public class Producto implements Serializable, Cloneable {
 
     @Override
     public String toString() {
-        return "Producto{" + "id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", precioUnit=" + precioUnit + ", precioDocena=" + precioDocena + ", precioCiento=" + precioCiento + ", precioCincuenta=" + precioCincuenta + ", precioCompra=" + precioCompra + ", precioVenta=" + precioVenta + ", estado=" + estado + ", estadoBoolean=" + estadoBoolean + ", stock=" + stock + ", marca=" + marca + ", code=" + code + '}';
+        return "Producto{" + "id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", precioUnit=" + precioUnit + ", precioDocena=" + precioDocena + ", precioCiento=" + precioCiento + ", precioCincuenta=" + precioCincuenta + ", precioCompra=" + precioCompra + ", precioVenta=" + precioVenta + ", estado=" + estado + ", estadoBoolean=" + estadoBoolean + ", marca=" + marca + ", code=" + code + '}';
     }
 
 }

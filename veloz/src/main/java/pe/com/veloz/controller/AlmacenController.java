@@ -5,6 +5,7 @@
  */
 package pe.com.veloz.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.logging.Log;
@@ -16,14 +17,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import pe.com.veloz.domain.Almacen;
+import pe.com.veloz.domain.AlmacenConsolidado;
 import pe.com.veloz.domain.AlmacenDetalle;
 import pe.com.veloz.domain.Cliente;
 import pe.com.veloz.domain.Usuario;
 import pe.com.veloz.domain.dto.AlmacenDTO;
 import pe.com.veloz.domain.dto.ProductoAlmacenDTO;
+import pe.com.veloz.service.AlmacenConsolidadoService;
 import pe.com.veloz.service.AlmacenDetalleService;
 import pe.com.veloz.service.AlmacenService;
 import pe.com.veloz.service.ClienteService;
+import pe.com.veloz.service.ProductoService;
 
 /**
  *
@@ -45,6 +49,12 @@ public class AlmacenController {
     private ClienteService clienteService;
 
     @Autowired
+    private ProductoService productoService;
+
+    @Autowired
+    private AlmacenConsolidadoService almacenConsolidadoService;
+
+    @Autowired
     private HttpServletRequest request;
 
     @RequestMapping(value = "/all", method = {RequestMethod.GET, RequestMethod.POST})
@@ -55,11 +65,15 @@ public class AlmacenController {
     @RequestMapping(value = "/save", method = {RequestMethod.POST})
     public void saveAlmacen(@RequestBody AlmacenDTO data) {
 
-        System.out.println("juan " + data.toString());
-
+        List<AlmacenConsolidado> listAlmacenConsolidado = almacenConsolidadoService.findAll();
+        List<ProductoAlmacenDTO> listaAlmacenTemp = data.getDetalles();
+        List<Integer> listAlmacenToDelete = new ArrayList<>();
         Usuario userDetails = (Usuario) request.getSession().getAttribute("userDetails");
         Almacen almacen = new Almacen();
 
+        /**
+         * Se valida si el cliente existe Si no existe se crea el cliente.
+         */
         if (data.getCliente().getId() != null) {
             almacen.setCliente(data.getCliente().getId());
         } else {
@@ -72,16 +86,80 @@ public class AlmacenController {
             almacen.setCliente(cliente.getId());
         }
 
+        /**
+         * Se crea la cabecera del almacen.
+         */
         almacen.setNroDoc(data.getNroDoc());
         almacen.setUsuario(userDetails.getId());
         almacenService.saveAlmacen(almacen);
 
+        /**
+         * Se inserta el detalle del almacen.
+         */
         for (ProductoAlmacenDTO detalle : data.getDetalles()) {
             AlmacenDetalle almacenDetalle = new AlmacenDetalle();
             almacenDetalle.setAlmacen(almacen.getId());
             almacenDetalle.setCantidad(detalle.getCantidad());
             almacenDetalle.setProducto(detalle.getProducto().getId());
             almacenDetalleService.saveAlmacenDetalle(almacenDetalle);
+        }
+
+        /**
+         * Se valida si existe datos en la tabla Almacen consolidado.
+         */
+        if (listAlmacenConsolidado.size() > 0) {
+            for (ProductoAlmacenDTO almacenDTO : data.getDetalles()) {
+                for (AlmacenConsolidado almacenConsolidado : listAlmacenConsolidado) {
+                    if (almacenConsolidado.getProducto().equals(almacenDTO.getProducto().getId())) {
+                        AlmacenConsolidado almToUpdate = new AlmacenConsolidado();
+                        almToUpdate.setId(almacenConsolidado.getId());
+                        almToUpdate.setDisponible(almacenConsolidado.getDisponible() + almacenDTO.getCantidad());
+                        almacenConsolidadoService.updateAlmacenConsolidadoDisponible(almToUpdate);
+                        listAlmacenToDelete.add(data.getDetalles().indexOf(almacenDTO));
+                    }
+                }
+            }
+
+            /**
+             * Se elimina los productos que existen en el almacen consolidado,
+             * quedando así sólo los productos nuevos que no están en el la
+             * tabla almacen consolidado.
+             */
+            for (Integer index : listAlmacenToDelete) {
+                listaAlmacenTemp.remove((int) index);
+            }
+
+            for (ProductoAlmacenDTO p : listaAlmacenTemp) {
+                System.out.println("juan " + p.toString());
+            }
+            /**
+             * Si hay algún producto nuevo ingresando al almacen consolidad,
+             * entonces se inserta el registro.
+             */
+
+            for (ProductoAlmacenDTO almacenTemp : listaAlmacenTemp) {
+                for (AlmacenConsolidado almacenConsolidado : listAlmacenConsolidado) {
+                    if (almacenConsolidado.getProducto().equals(almacenTemp.getProducto().getId())) {
+                        AlmacenConsolidado almToSave = new AlmacenConsolidado();
+                        almToSave.setProducto(almacenTemp.getProducto().getId());
+                        almToSave.setVendido(0l);
+                        almToSave.setDisponible(almacenTemp.getCantidad());
+                        almacenConsolidadoService.saveAlmacenConsolidado(almToSave);
+                    }
+                }
+            }
+        } else {
+            /**
+             * Si no existen datos en la tabla de almacen consolidado, entonces
+             * se insertan los datos del almacen detalle por primera vez.
+             */
+            for (ProductoAlmacenDTO detalle : data.getDetalles()) {
+                AlmacenConsolidado almacenConsolidado = new AlmacenConsolidado();
+                almacenConsolidado.setProducto(detalle.getProducto().getId());
+                almacenConsolidado.setDisponible(detalle.getCantidad());
+                almacenConsolidado.setVendido(0l);
+                almacenConsolidadoService.saveAlmacenConsolidado(almacenConsolidado);
+            }
         }
 
     }

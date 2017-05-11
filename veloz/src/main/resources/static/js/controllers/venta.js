@@ -163,6 +163,9 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
             $scope.cliente.originalObject.id = undefined;
             $scope.cliente.originalObject.razonSocial = $("#ex2_value").val();
+            console.log($scope.cliente.originalObject);
+        } else {
+            console.log("error");
         }
 
         $http({
