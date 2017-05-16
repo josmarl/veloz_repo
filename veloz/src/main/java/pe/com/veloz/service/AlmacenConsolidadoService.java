@@ -13,11 +13,13 @@ import pe.com.veloz.domain.AlmacenConsolidado;
  * @author josmarl
  */
 public interface AlmacenConsolidadoService {
-    
+
     List<AlmacenConsolidado> findAll();
-    
+
     void saveAlmacenConsolidado(AlmacenConsolidado almacenConsolidado);
-    
+
     void updateAlmacenConsolidadoDisponible(AlmacenConsolidado almacenConsolidado);
-    
+
+    AlmacenConsolidado findByProducto(Long id);
+
 }

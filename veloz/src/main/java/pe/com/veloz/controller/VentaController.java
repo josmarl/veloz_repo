@@ -16,14 +16,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import pe.com.veloz.controller.constants.Constants;
+import pe.com.veloz.domain.AlmacenConsolidado;
 import pe.com.veloz.domain.Cliente;
 import pe.com.veloz.domain.DetalleVenta;
 import pe.com.veloz.domain.Usuario;
 import pe.com.veloz.domain.Venta;
 import pe.com.veloz.domain.dto.DetalleProductoDTO;
 import pe.com.veloz.domain.dto.ProductoVentaDTO;
+import pe.com.veloz.domain.dto.ResponseDTO;
 import pe.com.veloz.domain.dto.VentaDTO;
 import pe.com.veloz.enums.TipoComprobanteEnum;
+import pe.com.veloz.service.AlmacenConsolidadoService;
 import pe.com.veloz.service.ClienteService;
 import pe.com.veloz.service.DetalleVentaService;
 import pe.com.veloz.service.ProductoService;
@@ -53,6 +56,9 @@ public class VentaController {
     private ProductoService productoService;
 
     @Autowired
+    private AlmacenConsolidadoService almacenConsolidadoService;
+
+    @Autowired
     private HttpServletRequest request;
 
     @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})
@@ -61,6 +67,7 @@ public class VentaController {
         List<ProductoVentaDTO> detalles = new ArrayList<>();
 
         for (ProductoVentaDTO detalle : data.getDetalles()) {
+
             if (detalle.getCantidad() >= Constants.UNITARIO && detalle.getCantidad() < Constants.DOCENA) {
                 detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioUnit() * detalle.getCantidad()));
                 detalle.setPrecioUnitario(detalle.getProducto().getPrecioUnit());
@@ -81,6 +88,26 @@ public class VentaController {
         }
 
         return detalles;
+    }
+
+    @RequestMapping(value = "/validate/stock", method = RequestMethod.POST)
+    public ResponseDTO validarStockProducto(@RequestBody DetalleProductoDTO data) {
+
+        System.out.println("jose");
+
+        AlmacenConsolidado almacenConsolidado = almacenConsolidadoService.findByProducto(data.getDetalles().get(0).getProducto().getId());
+        ResponseDTO responseDTO = new ResponseDTO();
+
+        if (data.getDetalles().get(0).getCantidad() <= almacenConsolidado.getDisponible()) {
+            responseDTO.setObject(true);
+        } else {
+            responseDTO.setMsg(Constants.MSG_FAILED_STOCK);
+            responseDTO.setObject(false);
+        }
+
+        System.out.println("jose");
+        System.out.println("jose --> " + responseDTO.toString());
+        return responseDTO;
     }
 
     @RequestMapping(value = "/tipocomp/totales", method = {RequestMethod.GET, RequestMethod.POST})

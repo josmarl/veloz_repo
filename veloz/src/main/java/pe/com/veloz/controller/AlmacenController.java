@@ -125,29 +125,27 @@ public class AlmacenController {
              * quedando así sólo los productos nuevos que no están en el la
              * tabla almacen consolidado.
              */
-            for (Integer index : listAlmacenToDelete) {
-                listaAlmacenTemp.remove((int) index);
-            }
-
-            for (ProductoAlmacenDTO p : listaAlmacenTemp) {
-                System.out.println("juan " + p.toString());
-            }
-            /**
-             * Si hay algún producto nuevo ingresando al almacen consolidad,
-             * entonces se inserta el registro.
-             */
-
-            for (ProductoAlmacenDTO almacenTemp : listaAlmacenTemp) {
-                for (AlmacenConsolidado almacenConsolidado : listAlmacenConsolidado) {
-                    if (almacenConsolidado.getProducto().equals(almacenTemp.getProducto().getId())) {
-                        AlmacenConsolidado almToSave = new AlmacenConsolidado();
-                        almToSave.setProducto(almacenTemp.getProducto().getId());
-                        almToSave.setVendido(0l);
-                        almToSave.setDisponible(almacenTemp.getCantidad());
-                        almacenConsolidadoService.saveAlmacenConsolidado(almToSave);
+            if (listAlmacenToDelete.size() > 0) {
+                for (Integer index : listAlmacenToDelete) {
+                    listaAlmacenTemp.remove((int) index);
+                }
+                /**
+                 * Si hay algún producto nuevo ingresando al almacen consolidad,
+                 * entonces se inserta el registro.
+                 */
+                for (ProductoAlmacenDTO almacenTemp : listaAlmacenTemp) {
+                    for (AlmacenConsolidado almacenConsolidado : listAlmacenConsolidado) {
+                        if (almacenConsolidado.getProducto().equals(almacenTemp.getProducto().getId())) {
+                            AlmacenConsolidado almToSave = new AlmacenConsolidado();
+                            almToSave.setProducto(almacenTemp.getProducto().getId());
+                            almToSave.setVendido(0l);
+                            almToSave.setDisponible(almacenTemp.getCantidad());
+                            almacenConsolidadoService.saveAlmacenConsolidado(almToSave);
+                        }
                     }
                 }
             }
+
         } else {
             /**
              * Si no existen datos en la tabla de almacen consolidado, entonces

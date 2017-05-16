@@ -36,4 +36,9 @@ public class AlmacenConsolidadoServiceImpl implements AlmacenConsolidadoService 
         return almacenConsolidadoMapper.findAll();
     }
 
+    @Override
+    public AlmacenConsolidado findByProducto(Long id) {
+        return almacenConsolidadoMapper.findByProducto(id);
+    }
+
 }

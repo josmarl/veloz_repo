@@ -34,4 +34,7 @@ public interface AlmacenConsolidadoMapper {
             + "where id = #{almacenConsolidado.id}")
     void updateAlmacenConsolidadoDisponible(@Param("almacenConsolidado") AlmacenConsolidado almacenConsolidado);
 
+    @Select("select id,producto,disponible,vendido from almacen_consolidado")
+    AlmacenConsolidado findByProducto(@Param("id") Long id);
+
 }

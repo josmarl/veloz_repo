@@ -88,6 +88,32 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             }
         }
 
+        for (var j = 0; j < $scope.detalles.length; j++) {
+            if ($scope.detalles[j].producto == detalle.producto) {
+                $http({
+                    url: SERVER + '/validate/stock',
+                    data: {
+                        detalle: detalle,
+                    },
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json; charset=UTF-8'
+                    }
+                }).success(function (data) {
+                    $scope.response = data;
+                    if ($scope.response.object() == false) {
+                        $scope.detalles[j].cantidad = $scope.detalles[j].cantidad - detalle.cantidad;
+                        if ($scope.detalles[j].cantidad == 0) {
+                            var index = $scope.detalles.indexOf(detalle);
+                            $scope.detalles.splice(index, 1);
+                        }
+                    }
+                }).error(function (err) {
+                    console.log(err);
+                });
+            }
+        }
+
         $http({
             url: SERVER + '/venta/add',
             data: {
