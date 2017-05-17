@@ -17,6 +17,6 @@ public class Constants {
     public static int UNITARIO = 1;
     public static double IGV_ACTUAL = 0.18;
 
-    public static String MSG_FAILED_STOCK = "El producto ha sobrepasado el stock!";
+    public static String MSG_FAILED_STOCK = "¡Stock Insuficiente!";
 
 }

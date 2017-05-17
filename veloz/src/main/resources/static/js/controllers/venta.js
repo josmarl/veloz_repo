@@ -74,9 +74,11 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         } else {
             for (var i = 0; i < $scope.detalles.length; i++) {
                 if ($scope.detalles[i].producto == detalle.producto) {
+
                     $scope.detalles[i].cantidad = parseInt($scope.detalles[i].cantidad) + parseInt(detalle.cantidad);
                     existe = parseInt(existe) + 1;
                 } else {
+
                     nExiste = parseInt(nExiste) + 1;
                 }
             }
@@ -88,47 +90,85 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             }
         }
 
+        $scope.detallesTemp = [];
+        var detalleTemp = {};
+
         for (var j = 0; j < $scope.detalles.length; j++) {
             if ($scope.detalles[j].producto == detalle.producto) {
-                $http({
-                    url: SERVER + '/validate/stock',
-                    data: {
-                        detalle: detalle,
-                    },
-                    method: "POST",
-                    headers: {
-                        'Content-Type': 'application/json; charset=UTF-8'
-                    }
-                }).success(function (data) {
-                    $scope.response = data;
-                    if ($scope.response.object() == false) {
-                        $scope.detalles[j].cantidad = $scope.detalles[j].cantidad - detalle.cantidad;
-                        if ($scope.detalles[j].cantidad == 0) {
-                            var index = $scope.detalles.indexOf(detalle);
-                            $scope.detalles.splice(index, 1);
-                        }
-                    }
-                }).error(function (err) {
-                    console.log(err);
-                });
+
+                detalleTemp.producto = $scope.prod.originalObject;
+                detalleTemp.cantidad = $scope.detalles[j].cantidad;
+                detalleTemp.precioUnitario = 0;
+                $scope.detallesTemp.push(detalleTemp);
             }
         }
 
         $http({
-            url: SERVER + '/venta/add',
+            url: SERVER + '/venta/stock',
             data: {
-                detalles: $scope.detalles,
+                detalles: $scope.detallesTemp,
             },
             method: "POST",
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8'
             }
         }).success(function (data) {
-            $scope.detallesProducto = data;
-            $location.path("/venta");
+
+            if (data.object == false) {
+                for (var j = 0; j < $scope.detalles.length; j++) {
+                    if ($scope.detalles[j].producto == detalle.producto) {
+
+                        var newCantidad = parseInt($scope.detalles[j].cantidad) - parseInt(detalle.cantidad)
+                        $scope.detalles[j].cantidad = parseInt(newCantidad);
+
+                        if ($scope.detalles[j].cantidad == 0) {
+                            var index = $scope.detalles.indexOf(detalle);
+                            $scope.detalles.splice(index, 1);
+                        }
+
+                        $http({
+                            url: SERVER + '/venta/add',
+                            data: {
+                                detalles: $scope.detalles,
+                            },
+                            method: "POST",
+                            headers: {
+                                'Content-Type': 'application/json; charset=UTF-8'
+                            }
+                        }).success(function (data) {
+                            $scope.detallesProducto = data;
+                            $location.path("/venta");
+                        }).error(function (err) {
+                            console.log(err);
+                        });
+                    }
+                }
+
+                toastr.error(data.msg, 'Error!');
+
+            } else {
+                $http({
+                    url: SERVER + '/venta/add',
+                    data: {
+                        detalles: $scope.detalles,
+                    },
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json; charset=UTF-8'
+                    }
+                }).success(function (data) {
+                    $scope.detallesProducto = data;
+                    $location.path("/venta");
+                }).error(function (err) {
+                    console.log(err);
+                });
+            }
+
         }).error(function (err) {
             console.log(err);
         });
+
+
     };
 
     $scope.deleteDetalle = function (detalle) {
@@ -189,7 +229,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
             $scope.cliente.originalObject.id = undefined;
             $scope.cliente.originalObject.razonSocial = $("#ex2_value").val();
-            console.log($scope.cliente.originalObject);
         } else {
             console.log("error");
         }

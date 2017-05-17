@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-05-10 14:20:00
+Date: 2017-05-17 15:40:38
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -29,11 +29,31 @@ CREATE TABLE `almacen` (
   KEY `ALMACEN_CLI` (`cliente`),
   CONSTRAINT `ALMACEN_CLI` FOREIGN KEY (`cliente`) REFERENCES `cliente` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `ALMACEN_USER_FK` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of almacen
 -- ----------------------------
+INSERT INTO `almacen` VALUES ('10', '001-001', '1', '3');
+INSERT INTO `almacen` VALUES ('28', '002-321-321', '1', '2');
+
+-- ----------------------------
+-- Table structure for almacen_consolidado
+-- ----------------------------
+DROP TABLE IF EXISTS `almacen_consolidado`;
+CREATE TABLE `almacen_consolidado` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `producto` int(60) DEFAULT NULL,
+  `disponible` int(60) DEFAULT NULL,
+  `vendido` int(60) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of almacen_consolidado
+-- ----------------------------
+INSERT INTO `almacen_consolidado` VALUES ('7', '4', '106', '0');
+INSERT INTO `almacen_consolidado` VALUES ('8', '5', '107', '0');
 
 -- ----------------------------
 -- Table structure for almacen_detalle
@@ -47,11 +67,16 @@ CREATE TABLE `almacen_detalle` (
   PRIMARY KEY (`id`),
   KEY `AL_DET_ALMACEN` (`almacen`) USING BTREE,
   CONSTRAINT `AL_DET_ALMACEN` FOREIGN KEY (`almacen`) REFERENCES `almacen` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of almacen_detalle
 -- ----------------------------
+INSERT INTO `almacen_detalle` VALUES ('1', '4', '100', '10');
+INSERT INTO `almacen_detalle` VALUES ('2', '5', '100', '10');
+INSERT INTO `almacen_detalle` VALUES ('52', '5', '7', '28');
+INSERT INTO `almacen_detalle` VALUES ('53', '4', '6', '28');
+INSERT INTO `almacen_detalle` VALUES ('54', '6', '2', '28');
 
 -- ----------------------------
 -- Table structure for cliente
@@ -64,7 +89,7 @@ CREATE TABLE `cliente` (
   `dni` int(11) DEFAULT NULL,
   `direccion` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of cliente
@@ -72,6 +97,11 @@ CREATE TABLE `cliente` (
 INSERT INTO `cliente` VALUES ('1', 'Loro EIRL', '1045454545', null, 'ok');
 INSERT INTO `cliente` VALUES ('2', 'Artesco EIRL', '12121212', null, 'ok');
 INSERT INTO `cliente` VALUES ('3', 'Jose Limachi', '11111111111', '45454545', 'ok');
+INSERT INTO `cliente` VALUES ('4', 'Juan perez', '0', '0', '');
+INSERT INTO `cliente` VALUES ('5', 'juan', '0', '0', '');
+INSERT INTO `cliente` VALUES ('6', 'pedro', '0', '0', '');
+INSERT INTO `cliente` VALUES ('7', 'jorge2', '0', '0', '');
+INSERT INTO `cliente` VALUES ('8', 'Maria', '0', '0', '');
 
 -- ----------------------------
 -- Table structure for detalle_venta
@@ -88,21 +118,11 @@ CREATE TABLE `detalle_venta` (
   KEY `DET_VENT_FK` (`venta`) USING BTREE,
   CONSTRAINT `DET_PROD_FK` FOREIGN KEY (`producto`) REFERENCES `producto` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `DET_VENT_FK` FOREIGN KEY (`venta`) REFERENCES `venta` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of detalle_venta
 -- ----------------------------
-INSERT INTO `detalle_venta` VALUES ('1', '4', '30', '30', '1');
-INSERT INTO `detalle_venta` VALUES ('2', '4', '30', '30', '2');
-INSERT INTO `detalle_venta` VALUES ('3', '4', '10', '10', '3');
-INSERT INTO `detalle_venta` VALUES ('4', '4', '10', '10', '4');
-INSERT INTO `detalle_venta` VALUES ('5', '4', '30', '30', '5');
-INSERT INTO `detalle_venta` VALUES ('6', '4', '10', '10', '6');
-INSERT INTO `detalle_venta` VALUES ('7', '4', '10', '10', '7');
-INSERT INTO `detalle_venta` VALUES ('8', '4', '30', '30', '8');
-INSERT INTO `detalle_venta` VALUES ('9', '4', '60', '60', '9');
-INSERT INTO `detalle_venta` VALUES ('10', '4', '60', '60', '10');
 
 -- ----------------------------
 -- Table structure for empresa
@@ -161,16 +181,17 @@ CREATE TABLE `producto` (
   `precio_compra` double DEFAULT NULL,
   `precio_venta` double DEFAULT NULL,
   `estado` int(1),
-  `stock` int(11) DEFAULT NULL,
   `marca` varchar(60) DEFAULT NULL,
   `code` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of producto
 -- ----------------------------
-INSERT INTO `producto` VALUES ('4', 'cuaderno', 'ok', '1', '1', '1', '1', '1', '1', '1', '0', 'loro', '001');
+INSERT INTO `producto` VALUES ('4', 'cuaderno', 'ok', '1', '1', '1', '1', '1', '1', '1', 'loro', '001');
+INSERT INTO `producto` VALUES ('5', 'Lapicero', 'ok', '2', '2', '2', '2', '2', '2', '1', 'artesco', '002');
+INSERT INTO `producto` VALUES ('6', 'Libro', 'ok', '1', '1', '1', '1', '1', '1', '1', 'Loro', '003');
 
 -- ----------------------------
 -- Table structure for role
@@ -242,18 +263,8 @@ CREATE TABLE `venta` (
   KEY `VENTA_CLIENTE_FK` (`cliente`),
   CONSTRAINT `VENTA_CLIENTE_FK` FOREIGN KEY (`cliente`) REFERENCES `cliente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `VENTA_USER_FK` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of venta
 -- ----------------------------
-INSERT INTO `venta` VALUES ('1', '3', '1', '0', '0', '30');
-INSERT INTO `venta` VALUES ('2', '3', '1', '0', '0', '30');
-INSERT INTO `venta` VALUES ('3', '3', '1', '0', '0', '10');
-INSERT INTO `venta` VALUES ('4', '3', '1', '0', '0', '10');
-INSERT INTO `venta` VALUES ('5', '3', '1', '0', '0', '30');
-INSERT INTO `venta` VALUES ('6', '3', '1', '0', '0', '10');
-INSERT INTO `venta` VALUES ('7', '3', '1', '0', '0', '10');
-INSERT INTO `venta` VALUES ('8', '3', '1', '24.6', '5.4', '30');
-INSERT INTO `venta` VALUES ('9', '3', '1', '0', '0', '60');
-INSERT INTO `venta` VALUES ('10', '3', '1', '0', '0', '60');

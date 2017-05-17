@@ -29,7 +29,6 @@ import pe.com.veloz.enums.TipoComprobanteEnum;
 import pe.com.veloz.service.AlmacenConsolidadoService;
 import pe.com.veloz.service.ClienteService;
 import pe.com.veloz.service.DetalleVentaService;
-import pe.com.veloz.service.ProductoService;
 import pe.com.veloz.service.VentaService;
 import pe.com.veloz.utils.AppUtils;
 
@@ -53,13 +52,36 @@ public class VentaController {
     private ClienteService clienteService;
 
     @Autowired
-    private ProductoService productoService;
-
-    @Autowired
     private AlmacenConsolidadoService almacenConsolidadoService;
 
     @Autowired
     private HttpServletRequest request;
+
+    @RequestMapping(value = "/stock", method = {RequestMethod.POST, RequestMethod.GET})
+    public ResponseDTO validarStockProducto(@RequestBody DetalleProductoDTO data) {
+
+        ProductoVentaDTO productoVentaDTO = data.getDetalles().get(0);
+        ResponseDTO responseDTO = new ResponseDTO();
+
+        try {
+            
+            AlmacenConsolidado almacenConsolidado = almacenConsolidadoService.findByProducto(productoVentaDTO.getProducto().getId());
+
+            if (productoVentaDTO.getCantidad() > almacenConsolidado.getDisponible()) {
+                Long restoProducto = productoVentaDTO.getCantidad() - almacenConsolidado.getDisponible();
+                responseDTO.setMsg(Constants.MSG_FAILED_STOCK
+                        + "\n" + " Sólo quedan "
+                        + restoProducto + " unidades del producto : \n"
+                        + productoVentaDTO.getProducto().getNombre());
+                responseDTO.setObject(false);
+            } else {
+                responseDTO.setObject(true);
+            }
+        } catch (Exception e) {
+        }
+
+        return responseDTO;
+    }
 
     @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})
     public List<ProductoVentaDTO> addCarrito(@RequestBody DetalleProductoDTO data) {
@@ -88,26 +110,6 @@ public class VentaController {
         }
 
         return detalles;
-    }
-
-    @RequestMapping(value = "/validate/stock", method = RequestMethod.POST)
-    public ResponseDTO validarStockProducto(@RequestBody DetalleProductoDTO data) {
-
-        System.out.println("jose");
-
-        AlmacenConsolidado almacenConsolidado = almacenConsolidadoService.findByProducto(data.getDetalles().get(0).getProducto().getId());
-        ResponseDTO responseDTO = new ResponseDTO();
-
-        if (data.getDetalles().get(0).getCantidad() <= almacenConsolidado.getDisponible()) {
-            responseDTO.setObject(true);
-        } else {
-            responseDTO.setMsg(Constants.MSG_FAILED_STOCK);
-            responseDTO.setObject(false);
-        }
-
-        System.out.println("jose");
-        System.out.println("jose --> " + responseDTO.toString());
-        return responseDTO;
     }
 
     @RequestMapping(value = "/tipocomp/totales", method = {RequestMethod.GET, RequestMethod.POST})
