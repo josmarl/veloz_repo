@@ -28,7 +28,6 @@ import pe.com.veloz.service.AlmacenConsolidadoService;
 import pe.com.veloz.service.AlmacenDetalleService;
 import pe.com.veloz.service.AlmacenService;
 import pe.com.veloz.service.ClienteService;
-import pe.com.veloz.service.ProductoService;
 
 /**
  *
@@ -48,9 +47,6 @@ public class AlmacenController {
 
     @Autowired
     private ClienteService clienteService;
-
-    @Autowired
-    private ProductoService productoService;
 
     @Autowired
     private AlmacenConsolidadoService almacenConsolidadoService;
@@ -129,7 +125,6 @@ public class AlmacenController {
              */
             if (listAlmacenToDelete.size() > 0) {
                 for (ProductoAlmacenDTO index : listAlmacenToDelete) {
-                    System.out.println("juan " + index);
                     listaAlmacenTemp.remove(index);
                 }
 

@@ -6,16 +6,6 @@
 package pe.com.veloz.utils;
 
 import java.math.BigDecimal;
-import javax.print.Doc;
-import javax.print.DocFlavor;
-import javax.print.DocPrintJob;
-import javax.print.PrintException;
-import javax.print.PrintService;
-import javax.print.PrintServiceLookup;
-import javax.print.SimpleDoc;
-import javax.print.attribute.HashPrintServiceAttributeSet;
-import javax.print.attribute.PrintServiceAttributeSet;
-import javax.print.attribute.standard.PrinterName;
 
 /**
  *

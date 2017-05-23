@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import pe.com.veloz.domain.AlmacenConsolidado;
-import pe.com.veloz.domain.Venta;
 import pe.com.veloz.domain.dto.ReporteDTO;
 import pe.com.veloz.domain.dto.ResponseDTO;
 import pe.com.veloz.enums.ReporteEnum;

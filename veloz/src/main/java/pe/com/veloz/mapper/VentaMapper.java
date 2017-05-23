@@ -14,7 +14,6 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
-import pe.com.veloz.domain.Almacen;
 import pe.com.veloz.domain.Cliente;
 import pe.com.veloz.domain.Venta;
 

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/almacen/almacen_form.html" afterPath="$PROJECT_DIR$/views/almacen/almacen_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/venta/venta.html" afterPath="$PROJECT_DIR$/views/venta/venta.html" />
-    </list>
+    <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -523,12 +520,12 @@
       <workItem from="1495470391833" duration="1309000" />
       <workItem from="1495475496167" duration="1214000" />
       <workItem from="1495484293428" duration="6922000" />
-      <workItem from="1495504536767" duration="3945000" />
+      <workItem from="1495504536767" duration="4130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226313000" />
+    <option name="totallyTimeSpent" value="226498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,7 +538,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21742313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
