@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/AlmacenController.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/AlmacenController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/VentaController.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/VentaController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Almacen.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Almacen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Venta.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Venta.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/AlmacenMapper.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/AlmacenMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/VentaMapper.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/VentaMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/reportes.js" afterPath="$PROJECT_DIR$/js/controllers/reportes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -454,12 +447,12 @@
       <workItem from="1495470391833" duration="1309000" />
       <workItem from="1495475496167" duration="1214000" />
       <workItem from="1495484293428" duration="6922000" />
-      <workItem from="1495504536767" duration="3247000" />
+      <workItem from="1495504536767" duration="3843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225615000" />
+    <option name="totallyTimeSpent" value="226211000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

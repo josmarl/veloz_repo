@@ -112,7 +112,7 @@ public class AlmacenController {
         if (listAlmacenConsolidado.size() > 0) {
             for (ProductoAlmacenDTO almacenDTO : data.getDetalles()) {
                 for (AlmacenConsolidado almacenConsolidado : listAlmacenConsolidado) {
-                    if (almacenConsolidado.getProducto().equals(almacenDTO.getProducto().getId())) {
+                    if (almacenConsolidado.getProductoObj().getId().equals(almacenDTO.getProducto().getId())) {
                         AlmacenConsolidado almToUpdate = new AlmacenConsolidado();
                         almToUpdate.setId(almacenConsolidado.getId());
                         almToUpdate.setDisponible(almacenConsolidado.getDisponible() + almacenDTO.getCantidad());
@@ -133,7 +133,6 @@ public class AlmacenController {
                     listaAlmacenTemp.remove(index);
                 }
 
-                System.out.println("jose " + listaAlmacenTemp.toString());
                 /**
                  * Si hay algún producto nuevo ingresando al almacen consolidad,
                  * entonces se inserta el registro.

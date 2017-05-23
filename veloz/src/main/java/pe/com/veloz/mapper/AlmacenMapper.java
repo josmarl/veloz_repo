@@ -26,7 +26,7 @@ import pe.com.veloz.domain.Cliente;
 @Mapper
 public interface AlmacenMapper {
 
-    @Select("select id,nro_doc as nroDoc,usuario,cliente from almacen")
+    @Select("select id,nro_doc as nroDoc,usuario,cliente,fecha_reg as fechaReg from almacen")
     @Results(value = {
         @Result(property = "clienteObj", column = "cliente", one = @One(select = "findClienteById")),})
     List<Almacen> findAllAlmacen();
@@ -48,7 +48,7 @@ public interface AlmacenMapper {
     @Update("update almacen set nro_doc = #{almacen.nroDoc},cliente=#{almacen.cliente} where id = #{almacen.id}")
     void updateAlmacen(@Param("almacen") Almacen almacen);
 
-    @Select("select id,nro_doc as nroDoc,cliente,usuario from almacen where id=#{id}")
+    @Select("select id,nro_doc as nroDoc,cliente,usuario,fecha_reg as fechaReg from almacen where id=#{id}")
     Almacen findAlmacenById(@Param("id") Long id);
 
 }
