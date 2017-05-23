@@ -30,13 +30,14 @@ public interface VentaMapper {
         @Result(property = "clienteObj", column = "cliente", one = @One(select = "findClienteById")),})
     List<Venta> findAll();
 
-    @Insert("insert into venta(cliente,usuario,base_imponible,igv,total,nro_doc) "
+    @Insert("insert into venta(cliente,usuario,base_imponible,igv,total,nro_doc,fecha_reg) "
             + "values(#{venta.cliente},"
             + "#{venta.usuario},"
             + "#{venta.baseImponible},"
             + "#{venta.igv},"
             + "#{venta.total},"
-            + "#{venta.nroDoc})")
+            + "#{venta.nroDoc},"
+            + "#{venta.fechaReg})")
     @Options(useGeneratedKeys = true, keyProperty = "venta.id", keyColumn = "id")
     void saveVenta(@Param("venta") Venta venta);
 

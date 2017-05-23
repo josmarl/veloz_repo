@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/reportes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/reportes/reportes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/SmsApplication.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/SmsApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/AlmacenController.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/AlmacenController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/VentaController.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/VentaController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Empresa.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Empresa.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Almacen.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Almacen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Venta.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/Venta.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/dto/ProductoVentaDTO.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/domain/dto/ProductoVentaDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/AlmacenConsolidadoMapper.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/AlmacenConsolidadoMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/AlmacenMapper.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/AlmacenMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/VentaMapper.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/mapper/VentaMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/service/AlmacenConsolidadoService.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/service/AlmacenConsolidadoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/service/AlmacenConsolidadoServiceImpl.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/service/AlmacenConsolidadoServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/service/VentaService.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/service/VentaService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/service/VentaServiceImpl.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/service/VentaServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/venta.js" afterPath="$PROJECT_DIR$/js/controllers/venta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/reportes.js" afterPath="$PROJECT_DIR$/js/controllers/reportes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,7 +35,17 @@
         <entry file="file://$PROJECT_DIR$/js/controllers/reportes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="35" />
+              <caret line="41" column="38" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -60,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reportes.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reportes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/reportes/reportes.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
@@ -110,7 +111,6 @@
         <option value="$PROJECT_DIR$/js/controllers/login.js" />
         <option value="$PROJECT_DIR$/views/mensaje/mensaje.html" />
         <option value="$PROJECT_DIR$/views/reporte/reporte_destinatario.html" />
-        <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/forms.html" />
         <option value="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.css" />
@@ -138,9 +138,10 @@
         <option value="$PROJECT_DIR$/views/usuario/usuario.html" />
         <option value="$PROJECT_DIR$/views/reportes/almacen_reporte.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/controllers/reportes.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/views/reportes/reportes.html" />
+        <option value="$PROJECT_DIR$/js/controllers/reportes.js" />
+        <option value="$PROJECT_DIR$/home.html" />
       </list>
     </option>
   </component>
@@ -453,12 +454,12 @@
       <workItem from="1495470391833" duration="1309000" />
       <workItem from="1495475496167" duration="1214000" />
       <workItem from="1495484293428" duration="6922000" />
-      <workItem from="1495504536767" duration="1956000" />
+      <workItem from="1495504536767" duration="3247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224324000" />
+    <option name="totallyTimeSpent" value="225615000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -529,13 +530,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/persona.html" />
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/angular-auto-complete/bower.json" />
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -817,10 +811,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/reportes.js">
+    <entry file="file://$PROJECT_DIR$/views/reportes/reportes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="162">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -833,10 +827,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/reportes/reportes.html">
+    <entry file="file://$PROJECT_DIR$/js/controllers/reportes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="360">
+          <caret line="41" column="38" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="29" />
           <folding />
         </state>
       </provider>

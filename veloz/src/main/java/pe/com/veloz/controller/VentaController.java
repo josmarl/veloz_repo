@@ -6,6 +6,7 @@
 package pe.com.veloz.controller;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.logging.Log;
@@ -184,6 +185,7 @@ public class VentaController {
         venta.setTotal(data.getTotal());
         venta.setUsuario(userDetails.getId());
         venta.setNroDoc(correlativo.getSerie() + "-" + correlativo.getCorrelativo());
+        venta.setFechaReg(new Date());
         ventaService.saveVenta(venta);
 
         /**

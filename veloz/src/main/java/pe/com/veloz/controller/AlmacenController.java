@@ -6,6 +6,7 @@
 package pe.com.veloz.controller;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.logging.Log;
@@ -91,6 +92,7 @@ public class AlmacenController {
          */
         almacen.setNroDoc(data.getNroDoc());
         almacen.setUsuario(userDetails.getId());
+        almacen.setFechaReg(new Date());
         almacenService.saveAlmacen(almacen);
 
         /**

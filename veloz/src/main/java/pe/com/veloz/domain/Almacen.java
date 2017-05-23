@@ -6,6 +6,7 @@
 package pe.com.veloz.domain;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  *
@@ -20,6 +21,7 @@ public class Almacen implements Serializable, Cloneable {
     private Usuario usuarioObj;
     private Long cliente;
     private Cliente clienteObj;
+    private Date fechaReg;
 
     public Almacen() {
     }
@@ -72,9 +74,17 @@ public class Almacen implements Serializable, Cloneable {
         this.clienteObj = clienteObj;
     }
 
+    public Date getFechaReg() {
+        return fechaReg;
+    }
+
+    public void setFechaReg(Date fechaReg) {
+        this.fechaReg = fechaReg;
+    }
+
     @Override
     public String toString() {
-        return "Almacen{" + "id=" + id + ", nroDoc=" + nroDoc + ", usuario=" + usuario + ", usuarioObj=" + usuarioObj + ", cliente=" + cliente + ", clienteObj=" + clienteObj + '}';
+        return "Almacen{" + "id=" + id + ", nroDoc=" + nroDoc + ", usuario=" + usuario + ", usuarioObj=" + usuarioObj + ", cliente=" + cliente + ", clienteObj=" + clienteObj + ", fechaReg=" + fechaReg + '}';
     }
 
 }

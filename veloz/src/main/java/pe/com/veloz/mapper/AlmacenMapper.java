@@ -34,10 +34,11 @@ public interface AlmacenMapper {
     @Select("select id,razon_social as razonSocial from cliente where id=#{id}")
     Cliente findClienteById(Long id);
 
-    @Insert("insert into almacen(nro_doc,usuario,cliente) values("
+    @Insert("insert into almacen(nro_doc,usuario,cliente,fecha_reg) values("
             + "#{almacen.nroDoc},"
             + "#{almacen.usuario},"
-            + "#{almacen.cliente})")
+            + "#{almacen.cliente},"
+            + "#{almacen.fechaReg})")
     @Options(useGeneratedKeys = true, keyProperty = "almacen.id", keyColumn = "id")
     void saveAlmacen(@Param("almacen") Almacen almacen);
 

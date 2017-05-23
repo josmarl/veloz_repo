@@ -39,7 +39,7 @@ app.controller('reportesController', ['$scope', '$rootScope', '$http', '$locatio
                 $scope.viewReporteAlmacen = true;
                 $scope.viewReporteVentas = false;
             } else {
-                $scope.headingTitle = +"Reporte de : Ventas";
+                $scope.headingTitle = "Reporte de : Ventas";
                 $scope.viewReporteAlmacen = false;
                 $scope.viewReporteVentas = true;
             }
