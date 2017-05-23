@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-05-17 15:40:38
+Date: 2017-05-22 21:55:22
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -29,13 +29,14 @@ CREATE TABLE `almacen` (
   KEY `ALMACEN_CLI` (`cliente`),
   CONSTRAINT `ALMACEN_CLI` FOREIGN KEY (`cliente`) REFERENCES `cliente` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `ALMACEN_USER_FK` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of almacen
 -- ----------------------------
-INSERT INTO `almacen` VALUES ('10', '001-001', '1', '3');
-INSERT INTO `almacen` VALUES ('28', '002-321-321', '1', '2');
+INSERT INTO `almacen` VALUES ('44', '001-321', '1', '3');
+INSERT INTO `almacen` VALUES ('45', '0312-321', '1', '3');
+INSERT INTO `almacen` VALUES ('46', '001-32131', '1', '2');
 
 -- ----------------------------
 -- Table structure for almacen_consolidado
@@ -47,13 +48,14 @@ CREATE TABLE `almacen_consolidado` (
   `disponible` int(60) DEFAULT NULL,
   `vendido` int(60) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of almacen_consolidado
 -- ----------------------------
-INSERT INTO `almacen_consolidado` VALUES ('7', '4', '106', '0');
-INSERT INTO `almacen_consolidado` VALUES ('8', '5', '107', '0');
+INSERT INTO `almacen_consolidado` VALUES ('20', '5', '290', '10');
+INSERT INTO `almacen_consolidado` VALUES ('21', '4', '185', '15');
+INSERT INTO `almacen_consolidado` VALUES ('22', '6', '100', '0');
 
 -- ----------------------------
 -- Table structure for almacen_detalle
@@ -67,16 +69,17 @@ CREATE TABLE `almacen_detalle` (
   PRIMARY KEY (`id`),
   KEY `AL_DET_ALMACEN` (`almacen`) USING BTREE,
   CONSTRAINT `AL_DET_ALMACEN` FOREIGN KEY (`almacen`) REFERENCES `almacen` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of almacen_detalle
 -- ----------------------------
-INSERT INTO `almacen_detalle` VALUES ('1', '4', '100', '10');
-INSERT INTO `almacen_detalle` VALUES ('2', '5', '100', '10');
-INSERT INTO `almacen_detalle` VALUES ('52', '5', '7', '28');
-INSERT INTO `almacen_detalle` VALUES ('53', '4', '6', '28');
-INSERT INTO `almacen_detalle` VALUES ('54', '6', '2', '28');
+INSERT INTO `almacen_detalle` VALUES ('86', '5', '100', '44');
+INSERT INTO `almacen_detalle` VALUES ('87', '5', '100', '45');
+INSERT INTO `almacen_detalle` VALUES ('88', '4', '100', '45');
+INSERT INTO `almacen_detalle` VALUES ('89', '4', '100', '46');
+INSERT INTO `almacen_detalle` VALUES ('90', '6', '100', '46');
+INSERT INTO `almacen_detalle` VALUES ('91', '5', '100', '46');
 
 -- ----------------------------
 -- Table structure for cliente
@@ -89,7 +92,7 @@ CREATE TABLE `cliente` (
   `dni` int(11) DEFAULT NULL,
   `direccion` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of cliente
@@ -102,6 +105,32 @@ INSERT INTO `cliente` VALUES ('5', 'juan', '0', '0', '');
 INSERT INTO `cliente` VALUES ('6', 'pedro', '0', '0', '');
 INSERT INTO `cliente` VALUES ('7', 'jorge2', '0', '0', '');
 INSERT INTO `cliente` VALUES ('8', 'Maria', '0', '0', '');
+INSERT INTO `cliente` VALUES ('9', 'Jorge', '0', '0', '');
+INSERT INTO `cliente` VALUES ('10', 'maria', '0', '0', '');
+INSERT INTO `cliente` VALUES ('11', 'maria', '0', '0', '');
+INSERT INTO `cliente` VALUES ('12', 'patricio', '0', '0', '');
+INSERT INTO `cliente` VALUES ('13', 'mario', '0', '0', '');
+
+-- ----------------------------
+-- Table structure for correlativo
+-- ----------------------------
+DROP TABLE IF EXISTS `correlativo`;
+CREATE TABLE `correlativo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `serie` int(11) DEFAULT NULL,
+  `correlativo` int(11) DEFAULT NULL,
+  `empresa` int(11) DEFAULT NULL,
+  `estado` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `corr_empresa_fk` (`empresa`),
+  CONSTRAINT `corr_empresa_fk` FOREIGN KEY (`empresa`) REFERENCES `empresa` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of correlativo
+-- ----------------------------
+INSERT INTO `correlativo` VALUES ('1', '1', '234', '1', '1');
+INSERT INTO `correlativo` VALUES ('2', '1', '2', '1', '0');
 
 -- ----------------------------
 -- Table structure for detalle_venta
@@ -118,11 +147,13 @@ CREATE TABLE `detalle_venta` (
   KEY `DET_VENT_FK` (`venta`) USING BTREE,
   CONSTRAINT `DET_PROD_FK` FOREIGN KEY (`producto`) REFERENCES `producto` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `DET_VENT_FK` FOREIGN KEY (`venta`) REFERENCES `venta` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of detalle_venta
 -- ----------------------------
+INSERT INTO `detalle_venta` VALUES ('37', '5', '10', '20', '21');
+INSERT INTO `detalle_venta` VALUES ('38', '4', '15', '15', '21');
 
 -- ----------------------------
 -- Table structure for empresa
@@ -132,8 +163,6 @@ CREATE TABLE `empresa` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `razon_social` varchar(100) DEFAULT NULL,
   `ruc` int(11) DEFAULT NULL,
-  `serie` int(11) DEFAULT NULL,
-  `correlativo` varchar(100) DEFAULT NULL,
   `direccion` varchar(200) DEFAULT NULL,
   `owner` varchar(200) DEFAULT NULL COMMENT 'Nombres del dueño de la empresa',
   `tipo` int(11) DEFAULT NULL COMMENT 'tipo : (1)principal (2) sucursal',
@@ -144,7 +173,7 @@ CREATE TABLE `empresa` (
 -- ----------------------------
 -- Records of empresa
 -- ----------------------------
-INSERT INTO `empresa` VALUES ('1', 'Libreria Veloz SAC', '2043434343', '1', '0002121', 'Azangaro Mz Y Lte 44', 'Juan Quispe', '2', '1');
+INSERT INTO `empresa` VALUES ('1', 'Libreria Veloz SAC', '2043434343', 'Azangaro Mz Y Lte 44', 'Juan Quispe', '2', '1');
 
 -- ----------------------------
 -- Table structure for persona
@@ -258,13 +287,15 @@ CREATE TABLE `venta` (
   `base_imponible` double DEFAULT NULL,
   `igv` double DEFAULT NULL,
   `total` double DEFAULT NULL,
+  `nro_doc` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `VENTA_USER_FK` (`usuario`) USING BTREE,
   KEY `VENTA_CLIENTE_FK` (`cliente`),
   CONSTRAINT `VENTA_CLIENTE_FK` FOREIGN KEY (`cliente`) REFERENCES `cliente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `VENTA_USER_FK` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of venta
 -- ----------------------------
+INSERT INTO `venta` VALUES ('21', '3', '1', '0', '0', '35', '1-234');

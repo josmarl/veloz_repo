@@ -23,6 +23,7 @@ public class Venta implements Serializable, Cloneable {
     private double baseImponible;
     private double igv;
     private double total;
+    private String nroDoc;
 
     public Venta() {
     }
@@ -91,9 +92,17 @@ public class Venta implements Serializable, Cloneable {
         this.total = total;
     }
 
+    public String getNroDoc() {
+        return nroDoc;
+    }
+
+    public void setNroDoc(String nroDoc) {
+        this.nroDoc = nroDoc;
+    }
+
     @Override
     public String toString() {
-        return "Venta{" + "id=" + id + ", cliente=" + cliente + ", clienteObj=" + clienteObj + ", usuario=" + usuario + ", usuarioObj=" + usuarioObj + ", baseImponible=" + baseImponible + ", igv=" + igv + ", total=" + total + '}';
+        return "Venta{" + "id=" + id + ", cliente=" + cliente + ", clienteObj=" + clienteObj + ", usuario=" + usuario + ", usuarioObj=" + usuarioObj + ", baseImponible=" + baseImponible + ", igv=" + igv + ", total=" + total + ", nroDoc=" + nroDoc + '}';
     }
 
 }

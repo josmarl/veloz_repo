@@ -17,6 +17,7 @@ public class ProductoVentaDTO {
     private int cantidad;
     private double precioUnitario;
     private double importe;
+    private int cantidadStock;
 
     public ProductoVentaDTO() {
     }
@@ -53,9 +54,17 @@ public class ProductoVentaDTO {
         this.importe = importe;
     }
 
+    public int getCantidadStock() {
+        return cantidadStock;
+    }
+
+    public void setCantidadStock(int cantidadStock) {
+        this.cantidadStock = cantidadStock;
+    }
+
     @Override
     public String toString() {
-        return "ProductoVentaDTO{" + "producto=" + producto + ", cantidad=" + cantidad + ", precioUnitario=" + precioUnitario + ", importe=" + importe + '}';
+        return "ProductoVentaDTO{" + "producto=" + producto + ", cantidad=" + cantidad + ", precioUnitario=" + precioUnitario + ", importe=" + importe + ", cantidadStock=" + cantidadStock + '}';
     }
 
 }

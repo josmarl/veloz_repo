@@ -20,6 +20,8 @@ public interface AlmacenConsolidadoService {
 
     void updateAlmacenConsolidadoDisponible(AlmacenConsolidado almacenConsolidado);
 
+    void updateAlmacenConsolidadoStock(AlmacenConsolidado almacenConsolidado);
+
     AlmacenConsolidado findByProducto(Long id);
 
 }

@@ -5,17 +5,15 @@
  */
 package pe.com.veloz.service;
 
-import java.util.List;
-import pe.com.veloz.domain.Venta;
+import pe.com.veloz.domain.Correlativo;
 
 /**
  *
  * @author josmarl
  */
-public interface VentaService {
+public interface CorrelativoService {
 
-    List<Venta> findAll();
-
-    void saveVenta(Venta venta);
-
+    Correlativo findActive();
+    
+     void updateCorrelativo(Correlativo correlativo);
 }

@@ -7,11 +7,12 @@ var app = angular.module('app', [
     'angucomplete'
 ]);
 
-var SERVER = 'http://192.168.1.132:8083';
-var SERVER_IP = '192.168.1.132';
-/*var SERVER = 'http://192.168.43.172:8083';
- var SERVER_IP = '192.168.43.172';*/
-//var SERVER = 'http://localhost:8083';
+/*var SERVER = 'http://192.168.1.132:8083';
+ var SERVER_IP = '192.168.1.132';*/
+var SERVER = 'http://192.168.43.172:8083';
+var SERVER_IP = '192.168.43.172';
+/*var SERVER_IP = 'localhost';
+ var SERVER = 'http://localhost:8083';*/
 
 var ACTIVE = '1';
 var INACTIVE = '0';
@@ -80,6 +81,10 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($r
         .when('/cliente/edit/:id', {
             templateUrl: 'views/cliente/cliente_edit.html',
             controller: 'clienteController'
+        })
+        .when('/reportes', {
+            templateUrl: 'views/reportes/reportes.html',
+            controller: 'reportesController'
         })
 
         .otherwise('/login');

@@ -61,6 +61,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
     $scope.agregar = function () {
 
         var detalle = {};
+        var detalleTemp = {};
+        $scope.detallesTemp = [];
 
         detalle.producto = $scope.prod.originalObject;
         detalle.cantidad = $scope.cantidad;
@@ -69,7 +71,10 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         var existe = 0;
         var nExiste = 0;
 
-        if ($scope.detalles.length == 0) {
+        console.log($scope.detalles.length);
+        console.log($scope.detalles.size);
+
+        if ($scope.detalles.length == 0 || $scope.detalles.size == 0) {
             $scope.detalles.push(detalle);
         } else {
             for (var i = 0; i < $scope.detalles.length; i++) {
@@ -90,8 +95,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             }
         }
 
-        $scope.detallesTemp = [];
-        var detalleTemp = {};
 
         for (var j = 0; j < $scope.detalles.length; j++) {
             if ($scope.detalles[j].producto == detalle.producto) {
@@ -99,6 +102,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                 detalleTemp.producto = $scope.prod.originalObject;
                 detalleTemp.cantidad = $scope.detalles[j].cantidad;
                 detalleTemp.precioUnitario = 0;
+                detalleTemp.cantidadStock = detalle.cantidad;
                 $scope.detallesTemp.push(detalleTemp);
             }
         }
@@ -137,11 +141,13 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                             }
                         }).success(function (data) {
                             $scope.detallesProducto = data;
+                            $scope.detallesTemp = [];
                             $location.path("/venta");
                         }).error(function (err) {
                             console.log(err);
                         });
                     }
+                    break;
                 }
 
                 toastr.error(data.msg, 'Error!');
@@ -158,6 +164,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                     }
                 }).success(function (data) {
                     $scope.detallesProducto = data;
+                    $scope.detallesTemp = [];
                     $location.path("/venta");
                 }).error(function (err) {
                     console.log(err);
@@ -215,9 +222,13 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             }
         }).success(function (response) {
             $scope.response = response;
+            $scope.clearVenta();
             toastr.success($scope.response.msg, 'Mensaje!');
+            $location.path("/venta");
         }).error(function (err) {
+            $scope.clearVenta();
             console.log(err);
+            $location.path("/venta");
         });
     }
 
@@ -249,12 +260,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             }
         }).success(function (data) {
             toastr.success('Venta procesada correctamente!', 'Mensaje!');
-            $scope.detallesProducto = [];
-            $scope.tipoComprobante = {};
-            $scope.cliente.originalObject = '';
-            $scope.cantidad = 0;
-            $scope.prod.originalObject = '';
-            $location.path("/venta");
         }).error(function (err) {
             console.log(err);
         });
@@ -277,6 +282,19 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         } else {
             return true;
         }
+    }
+
+    $scope.clearVenta = function () {
+        $scope.tipoComprobante = {};
+        $scope.cliente.originalObject = '';
+        $scope.prod.originalObject = '';
+        $scope.detalles = [];
+        $scope.detallesTemp = [];
+        $scope.detallesProducto = [];
+        $scope.cantidad = '';
+        $("#ex1").val('');
+        $("#ex2").val('');
+        $scope.prod = {};
     }
 
     $scope.initialize();

@@ -1,0 +1,63 @@
+<div class="container">
+    <h3>{{headingTitle}}</h3>
+    <br>
+    <form ng-submit="findReporte()">
+        <div class="form-group col-md-1">
+            <label>Reporte : </label>
+        </div>
+        <div class="form-group col-md-9">
+            <select ng-model="nreporte" class="form-control">
+                <option ng-value="nreporte.id" ng-repeat="nreporte in nreportes">{{nreporte.nombre}}</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <button type="submit" class="btn btn-primary btn-embossed">Ver Reporte</button>
+        </div>
+    </form>
+
+    <table class="table" ng-show="viewReporteAlmacen">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Producto</th>
+            <th>Disponible</th>
+            <th>Vendido</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr ng-repeat="rep in reporte">
+            <td>{{$index+1}}</td>
+            <td>{{rep.productoObj.nombre}} | {{rep.productoObj.marca}}</td>
+            <td>{{rep.disponible}}</td>
+            <td>{{rep.vendido}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="table" ng-show="viewReporteVentas">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Nro. Doc</th>
+            <th>Cliente</th>
+            <th>Base Imponible</th>
+            <th>IGV</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr ng-repeat="rep in reporte">
+            <td>{{$index+1}}</td>
+            <td>{{rep.nroDoc}}</td>
+            <td>{{rep.clienteObj.razonSocial}}</td>
+            <td>{{rep.baseImponible}}</td>
+            <td>{{rep.igv}}</td>
+            <td>{{rep.total}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

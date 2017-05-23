@@ -18,8 +18,6 @@ public class Empresa implements Serializable, Cloneable {
     private Long id;
     private String razonSocial;
     private Long ruc;
-    private Long serie;
-    private String correlativo;
     private String direccion;
     private String owner;
     private Long tipo;
@@ -50,22 +48,6 @@ public class Empresa implements Serializable, Cloneable {
 
     public void setRuc(Long ruc) {
         this.ruc = ruc;
-    }
-
-    public Long getSerie() {
-        return serie;
-    }
-
-    public void setSerie(Long serie) {
-        this.serie = serie;
-    }
-
-    public String getCorrelativo() {
-        return correlativo;
-    }
-
-    public void setCorrelativo(String correlativo) {
-        this.correlativo = correlativo;
     }
 
     public String getDireccion() {
@@ -102,7 +84,7 @@ public class Empresa implements Serializable, Cloneable {
 
     @Override
     public String toString() {
-        return "Empresa{" + "id=" + id + ", razonSocial=" + razonSocial + ", ruc=" + ruc + ", serie=" + serie + ", correlativo=" + correlativo + ", direccion=" + direccion + ", owner=" + owner + ", tipo=" + tipo + ", estado=" + estado + '}';
+        return "Empresa{" + "id=" + id + ", razonSocial=" + razonSocial + ", ruc=" + ruc + ", direccion=" + direccion + ", owner=" + owner + ", tipo=" + tipo + ", estado=" + estado + '}';
     }
 
 }

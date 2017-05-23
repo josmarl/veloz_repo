@@ -5,6 +5,7 @@
  */
 package pe.com.veloz.service;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.com.veloz.domain.Venta;
@@ -23,6 +24,11 @@ public class VentaServiceImpl implements VentaService {
     @Override
     public void saveVenta(Venta venta) {
         ventaMapper.saveVenta(venta);
+    }
+
+    @Override
+    public List<Venta> findAll() {
+        return ventaMapper.findAll();
     }
 
 }

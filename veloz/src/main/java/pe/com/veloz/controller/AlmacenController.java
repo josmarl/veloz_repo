@@ -67,7 +67,7 @@ public class AlmacenController {
 
         List<AlmacenConsolidado> listAlmacenConsolidado = almacenConsolidadoService.findAll();
         List<ProductoAlmacenDTO> listaAlmacenTemp = data.getDetalles();
-        List<Integer> listAlmacenToDelete = new ArrayList<>();
+        List<ProductoAlmacenDTO> listAlmacenToDelete = new ArrayList<>();
         Usuario userDetails = (Usuario) request.getSession().getAttribute("userDetails");
         Almacen almacen = new Almacen();
 
@@ -115,7 +115,7 @@ public class AlmacenController {
                         almToUpdate.setId(almacenConsolidado.getId());
                         almToUpdate.setDisponible(almacenConsolidado.getDisponible() + almacenDTO.getCantidad());
                         almacenConsolidadoService.updateAlmacenConsolidadoDisponible(almToUpdate);
-                        listAlmacenToDelete.add(data.getDetalles().indexOf(almacenDTO));
+                        listAlmacenToDelete.add(data.getDetalles().get(data.getDetalles().indexOf(almacenDTO)));
                     }
                 }
             }
@@ -126,23 +126,22 @@ public class AlmacenController {
              * tabla almacen consolidado.
              */
             if (listAlmacenToDelete.size() > 0) {
-                for (Integer index : listAlmacenToDelete) {
-                    listaAlmacenTemp.remove((int) index);
+                for (ProductoAlmacenDTO index : listAlmacenToDelete) {
+                    System.out.println("juan " + index);
+                    listaAlmacenTemp.remove(index);
                 }
+
+                System.out.println("jose " + listaAlmacenTemp.toString());
                 /**
                  * Si hay algún producto nuevo ingresando al almacen consolidad,
                  * entonces se inserta el registro.
                  */
                 for (ProductoAlmacenDTO almacenTemp : listaAlmacenTemp) {
-                    for (AlmacenConsolidado almacenConsolidado : listAlmacenConsolidado) {
-                        if (almacenConsolidado.getProducto().equals(almacenTemp.getProducto().getId())) {
-                            AlmacenConsolidado almToSave = new AlmacenConsolidado();
-                            almToSave.setProducto(almacenTemp.getProducto().getId());
-                            almToSave.setVendido(0l);
-                            almToSave.setDisponible(almacenTemp.getCantidad());
-                            almacenConsolidadoService.saveAlmacenConsolidado(almToSave);
-                        }
-                    }
+                    AlmacenConsolidado almToSave = new AlmacenConsolidado();
+                    almToSave.setProducto(almacenTemp.getProducto().getId());
+                    almToSave.setVendido(0l);
+                    almToSave.setDisponible(almacenTemp.getCantidad());
+                    almacenConsolidadoService.saveAlmacenConsolidado(almToSave);
                 }
             }
 

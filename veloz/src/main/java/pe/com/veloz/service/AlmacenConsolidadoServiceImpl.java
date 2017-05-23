@@ -41,4 +41,9 @@ public class AlmacenConsolidadoServiceImpl implements AlmacenConsolidadoService 
         return almacenConsolidadoMapper.findByProducto(id);
     }
 
+    @Override
+    public void updateAlmacenConsolidadoStock(AlmacenConsolidado almacenConsolidado) {
+        almacenConsolidadoMapper.updateAlmacenConsolidadoStock(almacenConsolidado);
+    }
+
 }

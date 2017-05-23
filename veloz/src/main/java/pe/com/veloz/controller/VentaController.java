@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import pe.com.veloz.controller.constants.Constants;
 import pe.com.veloz.domain.AlmacenConsolidado;
 import pe.com.veloz.domain.Cliente;
+import pe.com.veloz.domain.Correlativo;
 import pe.com.veloz.domain.DetalleVenta;
 import pe.com.veloz.domain.Usuario;
 import pe.com.veloz.domain.Venta;
@@ -28,6 +29,7 @@ import pe.com.veloz.domain.dto.VentaDTO;
 import pe.com.veloz.enums.TipoComprobanteEnum;
 import pe.com.veloz.service.AlmacenConsolidadoService;
 import pe.com.veloz.service.ClienteService;
+import pe.com.veloz.service.CorrelativoService;
 import pe.com.veloz.service.DetalleVentaService;
 import pe.com.veloz.service.VentaService;
 import pe.com.veloz.utils.AppUtils;
@@ -55,6 +57,9 @@ public class VentaController {
     private AlmacenConsolidadoService almacenConsolidadoService;
 
     @Autowired
+    private CorrelativoService correlativoService;
+
+    @Autowired
     private HttpServletRequest request;
 
     @RequestMapping(value = "/stock", method = {RequestMethod.POST, RequestMethod.GET})
@@ -64,20 +69,22 @@ public class VentaController {
         ResponseDTO responseDTO = new ResponseDTO();
 
         try {
-            
+
             AlmacenConsolidado almacenConsolidado = almacenConsolidadoService.findByProducto(productoVentaDTO.getProducto().getId());
 
             if (productoVentaDTO.getCantidad() > almacenConsolidado.getDisponible()) {
-                Long restoProducto = productoVentaDTO.getCantidad() - almacenConsolidado.getDisponible();
+                Long cantidadExceso = productoVentaDTO.getCantidad() - almacenConsolidado.getDisponible();
+                Long cantidadDisponible = Math.abs(cantidadExceso - productoVentaDTO.getCantidadStock());
                 responseDTO.setMsg(Constants.MSG_FAILED_STOCK
                         + "\n" + " Sólo quedan "
-                        + restoProducto + " unidades del producto : \n"
+                        + cantidadDisponible + " unidades del producto : \n"
                         + productoVentaDTO.getProducto().getNombre());
                 responseDTO.setObject(false);
             } else {
                 responseDTO.setObject(true);
             }
         } catch (Exception e) {
+            logger.error(e);
         }
 
         return responseDTO;
@@ -142,8 +149,13 @@ public class VentaController {
     public void guardarVenta(@RequestBody VentaDTO data) {
 
         Usuario userDetails = (Usuario) request.getSession().getAttribute("userDetails");
+        Correlativo correlativo = correlativoService.findActive();
         Venta venta = new Venta();
 
+        /**
+         * Aqui se valida la existencia del cliente,y si no existe, se registra
+         * un nuevo cliente.
+         */
         if (data.getCliente().getId() != null) {
             venta.setCliente(data.getCliente().getId());
 
@@ -157,13 +169,26 @@ public class VentaController {
             venta.setCliente(cliente.getId());
         }
 
+        /**
+         * Se actualiza el correlativo.
+         */
+        correlativo.setCorrelativo(correlativo.getCorrelativo() + 1);
+        correlativoService.updateCorrelativo(correlativo);
+
+        /**
+         * Aqui se guarda la venta.
+         */
         venta.setUsuario(userDetails.getId());
         venta.setBaseImponible(data.getBaseImponible());
         venta.setIgv(data.getIgv());
         venta.setTotal(data.getTotal());
         venta.setUsuario(userDetails.getId());
+        venta.setNroDoc(correlativo.getSerie() + "-" + correlativo.getCorrelativo());
         ventaService.saveVenta(venta);
 
+        /**
+         * Aqui se guarda los detalles de venta.
+         */
         for (ProductoVentaDTO detalle : data.getDetalles()) {
             DetalleVenta detalleVenta = new DetalleVenta();
             detalleVenta.setCantidad(detalle.getCantidad());
@@ -171,6 +196,14 @@ public class VentaController {
             detalleVenta.setProducto(detalle.getProducto().getId());
             detalleVenta.setVenta(venta.getId());
             detalleVentaService.saveDetalleVenta(detalleVenta);
+
+            /**
+             * Actualizacion del almacen consolidado.
+             */
+            AlmacenConsolidado almacenConsolidado = almacenConsolidadoService.findByProducto(detalle.getProducto().getId());
+            almacenConsolidado.setDisponible(Math.abs(almacenConsolidado.getDisponible() - detalle.getCantidad()));
+            almacenConsolidado.setVendido(Math.abs(almacenConsolidado.getVendido() + detalle.getCantidad()));
+            almacenConsolidadoService.updateAlmacenConsolidadoStock(almacenConsolidado);
         }
     }
 
