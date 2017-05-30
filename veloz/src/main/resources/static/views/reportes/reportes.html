@@ -40,7 +40,7 @@
         <thead>
         <tr>
             <th>#</th>
-            <th>Nro. Doc</th>
+            <th>Nro. Doc | Fecha</th>
             <th>Cliente</th>
             <th>Base Imponible</th>
             <th>IGV</th>
@@ -52,7 +52,7 @@
 
         <tr ng-repeat="rep in reporte">
             <td>{{$index+1}}</td>
-            <td>{{rep.nroDoc}}</td>
+            <td>{{rep.nroDoc}} | {{rep.fechaReg | date}}</td>
             <td>{{rep.clienteObj.razonSocial}}</td>
             <td>{{rep.baseImponible}}</td>
             <td>{{rep.igv}}</td>

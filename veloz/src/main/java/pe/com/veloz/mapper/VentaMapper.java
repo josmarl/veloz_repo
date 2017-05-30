@@ -6,6 +6,7 @@
 package pe.com.veloz.mapper;
 
 import java.util.List;
+
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.One;
@@ -18,15 +19,14 @@ import pe.com.veloz.domain.Cliente;
 import pe.com.veloz.domain.Venta;
 
 /**
- *
  * @author josmarl
  */
 @Mapper
 public interface VentaMapper {
 
-    @Select("select id,cliente,usuario,base_imponible as baseImponible,igv,total,nro_doc as nroDoc from venta")
+    @Select("select id,cliente,usuario,base_imponible as baseImponible,igv,total,nro_doc as nroDoc,fecha_reg as fechaReg from venta")
     @Results(value = {
-        @Result(property = "clienteObj", column = "cliente", one = @One(select = "findClienteById")),})
+            @Result(property = "clienteObj", column = "cliente", one = @One(select = "findClienteById")),})
     List<Venta> findAll();
 
     @Insert("insert into venta(cliente,usuario,base_imponible,igv,total,nro_doc,fecha_reg) "
