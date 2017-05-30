@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,6 @@ import pe.com.veloz.service.AlmacenService;
 import pe.com.veloz.service.ClienteService;
 
 /**
- *
  * @author josmarl
  */
 @RestController
@@ -61,6 +61,8 @@ public class AlmacenController {
 
     @RequestMapping(value = "/save", method = {RequestMethod.POST})
     public void saveAlmacen(@RequestBody AlmacenDTO data) {
+
+        System.out.println("josmarl " + data.toString());
 
         List<AlmacenConsolidado> listAlmacenConsolidado = almacenConsolidadoService.findAll();
         List<ProductoAlmacenDTO> listaAlmacenTemp = data.getDetalles();
@@ -99,6 +101,7 @@ public class AlmacenController {
             almacenDetalle.setAlmacen(almacen.getId());
             almacenDetalle.setCantidad(detalle.getCantidad());
             almacenDetalle.setProducto(detalle.getProducto().getId());
+            almacenDetalle.setImporte(detalle.getImporte());
             almacenDetalleService.saveAlmacenDetalle(almacenDetalle);
         }
 

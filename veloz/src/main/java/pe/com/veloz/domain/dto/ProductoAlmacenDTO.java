@@ -8,13 +8,13 @@ package pe.com.veloz.domain.dto;
 import pe.com.veloz.domain.Producto;
 
 /**
- *
  * @author josmarl
  */
 public class ProductoAlmacenDTO {
 
     private Producto producto;
     private Long cantidad;
+    private double importe;
 
     public ProductoAlmacenDTO() {
     }
@@ -35,9 +35,20 @@ public class ProductoAlmacenDTO {
         this.cantidad = cantidad;
     }
 
-    @Override
-    public String toString() {
-        return "ProductoAlmacenDTO{" + "producto=" + producto + ", cantidad=" + cantidad + '}';
+    public double getImporte() {
+        return importe;
     }
 
+    public void setImporte(double importe) {
+        this.importe = importe;
+    }
+
+    @Override
+    public String toString() {
+        return "ProductoAlmacenDTO{" +
+                "producto=" + producto +
+                ", cantidad=" + cantidad +
+                ", importe=" + importe +
+                '}';
+    }
 }

@@ -65,6 +65,7 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
 
         detalle.producto = $scope.prod.originalObject;
         detalle.cantidad = $scope.cantidad;
+        detalle.importe = $scope.importe;
 
         var existe = 0;
         var nExiste = 0;
@@ -75,6 +76,7 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
             for (var i = 0; i < $scope.detalles.length; i++) {
                 if ($scope.detalles[i].producto == detalle.producto) {
                     $scope.detalles[i].cantidad = parseInt($scope.detalles[i].cantidad) + parseInt(detalle.cantidad);
+                    $scope.detalles[i].importe = parseFloat($scope.detalles[i].importe) + parseFloat(detalle.importe);
                     existe = parseInt(existe) + 1;
                 } else {
                     nExiste = parseInt(nExiste) + 1;

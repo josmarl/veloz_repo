@@ -8,7 +8,6 @@ package pe.com.veloz.domain;
 import java.io.Serializable;
 
 /**
- *
  * @author josmarl
  */
 public class AlmacenDetalle implements Serializable, Cloneable {
@@ -19,6 +18,7 @@ public class AlmacenDetalle implements Serializable, Cloneable {
     private Producto productoObj;
     private Long cantidad;
     private Long almacen;
+    private double importe;
     private Almacen almacenObj;
 
     public AlmacenDetalle() {
@@ -72,9 +72,24 @@ public class AlmacenDetalle implements Serializable, Cloneable {
         this.almacenObj = almacenObj;
     }
 
-    @Override
-    public String toString() {
-        return "AlmacenDetalle{" + "id=" + id + ", producto=" + producto + ", productoObj=" + productoObj + ", cantidad=" + cantidad + ", almacen=" + almacen + ", almacenObj=" + almacenObj + '}';
+    public double getImporte() {
+        return importe;
     }
 
+    public void setImporte(double importe) {
+        this.importe = importe;
+    }
+
+    @Override
+    public String toString() {
+        return "AlmacenDetalle{" +
+                "id=" + id +
+                ", producto=" + producto +
+                ", productoObj=" + productoObj +
+                ", cantidad=" + cantidad +
+                ", almacen=" + almacen +
+                ", importe=" + importe +
+                ", almacenObj=" + almacenObj +
+                '}';
+    }
 }

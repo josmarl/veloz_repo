@@ -5,7 +5,7 @@
             <label>Cant.</label>
             <input type="number" class="form-control" placeholder="Cant." ng-model="cantidad">
         </div>
-        <div class="col-md-9">
+        <div class="col-md-6">
             <label>Producto:</label>
             <angucomplete id="ex3"
                           placeholder="Buscar producto..."
@@ -18,6 +18,10 @@
                           minlength="1"
                           inputclass="form-control form-control-small"
                           class="ng-isolate-scope"/>
+        </div>
+        <div class="col-md-3">
+            <label>Importe.</label>
+            <input type="number" class="form-control" placeholder="S/.Importe." ng-model="importe">
         </div>
         <div class="col-md-1">
             <label>Opt.</label><br>
@@ -35,6 +39,7 @@
             <th>#</th>
             <th>Cant.</th>
             <th>Producto</th>
+            <th>Importe</th>
             <th>Elim.</th>
         </tr>
         </thead>
@@ -44,6 +49,7 @@
             <td>{{$index +1}}</td>
             <td>{{det.cantidad}}</td>
             <td>{{det.producto.nombre}}</td>
+            <td>{{det.importe}}</td>
             <td>
                 <button class="btn btn-danger" ng-click="deleteDetalle(det)"><i
                         class="glyphicon glyphicon-remove"></i></button>
