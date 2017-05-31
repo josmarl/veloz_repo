@@ -7,6 +7,7 @@ package pe.com.veloz.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +20,6 @@ import pe.com.veloz.service.AlmacenConsolidadoService;
 import pe.com.veloz.service.VentaService;
 
 /**
- *
  * @author josmarl
  */
 @RestController
@@ -60,6 +60,9 @@ public class ReportesController {
             responseDTO.setObject(almacenConsolidadoService.findAll());
         }
         if (ReporteEnum.R_VENTAS.getId() == id) {
+            responseDTO.setObject(ventaService.findAll());
+        }
+        if (ReporteEnum.R_KARDEX.getId() == id) {
             responseDTO.setObject(ventaService.findAll());
         }
 

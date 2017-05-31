@@ -6,13 +6,13 @@
 package pe.com.veloz.enums;
 
 /**
- *
  * @author josmarl
  */
 public enum ReporteEnum {
 
     R_ALMACEN_CONSOLIDADO(1, "Consolidado del Almacén", 1),
-    R_VENTAS(2, "Ventas", 2);
+    R_VENTAS(2, "Ventas", 2),
+    R_KARDEX(3, "Kardex", 3);
 
     private int id;
     private String nombre;

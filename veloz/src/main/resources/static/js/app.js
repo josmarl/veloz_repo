@@ -7,10 +7,12 @@ var app = angular.module('app', [
     'angucomplete'
 ]);
 
-var SERVER = 'http://192.168.1.146:8083';
- var SERVER_IP = '192.168.1.146';
+/*var SERVER = 'http://192.168.1.146:8083';
+ var SERVER_IP = '192.168.1.146';*/
 /*var SERVER = 'http://192.168.43.172:8083';
 var SERVER_IP = '192.168.43.172';*/
+var SERVER = 'http://192.168.152.11:8083';
+ var SERVER_IP = '192.168.152.11';
 /*var SERVER_IP = 'localhost';
  var SERVER = 'http://localhost:8083';*/
 

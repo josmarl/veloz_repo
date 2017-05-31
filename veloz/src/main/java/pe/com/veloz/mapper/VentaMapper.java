@@ -42,4 +42,6 @@ public interface VentaMapper {
 
     @Select("select id,razon_social as razonSocial from cliente where id=#{id}")
     Cliente findClienteById(Long id);
+
+
 }
