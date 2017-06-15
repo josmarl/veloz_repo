@@ -16,6 +16,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
     $scope.datosTipoComprobante = {};
     $scope.cliente = {};
     $scope.cliente.originalObject = {};
+    $scope.total = 0;
 
     $scope.initialize = function () {
         $scope.getClientes();
@@ -140,7 +141,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                                 'Content-Type': 'application/json; charset=UTF-8'
                             }
                         }).success(function (data) {
-                            $scope.detallesProducto = data;
+                            $scope.detallesProducto = data.detalles;
+                            $scope.total = data.total;
                             $scope.detallesTemp = [];
                             $location.path("/venta");
                         }).error(function (err) {
@@ -163,7 +165,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                         'Content-Type': 'application/json; charset=UTF-8'
                     }
                 }).success(function (data) {
-                    $scope.detallesProducto = data;
+                    $scope.detallesProducto = data.detalles;
+                    $scope.total = data.total;
                     $scope.detallesTemp = [];
                     $location.path("/venta");
                 }).error(function (err) {
@@ -179,7 +182,9 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
     };
 
     $scope.deleteDetalle = function (detalle) {
+
         var index = $scope.detallesProducto.indexOf(detalle);
+        $scope.total = $scope.total - $scope.detallesProducto[index].importe;
         $scope.detallesProducto.splice(index, 1);
         $scope.detalles.splice(index, 1);
     }
