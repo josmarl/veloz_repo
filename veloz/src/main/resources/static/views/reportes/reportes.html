@@ -6,7 +6,7 @@
             <label>Reporte : </label>
         </div>
         <div class="form-group col-md-9">
-            <select ng-model="nreporte" class="form-control">
+            <select ng-model="nreporte" class="form-control" ng-change="findReporteName()">
                 <option ng-value="nreporte.id" ng-repeat="nreporte in nreportes">{{nreporte.nombre}}</option>
             </select>
         </div>
