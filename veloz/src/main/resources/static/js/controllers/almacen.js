@@ -14,6 +14,7 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
     $scope.cliente = {};
     $scope.cliente.originalObject = {};
     $scope.idAlmacen = $routeParams.id;
+    $scope.total = 0;
 
     $scope.initialize = function () {
         $scope.loadData();
@@ -90,10 +91,13 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
             }
         }
 
+        $scope.total = parseFloat($scope.total) + parseFloat(detalle.importe);
+
     };
 
     $scope.deleteDetalle = function (detalle) {
         var index = $scope.detalles.indexOf(detalle);
+        $scope.total = parseFloat($scope.total) - parseFloat($scope.detalles[index].importe);
         $scope.detalles.splice(index, 1);
     }
 
