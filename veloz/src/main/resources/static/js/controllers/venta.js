@@ -235,6 +235,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             console.log(err);
             $location.path("/venta");
         });
+        $scope.clearVenta();
     }
 
     $scope.guardarVenta = function () {
