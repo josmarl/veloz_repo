@@ -22,6 +22,7 @@
             <th>Producto</th>
             <th>Disponible</th>
             <th>Vendido</th>
+            <th>Total</th>
         </tr>
         </thead>
 
@@ -32,6 +33,7 @@
             <td>{{rep.productoObj.nombre}} | {{rep.productoObj.marca}}</td>
             <td>{{rep.disponible}}</td>
             <td>{{rep.vendido}}</td>
+            <td>{{rep.disponible + rep.vendido}}</td>
         </tr>
         </tbody>
     </table>
