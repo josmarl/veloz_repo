@@ -100,7 +100,7 @@ public class SmsApplication {
     }
 
     @Configuration
-    @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
+    @Order(SecurityProperties.BASIC_AUTH_ORDER)
     protected static class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         @Override

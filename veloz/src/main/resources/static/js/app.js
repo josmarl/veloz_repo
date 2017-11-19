@@ -8,8 +8,8 @@ var app = angular.module('app', [
 ]);
 
 
-var SERVER = 'http://192.168.1.40:8083';
-var SERVER_IP = '192.168.1.40';
+var SERVER = 'http://192.168.1.42:8083';
+var SERVER_IP = '192.168.1.42';
 
 var ACTIVE = '1';
 var INACTIVE = '0';
