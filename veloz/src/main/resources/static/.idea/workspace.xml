@@ -2,70 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../.gitignore" afterPath="$PROJECT_DIR$/../../../../../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printSocket/nbactions.xml" afterPath="$PROJECT_DIR$/../../../../../printSocket/nbactions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printSocket/pom.xml" afterPath="$PROJECT_DIR$/../../../../../printSocket/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printSocket/src/main/java/pe/com/josmarl/utils/SocketServer.java" afterPath="$PROJECT_DIR$/../../../../../printSocket/src/main/java/pe/com/josmarl/utils/SocketServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printSocket/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../../../../../printSocket/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printSocket/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../../../../../printSocket/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printSocket/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../../../../../printSocket/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printTest/build.xml" afterPath="$PROJECT_DIR$/../../../../../printTest/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printTest/manifest.mf" afterPath="$PROJECT_DIR$/../../../../../printTest/manifest.mf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printTest/nbproject/build-impl.xml" afterPath="$PROJECT_DIR$/../../../../../printTest/nbproject/build-impl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printTest/nbproject/genfiles.properties" afterPath="$PROJECT_DIR$/../../../../../printTest/nbproject/genfiles.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printTest/nbproject/project.properties" afterPath="$PROJECT_DIR$/../../../../../printTest/nbproject/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printTest/nbproject/project.xml" afterPath="$PROJECT_DIR$/../../../../../printTest/nbproject/project.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../printTest/src/SocketServer.java" afterPath="$PROJECT_DIR$/../../../../../printTest/src/SocketServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/compiler.xml" afterPath="$PROJECT_DIR$/../../../../.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/../../../../.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/encodings.xml" afterPath="$PROJECT_DIR$/../../../../.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0_pr3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0_pr3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_0_pr3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_0_pr3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_0_pr3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_0_pr3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_github_virtuald_curvesapi_1_03.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_github_virtuald_curvesapi_1_03.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_42.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_42.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_6_14.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_6_14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_poi_poi_3_14.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_poi_poi_3_14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_14.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_14.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_15.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_15.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_15.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_15.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_15.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_15.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_15.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_15.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_15.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_15.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_assertj_assertj_core_3_8_0.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_assertj_assertj_core_3_8_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mockito_mockito_core_2_8_9.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mockito_mockito_core_2_8_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mybatis_mybatis_3_4_0.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mybatis_mybatis_3_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_1_1.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_1_1.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_objenesis_objenesis_2_5.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_objenesis_objenesis_2_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/dataSources.local.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/dataSources/2547ba2c-2b55-4ae9-92f2-f22382b1a5d3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_kotlin_2_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_2_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_0_M5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_0_M5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_0_M5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_beans_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_context_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_core_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jcl_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_test_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_web_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_15.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_aop_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_beans_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_context_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_core_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_test_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_web_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_0_BUILD_SNAPSHOT.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_0_BUILD_SNAPSHOT.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_0_BUILD_SNAPSHOT.xml" />
@@ -77,171 +55,49 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_0_BUILD_SNAPSHOT.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_1_1_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_1_1_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_aop_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_aop_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_beans_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_beans_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_context_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_context_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_core_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_core_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_expression_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_expression_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jcl_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jcl_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_test_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_test_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_tx_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_tx_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_web_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_web_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_webjars_angularjs_1_4_9.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_webjars_angularjs_1_4_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_webjars_bootstrap_3_3_6.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_webjars_bootstrap_3_3_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_webjars_jquery_1_11_1.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_webjars_jquery_1_11_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_yaml_snakeyaml_1_18.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_yaml_snakeyaml_1_18.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/misc.xml" afterPath="$PROJECT_DIR$/../../../../.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/modules.xml" afterPath="$PROJECT_DIR$/../../../../.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../pom.xml" afterPath="$PROJECT_DIR$/../../../../pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/SmsApplication.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/SmsApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/VentaController.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/controller/VentaController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../java/pe/com/veloz/utils/PrintServiceUtil.java" afterPath="$PROJECT_DIR$/../../java/pe/com/veloz/utils/PrintServiceUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angucomplete/.bower.json" afterPath="$PROJECT_DIR$/bower_components/angucomplete/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/.editorconfig" afterPath="$PROJECT_DIR$/bower_components/flat-ui/.editorconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/.gitignore" afterPath="$PROJECT_DIR$/bower_components/flat-ui/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/CHANGELOG.md" afterPath="$PROJECT_DIR$/bower_components/flat-ui/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/Gruntfile.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/README.md" afterPath="$PROJECT_DIR$/bower_components/flat-ui/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/bower.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.min.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/vendor/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/css/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/glyphicons/flat-ui-icons-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/glyphicons/flat-ui-icons-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/glyphicons/selection.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/glyphicons/selection.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-black.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-black.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-bold.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-bolditalic.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-bolditalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-italic.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-italic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-light.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-light.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/fonts/lato/lato-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/clocks.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/clocks.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/loop.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/loop.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/ribbon.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/img/icons/svg/ribbon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/index.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/flat-ui.min.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/flat-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/html5shiv.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/html5shiv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/respond.min.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/respond.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/video.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/dist/js/vendor/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/demo.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/demo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/docs.css" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/docs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/demo.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/demo.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/docs.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/docs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/prettyprint.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/src/prettyprint.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/js/application.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/js/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/js/prettify.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/assets/js/prettify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/components.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/components.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/buttons.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/dropdowns.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/dropdowns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/forms.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/forms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbar-fixed-top.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbar-fixed-top.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbar-static-top.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbar-static-top.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbars-with-elements.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbars-with-elements.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbars.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbars.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/pagination.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/pagination.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/radiocheck.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/radiocheck.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/select.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/select.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/switches.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/switches.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tagsinput.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tagsinput.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/thumbnails.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/thumbnails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tiles.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tiles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/todo-list.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/todo-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tooltips.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/tooltips.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/typography.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/typography.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/vertical-slider.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/examples/vertical-slider.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/getting-started.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/getting-started.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/docs/template.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/docs/template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/glyphicons/flat-ui-icons-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/glyphicons/flat-ui-icons-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/glyphicons/selection.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/glyphicons/selection.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-black.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-black.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-bold.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-bolditalic.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-bolditalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-italic.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-italic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-light.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-light.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-regular.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/fonts/lato/lato-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/clocks.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/clocks.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/loop.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/loop.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/ribbon.svg" afterPath="$PROJECT_DIR$/bower_components/flat-ui/img/icons/svg/ribbon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/index.html" afterPath="$PROJECT_DIR$/bower_components/flat-ui/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/index.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/js/.jscs.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/js/.jscs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/js/.jshintrc" afterPath="$PROJECT_DIR$/bower_components/flat-ui/js/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/js/radiocheck.js" afterPath="$PROJECT_DIR$/bower_components/flat-ui/js/radiocheck.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/.csscomb.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/.csscomb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/.csslintrc" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/.csslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/flat-ui.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/flat-ui.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/background-clip.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/background-clip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/background-variant.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/background-variant.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/border-radius.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/border-radius.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/buttons.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/center-block.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/center-block.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/clearfix.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/clearfix.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/forms.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/gradients.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/gradients.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/grid.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/hide-text.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/hide-text.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/image.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/image.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/nav-divider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/navbar-vertical-align.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/navbar-vertical-align.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/opacity.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/opacity.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/pagination.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/pallets.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/pallets.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/reset-filter.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/resize.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/resize.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/responsive-visibility.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/select.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/select.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/size.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/size.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/switches.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/switches.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/tab-focus.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/text-emphasis.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/text-overflow.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/mixins/vendor-prefixes.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/button-groups.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/button-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/buttons.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/code.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/code.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/dropdowns.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/footer.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/footer.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/forms.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/glyphicons.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/glyphicons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/input-groups.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/input-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/local-fonts.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/local-fonts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/login.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/login.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/navbar.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/pager.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/pager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/pagination.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/palette.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/palette.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/print.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/print.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/progress-bars.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/progress-bars.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/radiocheck.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/radiocheck.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/scaffolding.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/scaffolding.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/select.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/select.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/share.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/share.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/slider.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/slider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/switch.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/switch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tagsinput.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tagsinput.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/thumbnails.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/thumbnails.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tiles.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tiles.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/todo-list.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/todo-list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tooltip.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/tooltip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/type.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/type.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/typeahead.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/typeahead.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/video.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/modules/video.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/spaces.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/spaces.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/less/variables.less" afterPath="$PROJECT_DIR$/bower_components/flat-ui/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/flat-ui/package.json" afterPath="$PROJECT_DIR$/bower_components/flat-ui/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/almacen.js" afterPath="$PROJECT_DIR$/js/controllers/almacen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/reportes.js" afterPath="$PROJECT_DIR$/js/controllers/reportes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/venta.js" afterPath="$PROJECT_DIR$/js/controllers/venta.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/almacen/almacen.html" afterPath="$PROJECT_DIR$/views/almacen/almacen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/almacen/almacen_edit.html" afterPath="$PROJECT_DIR$/views/almacen/almacen_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/almacen/almacen_form.html" afterPath="$PROJECT_DIR$/views/almacen/almacen_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/cliente/cliente.html" afterPath="$PROJECT_DIR$/views/cliente/cliente.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/producto/producto.html" afterPath="$PROJECT_DIR$/views/producto/producto.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/reportes/reportes.html" afterPath="$PROJECT_DIR$/views/reportes/reportes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/usuario/usuario.html" afterPath="$PROJECT_DIR$/views/usuario/usuario.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/venta/venta.html" afterPath="$PROJECT_DIR$/views/venta/venta.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../veloz.iml" afterPath="$PROJECT_DIR$/../../../../veloz.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../veloz_db.sql" afterPath="$PROJECT_DIR$/../../../../../veloz_db.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0_pr3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_0_pr3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_2.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_0_pr3.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_2.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__javax_validation_validation_api_2_0_0_Final.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_42.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_44.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_6.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_6_14.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_6.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_8.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_15.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_15.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_15.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_15.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mockito_mockito_core_2_8_9.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_mockito_mockito_core_2_11_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_objenesis_objenesis_2_5.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_1_1_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_unknown.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_expression_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_expression_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jcl_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_aop_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_tx_5_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_tx_5_0_1_BUILD_SNAPSHOT.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_yaml_snakeyaml_1_18.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -265,17 +121,10 @@
       <file leaf-file-name="reportes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/reportes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            <state relative-caret-position="272">
+              <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="juliaca3.jpg" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../../../../../tutoria/sagt/auth_web/static/img/juliaca3.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -283,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -292,20 +141,20 @@
       <file leaf-file-name="venta.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="17">
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding>
-                <marker date="1496271065938" expanded="true" signature="46:110" ph="[...]" />
+                <marker date="1513283840426" expanded="true" signature="46:110" ph="[...]" />
               </folding>
             </state>
           </provider>
@@ -314,11 +163,11 @@
       <file leaf-file-name="venta.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="303" column="0" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+            <state relative-caret-position="5253">
+              <caret line="309" column="0" lean-forward="false" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1496270596161" expanded="true" signature="9327:9356" ph="{...}" />
+                <marker date="1508445344659" expanded="true" signature="9577:9606" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -393,8 +242,8 @@
         <option value="$PROJECT_DIR$/js/controllers/reportes.js" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/views/venta/venta.html" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/views/almacen/almacen_form.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
   </component>
@@ -405,20 +254,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="27" />
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -435,14 +276,9 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
@@ -455,7 +291,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -465,7 +300,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../tutoria/sagt/auth_web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -643,11 +478,13 @@
       <workItem from="1499093903845" duration="44000" />
       <workItem from="1502142846324" duration="10000" />
       <workItem from="1503357651836" duration="56000" />
+      <workItem from="1509052842855" duration="47000" />
+      <workItem from="1513283813207" duration="617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230132000" />
+    <option name="totallyTimeSpent" value="230796000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -659,25 +496,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2170706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +543,7 @@
     <entry file="file://$PROJECT_DIR$/js/controllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -715,91 +552,91 @@
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
-          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+          <caret line="32" column="3" lean-forward="false" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/flat-ui/docs/examples/dropdowns.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/angucomplete/angucomplete.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3950">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/flat-ui/docs/examples/forms.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="151" column="70" selection-start-line="151" selection-start-column="70" selection-end-line="151" selection-end-column="84" />
+          <caret line="151" column="70" lean-forward="false" selection-start-line="151" selection-start-column="70" selection-end-line="151" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/flat-ui/less/modules/select.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+          <caret line="86" column="17" lean-forward="false" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/flat-ui/docs/assets/css/demo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5608">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/flat-ui/docs/examples/select.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5014">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/flat-ui/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/flat-ui/dist/css/flat-ui.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="3353" column="2" selection-start-line="3353" selection-start-column="2" selection-end-line="3353" selection-end-column="2" />
+          <caret line="3353" column="2" lean-forward="false" selection-start-line="3353" selection-start-column="2" selection-end-line="3353" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/angucomplete/angucomplete.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/angucomplete/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/angular-toastr/dist/angular-toastr.tpls.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-756">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -807,21 +644,21 @@
     <entry file="file://$PROJECT_DIR$/bower_components/flat-ui/docs/examples/radiocheck.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
-          <caret line="42" column="61" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="61" />
+          <caret line="42" column="61" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/producto/producto_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="46" selection-end-column="14" />
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="46" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/producto/producto_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
-          <caret line="49" column="90" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="90" />
+          <caret line="49" column="90" lean-forward="false" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="90" />
         </state>
       </provider>
     </entry>
@@ -829,149 +666,141 @@
     <entry file="file://$PROJECT_DIR$/bower_components/flat-ui/docs/examples/navbars.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="313" column="58" selection-start-line="313" selection-start-column="52" selection-end-line="313" selection-end-column="58" />
+          <caret line="313" column="58" lean-forward="false" selection-start-line="313" selection-start-column="52" selection-end-line="313" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/persona.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="23" />
+          <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
-          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/usuario/usuario_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/usuario/usuario_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/usuario.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="100" selection-end-column="6" />
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="100" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/cliente/cliente_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/cliente/cliente_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="5" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/producto/producto.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/producto.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="82" selection-end-column="6" />
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="82" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/angular-toastr/dist/angular-toastr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/almacen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3222">
-          <caret line="181" column="23" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="23" />
+          <caret line="181" column="23" lean-forward="false" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-428">
-          <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+          <caret line="13" column="72" lean-forward="false" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/usuario/usuario.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/cliente/cliente.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="30" column="75" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <caret line="30" column="75" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/cliente.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
-          <caret line="79" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="97" selection-end-column="4" />
+          <caret line="79" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="97" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/reportes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding />
+          <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="17">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -979,41 +808,31 @@
     <entry file="file://$PROJECT_DIR$/views/almacen/almacen.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/almacen/almacen_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/reportes/reportes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="303" column="0" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+        <state relative-caret-position="5253">
+          <caret line="309" column="0" lean-forward="false" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1496270596161" expanded="true" signature="9327:9356" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <marker date="1496271065938" expanded="true" signature="46:110" ph="[...]" />
+            <marker date="1508445344659" expanded="true" signature="9577:9606" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1021,13 +840,31 @@
     <entry file="file://$PROJECT_DIR$/views/almacen/almacen_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../../../tutoria/sagt/auth_web/static/img/juliaca3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/reportes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding>
+            <marker date="1513283840426" expanded="true" signature="46:110" ph="[...]" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

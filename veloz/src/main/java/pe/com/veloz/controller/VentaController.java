@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +37,6 @@ import pe.com.veloz.service.VentaService;
 import pe.com.veloz.utils.AppUtils;
 
 /**
- *
  * @author josmarl
  */
 @RestController
@@ -92,9 +92,11 @@ public class VentaController {
     }
 
     @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})
-    public List<ProductoVentaDTO> addCarrito(@RequestBody DetalleProductoDTO data) {
+    public VentaDTO addCarrito(@RequestBody DetalleProductoDTO data) {
 
+        VentaDTO ventaDTO = new VentaDTO();
         List<ProductoVentaDTO> detalles = new ArrayList<>();
+        double total = 0;
 
         for (ProductoVentaDTO detalle : data.getDetalles()) {
 
@@ -115,9 +117,13 @@ public class VentaController {
                 detalle.setPrecioUnitario(detalle.getProducto().getPrecioCiento());
             }
             detalles.add(detalle);
+            total = total + detalle.getImporte();
         }
 
-        return detalles;
+        ventaDTO.setDetalles(detalles);
+        ventaDTO.setTotal(total);
+
+        return ventaDTO;
     }
 
     @RequestMapping(value = "/tipocomp/totales", method = {RequestMethod.GET, RequestMethod.POST})

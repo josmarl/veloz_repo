@@ -1,9 +1,10 @@
 <h3>{{headingTitle}}</h3>
 <div class="form-group">
     <div class="row">
+
         <div class="col-md-2">
             <label>Cant.</label>
-            <input type="number" class="form-control" placeholder="Cant." ng-model="cantidad">
+            <input type="number" class="form-control" placeholder="Cant." ng-model="cantidad" required>
         </div>
         <div class="col-md-9">
             <label>Producto:</label>
@@ -21,10 +22,11 @@
         </div>
         <div class="col-md-1">
             <label>Opt.</label><br>
-            <button type="button" class="btn btn-primary btn-embossed" ng-click="agregar()"><i
+            <button type="button" ng-click="agregar()" class="btn btn-primary btn-embossed"><i
                     class="glyphicon glyphicon-floppy-disk"></i>
             </button>
         </div>
+
     </div>
 </div>
 
@@ -54,6 +56,12 @@
             </td>
         </tr>
         </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="4">&nbsp;</th>
+            <th>S/.{{total}}</th>
+        </tr>
+        </tfoot>
     </table>
     <button class="btn btn-primary btn-embossed" ng-click="seleccionarTipoComp()" ng-disabled="validarDetalleVenta()">
         Guardar

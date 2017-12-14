@@ -28,6 +28,17 @@ app.controller('reportesController', ['$scope', '$rootScope', '$http', '$locatio
         });
     };
 
+    $scope.findReporteName = function () {
+        if ($scope.nreporte == 1) {
+            $scope.headingTitle = "Reporte de : Almacén Consolidado";
+        } else {
+            $scope.headingTitle = "Reporte de : Ventas";
+        }
+        $scope.viewReporteAlmacen = false;
+        $scope.viewReporteVentas = false;
+    }
+
+
     $scope.findReporte = function () {
         $http({
             url: SERVER + "/reportes/find/" + $scope.nreporte,
@@ -35,11 +46,9 @@ app.controller('reportesController', ['$scope', '$rootScope', '$http', '$locatio
         }).success(function (response) {
             $scope.reporte = response.object;
             if ($scope.nreporte == 1) {
-                $scope.headingTitle = "Reporte de : Almacén Consolidado";
                 $scope.viewReporteAlmacen = true;
                 $scope.viewReporteVentas = false;
             } else {
-                $scope.headingTitle = "Reporte de : Ventas";
                 $scope.viewReporteAlmacen = false;
                 $scope.viewReporteVentas = true;
             }
