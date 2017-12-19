@@ -237,17 +237,21 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
     $scope.guardarVenta = function () {
 
+        console.log($("#ex2_value").val());
         console.log($scope.cliente);
 
-        if ($scope.cliente.originalObject == undefined
-            || $scope.cliente.originalObject.id == undefined
-            || $scope.cliente.originalObject.razonSocial != $("#ex2_value").val()) {
+        var cli = $scope.cliente.originalObject;
 
-            $scope.cliente.originalObject.id = undefined;
-            $scope.cliente.originalObject.razonSocial = $("#ex2_value").val();
+        if ($scope.cliente === null && $("#ex2_value").val() !== null) {
+            cli.id = undefined;
+            cli.razonSocial = $("#ex2_value").val();
+            // $scope.cliente.originalObject.id = undefined;
+            // $scope.cliente.originalObject.razonSocial = $("#ex2_value").val();
         } else {
             console.log("error");
         }
+
+        console.log($scope.cliente);
 
         $http({
             url: SERVER + '/venta/save',
@@ -257,7 +261,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                 total: $scope.datosTipoComprobante.total,
                 detalles: $scope.detallesProducto,
                 tipoComprobante: $scope.tipoComprobante,
-                cliente: $scope.cliente.originalObject
+                cliente: cli
             },
             method: "POST",
             headers: {

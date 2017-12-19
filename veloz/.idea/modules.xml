@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/veloz.iml" filepath="$PROJECT_DIR$/veloz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/veloz.iml" filepath="$PROJECT_DIR$/.idea/veloz.iml" />
     </modules>
   </component>
 </project>
