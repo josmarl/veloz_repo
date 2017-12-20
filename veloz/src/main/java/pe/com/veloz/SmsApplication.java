@@ -10,17 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -99,8 +98,8 @@ public class SmsApplication {
 
     }
 
-    @Configuration
-    @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
+    @Configurable
+    @EnableWebSecurity
     protected static class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         @Override
@@ -109,7 +108,7 @@ public class SmsApplication {
             http
                     .httpBasic().and()
                     .authorizeRequests()
-                    .antMatchers("/index.html", "/login.html", "/", "/bower_components/**").permitAll()
+                    .antMatchers("/index.html", "/login.html", "/", "/bower_components/**", "/css/**", "/js/**", "/img/**").permitAll()
                     .antMatchers("/producto/**").hasRole(Roles.USER.getRoleSubString())
                     .antMatchers("/usuario/**").hasRole(Roles.USER.getRoleSubString())
                     .antMatchers("/venta/**").hasRole(Roles.USER.getRoleSubString())
@@ -117,7 +116,7 @@ public class SmsApplication {
                     .antMatchers("/reportes/**").hasRole(Roles.USER.getRoleSubString())
                     .antMatchers("/app/**").hasRole(Roles.USER.getRoleSubString())
                     //.antMatchers("/app/**").permitAll()
-                    .anyRequest().fullyAuthenticated().and().formLogin().loginPage("/login.html")
+                    //.anyRequest().fullyAuthenticated().and().formLogin().loginPage("/login.html")
                     .and()
                     .csrf()
                     .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()).disable();

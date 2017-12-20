@@ -72,19 +72,15 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         var existe = 0;
         var nExiste = 0;
 
-        console.log($scope.detalles.length);
-        console.log($scope.detalles.size);
 
         if ($scope.detalles.length == 0 || $scope.detalles.size == 0) {
             $scope.detalles.push(detalle);
         } else {
             for (var i = 0; i < $scope.detalles.length; i++) {
                 if ($scope.detalles[i].producto == detalle.producto) {
-
                     $scope.detalles[i].cantidad = parseInt($scope.detalles[i].cantidad) + parseInt(detalle.cantidad);
                     existe = parseInt(existe) + 1;
                 } else {
-
                     nExiste = parseInt(nExiste) + 1;
                 }
             }
@@ -178,7 +174,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             console.log(err);
         });
 
-
+        $scope.cliente = {};
+        $scope.cliente.originalObject = {};
     };
 
     $scope.deleteDetalle = function (detalle) {
@@ -240,6 +237,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
     $scope.guardarVenta = function () {
 
+        console.log($scope.cliente);
+
         if ($scope.cliente.originalObject == undefined
             || $scope.cliente.originalObject.id == undefined
             || $scope.cliente.originalObject.razonSocial != $("#ex2_value").val()) {
@@ -292,7 +291,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
     $scope.clearVenta = function () {
         $scope.tipoComprobante = {};
-        $scope.cliente.originalObject = '';
+        $scope.cliente = {};
+        $scope.cliente.originalObject = {};
         $scope.prod.originalObject = '';
         $scope.detalles = [];
         $scope.detallesTemp = [];
