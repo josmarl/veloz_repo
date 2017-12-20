@@ -111,22 +111,20 @@ app.controller('almacenController', ['$scope', '$rootScope', '$http', '$location
 
     $scope.guardarAlmacen = function () {
 
-        console.log($scope.cliente.originalObject);
+        var cli = {};
 
-        if ($scope.cliente.originalObject == undefined
-            || $scope.cliente.originalObject.id == undefined
-            || $scope.cliente.originalObject.razonSocial != $("#ex4_value").val()) {
-
-            $scope.cliente.originalObject.id = undefined;
-            $scope.cliente.originalObject.razonSocial = $("#ex4_value").val();
-
+        if ($scope.cliente == null) {
+            cli.id = undefined;
+            cli.razonSocial = $("#ex4_value").val();
+        } else {
+            cli = $scope.cliente.originalObject;
         }
 
 
         $http({
             url: SERVER + '/almacen/save',
             data: {
-                cliente: $scope.cliente.originalObject,
+                cliente: cli,
                 nroDoc: $scope.nroDoc,
                 detalles: $scope.detalles
             },

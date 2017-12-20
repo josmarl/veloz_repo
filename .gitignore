@@ -4,3 +4,17 @@
 /printerJosmarl/dist/
 /printTest/nbproject/private/
 /printTest/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

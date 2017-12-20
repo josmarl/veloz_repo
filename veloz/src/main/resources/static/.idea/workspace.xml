@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="769f4576-0f4a-45ec-bfa7-5a72ae8d92c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_4_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_beans_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_context_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_core_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_test_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_web_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_expression_5_0_1_BUILD_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_tx_5_0_1_BUILD_SNAPSHOT.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/venta.js" afterPath="$PROJECT_DIR$/js/controllers/venta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../veloz.iml" afterPath="$PROJECT_DIR$/../../../../veloz.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_aop_5_0_1_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/../../../../.idea/libraries/Maven__org_springframework_spring_jcl_5_0_2_BUILD_SNAPSHOT.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,14 +47,14 @@
       <file leaf-file-name="venta.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="340">
+              <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -86,14 +66,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="venta.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="venta.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="309" column="0" lean-forward="false" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
+            <state relative-caret-position="725">
+              <caret line="262" column="22" lean-forward="true" selection-start-line="262" selection-start-column="22" selection-end-line="262" selection-end-column="22" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1513284608778" expanded="true" signature="9626:9655" ph="{...}" />
+                <marker date="1513345265178" expanded="true" signature="9633:9662" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -121,10 +101,10 @@
       <find>clientes</find>
       <find>getClientes</find>
       <find>guardarVenta</find>
-      <find>$scope.cliente</find>
       <find>remove</find>
       <find>console.log</find>
       <find>console.lo</find>
+      <find>$scope.cliente</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,7 +139,6 @@
         <option value="$PROJECT_DIR$/views/cliente/cliente_edit.html" />
         <option value="$PROJECT_DIR$/views/cliente/cliente.html" />
         <option value="$PROJECT_DIR$/js/controllers/cliente.js" />
-        <option value="$PROJECT_DIR$/js/controllers/venta.js" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/views/usuario/usuario.html" />
         <option value="$PROJECT_DIR$/views/reportes/almacen_reporte.html" />
@@ -170,6 +149,7 @@
         <option value="$PROJECT_DIR$/views/venta/venta.html" />
         <option value="$PROJECT_DIR$/views/almacen/almacen_form.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/controllers/venta.js" />
       </list>
     </option>
   </component>
@@ -201,7 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -225,12 +204,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="venta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,12 +437,13 @@
       <workItem from="1502142846324" duration="10000" />
       <workItem from="1503357651836" duration="56000" />
       <workItem from="1509052842855" duration="47000" />
-      <workItem from="1513283813207" duration="1058000" />
+      <workItem from="1513283813207" duration="1250000" />
+      <workItem from="1513344626935" duration="1227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231237000" />
+    <option name="totallyTimeSpent" value="232656000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -743,14 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/almacen/almacen.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -792,23 +797,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="309" column="0" lean-forward="false" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1513284608778" expanded="true" signature="9626:9655" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="30" column="10" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
           <folding>
             <marker date="1513284630391" expanded="true" signature="46:110" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/venta/venta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/venta.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="262" column="22" lean-forward="true" selection-start-line="262" selection-start-column="22" selection-end-line="262" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1513345265178" expanded="true" signature="9633:9662" ph="{...}" />
           </folding>
         </state>
       </provider>
