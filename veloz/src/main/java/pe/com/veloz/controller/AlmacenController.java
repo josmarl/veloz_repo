@@ -62,8 +62,6 @@ public class AlmacenController {
     @RequestMapping(value = "/save", method = {RequestMethod.POST})
     public void saveAlmacen(@RequestBody AlmacenDTO data) {
 
-        System.out.println("josmarl " + data.toString());
-
         List<AlmacenConsolidado> listAlmacenConsolidado = almacenConsolidadoService.findAll();
         List<ProductoAlmacenDTO> listaAlmacenTemp = data.getDetalles();
         List<ProductoAlmacenDTO> listAlmacenToDelete = new ArrayList<>();
