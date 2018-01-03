@@ -8,16 +8,23 @@ package pe.com.veloz.domain;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import javax.persistence.*;
 
 /**
  *
  * @author server-itecs
  */
+@Entity
 public class Usuario implements Serializable, Cloneable, UserDetails {
 
     private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String username;
     private String password;
@@ -30,10 +37,15 @@ public class Usuario implements Serializable, Cloneable, UserDetails {
 
 
     /* Spring Security fields*/
+    @ElementCollection
     private List<Role> authorities;
+    @JsonIgnore
     private boolean accountNonExpired = true;
+    @JsonIgnore
     private boolean accountNonLocked = true;
+    @JsonIgnore
     private boolean credentialsNonExpired = true;
+    @JsonIgnore
     private boolean enabled = true;
 
     public Usuario(Long id, String username, String password, Long persona, Persona personaObj, String estado, Long empresa, Empresa empresaObj, Long authoritie, List<Role> authorities) {
