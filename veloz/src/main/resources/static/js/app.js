@@ -10,7 +10,7 @@ var app = angular.module('app', [
 
 // var SERVER = 'http://192.168.152.11:8083';
 // var SERVER_IP = '192.168.152.11';
-var SERVER = 'http://localhost:8083';
+var SERVER = 'http://localhost:8088';
 var SERVER_IP = 'localhost';
 
 var ACTIVE = '1';

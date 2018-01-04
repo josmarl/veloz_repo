@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +43,10 @@ public class UsuarioController {
 
     @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})
     public void saveUsuario(@RequestBody UsuarioDTO data) {
+        data.getUsuario().setAccountNonExpired(true);
+        data.getUsuario().setAccountNonLocked(true);
+        data.getUsuario().setCredentialsNonExpired(true);
+        data.getUsuario().setEnabled(true);
 
         usuarioService.saveUsuario(data.getUsuario());
 

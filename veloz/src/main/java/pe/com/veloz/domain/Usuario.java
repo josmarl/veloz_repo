@@ -8,8 +8,12 @@ package pe.com.veloz.domain;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import javax.persistence.*;
 
 /**
  *

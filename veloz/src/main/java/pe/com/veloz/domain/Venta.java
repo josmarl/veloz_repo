@@ -5,17 +5,19 @@
  */
 package pe.com.veloz.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- *
  * @author server-itecs
  */
 public class Venta implements Serializable, Cloneable {
 
     private static final long serialVersionUID = 1L;
-
     private Long id;
     private Long cliente;
     private Cliente clienteObj;
