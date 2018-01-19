@@ -36,7 +36,7 @@ import pe.com.veloz.service.UsuarioService;
 
 @SpringBootApplication
 @RestController
-public class SmsApplication extends SpringBootServletInitializer {
+public class SmsApplication {
 
     protected final Log logger = LogFactory.getLog(getClass());
 
@@ -61,11 +61,6 @@ public class SmsApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) throws IOException {
         SpringApplication.run(SmsApplication.class, args);
-    }
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(SmsApplication.class);
     }
 
     @Autowired
