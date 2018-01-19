@@ -17,12 +17,9 @@ import javax.persistence.Id;
  *
  * @author eddy
  */
-@Entity
 public class Producto implements Serializable, Cloneable {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nombre;
     private String descripcion;

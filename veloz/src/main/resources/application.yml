@@ -1,46 +1,13 @@
 spring:
   profiles: dev
   datasource:
-    url: jdbc:h2:file:./test
-    username: root
-    password:
-    driver-class-name: org.h2.Driver
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create
-  h2:
-    console:
-      enabled: true
-      path: /h2
-server:
-  port: 8085
-
-runtime: java
-env: flex
-
-handlers:
-- url: /.*
-  script: this field is required, but ignored
-
----
-
-spring:
-  profiles: dev-mysql
-  datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/veloz
     username: root
     password:
     platform: all
   jpa:
-    hibernate:
-      ddl-auto: update
     show-sql: true
-  data:
-    jpa:
-      repositories:
-        enabled: true
 server:
   port: 8088
 
@@ -48,14 +15,16 @@ server:
 
 spring:
   profiles: test
-  application:
-    name: test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/veloz
+    username: root
+    password: 123456
+    platform: all
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: create
 server:
-  port: 8086
+  port: 80
 
 
 

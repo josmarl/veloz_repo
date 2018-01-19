@@ -15,6 +15,8 @@ import org.springframework.beans.factory.annotation.Configurable;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -34,7 +36,7 @@ import pe.com.veloz.service.UsuarioService;
 
 @SpringBootApplication
 @RestController
-public class SmsApplication {
+public class SmsApplication extends SpringBootServletInitializer {
 
     protected final Log logger = LogFactory.getLog(getClass());
 
@@ -59,6 +61,11 @@ public class SmsApplication {
 
     public static void main(String[] args) throws IOException {
         SpringApplication.run(SmsApplication.class, args);
+    }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(SmsApplication.class);
     }
 
     @Autowired
@@ -110,12 +117,13 @@ public class SmsApplication {
                     .httpBasic().and()
                     .authorizeRequests()
                     .antMatchers("/index.html", "/login.html", "/", "/bower_components/**", "/css/**", "/js/**", "/img/**").permitAll()
-                    .antMatchers("/producto/**").hasRole(Roles.USER.getRoleSubString())
-                    .antMatchers("/usuario/**").hasRole(Roles.USER.getRoleSubString())
-                    .antMatchers("/venta/**").hasRole(Roles.USER.getRoleSubString())
-                    .antMatchers("/cliente/**").hasRole(Roles.USER.getRoleSubString())
-                    .antMatchers("/reportes/**").hasRole(Roles.USER.getRoleSubString())
-                    .antMatchers("/app/**").hasRole(Roles.USER.getRoleSubString())
+                    .antMatchers("/producto/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
+                    .antMatchers("/usuario/**").hasAnyRole(Roles.ADMIN.getRoleSubString())
+                    .antMatchers("/venta/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
+                    .antMatchers("/cliente/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
+                    .antMatchers("/almacen/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
+                    .antMatchers("/reportes/**").hasAnyRole(Roles.ADMIN.getRoleSubString())
+                    .antMatchers("/app/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
                     //.antMatchers("/app/**").permitAll()
                     //.anyRequest().fullyAuthenticated().and().formLogin().loginPage("/login.html")
                     .and()

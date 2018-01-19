@@ -15,12 +15,9 @@ import java.io.Serializable;
  *
  * @author josmarl
  */
-@Entity
 public class TipoComprobante implements Serializable, Cloneable {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nombre;
     private String codigo;

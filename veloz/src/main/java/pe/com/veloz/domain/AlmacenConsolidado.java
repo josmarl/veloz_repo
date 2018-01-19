@@ -15,12 +15,9 @@ import java.io.Serializable;
  *
  * @author josmarl
  */
-@Entity
 public class AlmacenConsolidado implements Serializable, Cloneable {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private Long producto;
     private Producto productoObj;

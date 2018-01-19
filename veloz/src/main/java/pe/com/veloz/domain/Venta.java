@@ -13,15 +13,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- *
  * @author server-itecs
  */
-@Entity
 public class Venta implements Serializable, Cloneable {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private Long cliente;
     private Cliente clienteObj;

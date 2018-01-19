@@ -17,12 +17,9 @@ import javax.persistence.Id;
  *
  * @author server-itecs
  */
-@Entity
 public class Role implements Serializable, Cloneable, GrantedAuthority {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
     private Usuario usuarioObj;

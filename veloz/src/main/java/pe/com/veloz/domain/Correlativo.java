@@ -15,11 +15,8 @@ import java.io.Serializable;
  *
  * @author josmarl
  */
-@Entity
 public class Correlativo implements Serializable, Cloneable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private int serie;
     private int correlativo;

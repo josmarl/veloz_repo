@@ -1,4 +1,10 @@
-/veloz/target/
+/veloz/target/classes
+/veloz/target/generated-sources
+/veloz/target/generated-test-sources
+/veloz/target/maven-archiver
+/veloz/target/maven-status
+/veloz/target/test-classes
+/veloz/target/veloz-1.0
 /printerJosmarl/nbproject/private/
 /printerJosmarl/build/
 /printerJosmarl/dist/
