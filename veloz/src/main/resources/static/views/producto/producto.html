@@ -1,8 +1,15 @@
 <table class="table">
 
     <h3>{{headingTitle}}</h3>
-    <a href="#/producto/new/" class="btn btn-primary btn-embossed"><i class="glyphicon glyphicon-plus"></i>&nbsp;Nuevo
-        Producto</a>
+    <div class="row">
+        <div class="col-md-4">
+            <a href="#/producto/new/" class="btn btn-primary btn-embossed"><i class="glyphicon glyphicon-plus"></i>&nbsp;Nuevo
+                Producto</a>
+        </div>
+        <div class="col-md-8">
+            <input type="text" ng-model="productSearch" class="form-control" placeholder="Buscar Productos...">
+        </div>
+    </div>
     <thead>
     <tr>
         <th>Código</th>
@@ -21,7 +28,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="pr in productos">
+    <tr ng-repeat="pr in productos | filter :productSearch">
         <td>{{pr.code}}</td>
         <td>{{pr.nombre}}</td>
         <td>{{pr.marca}}</td>
