@@ -15,14 +15,16 @@ server:
 
 spring:
   profiles: test
-  application:
-    name: test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/veloz
+    username: root
+    password: 123456
+    platform: all
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: create
 server:
-  port: 8086
+  port: 8088
 
 
 

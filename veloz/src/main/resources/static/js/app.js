@@ -7,11 +7,11 @@ var app = angular.module('app', [
     'angucomplete'
 ]);
 
+var SERVER = 'http://138.68.255.126:8088';
+var SERVER_IP = '138.68.255.126';
 
-// var SERVER = 'http://192.168.8.101:8088';
-// var SERVER_IP = '192.168.8.101';
-var SERVER = 'http://localhost:8088';
-var SERVER_IP = 'localhost';
+//var SERVER = 'http://localhost:8088';
+//var SERVER_IP = 'localhost';
 
 var ACTIVE = '1';
 var INACTIVE = '0';
