@@ -6,19 +6,17 @@
 package pe.com.veloz.controller;
 
 import java.util.List;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import pe.com.veloz.domain.Producto;
 import pe.com.veloz.service.ProductoService;
 
 /**
- *
  * @author eddy
  */
 @RestController
@@ -53,6 +51,24 @@ public class ProductoController {
     @RequestMapping(value = "/find/{id}", method = {RequestMethod.GET})
     public Producto findProductoId(@PathVariable Long id) {
         return productoService.findProductoById(id);
+    }
+
+    @RequestMapping(value = "/find/name/{nombre}/{marca}", method = {RequestMethod.GET})
+    public ResponseEntity<Boolean> validarExistsNombreMarcaProducto(@PathVariable String nombre, @PathVariable String marca) {
+        System.out.println(nombre);
+        System.out.println(marca);
+        boolean exists = false;
+        Producto producto = productoService.findProductoByNombreMarca(nombre, marca);
+        exists = producto != null;
+        return new ResponseEntity<Boolean>(exists, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/find/code/{code}", method = {RequestMethod.GET})
+    public ResponseEntity<Boolean> validarExistsCodeProducto(@PathVariable String code) {
+        boolean exists = false;
+        Producto producto = productoService.findProductoByCode(code);
+        exists = producto != null;
+        return new ResponseEntity<Boolean>(exists, HttpStatus.OK);
     }
 
 }

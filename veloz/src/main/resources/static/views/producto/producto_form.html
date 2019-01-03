@@ -1,13 +1,22 @@
 <div class="container">
     <h3>Registro de Productos</h3>
     <form method="post" ng-submit="saveProducto()">
-        <div class="form-group">
-            <label>Producto</label>
-            <input type="text" ng-model="producto.nombre" class="form-control" required/>
-        </div>
-        <div class="form-group">
-            <label>Código del Producto</label>
-            <input type="text" ng-model="producto.code" class="form-control" required/>
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label>Producto</label>
+                <input type="text" ng-model="producto.nombre" class="form-control"
+                       required/>
+            </div>
+            <div class="col-md-3">
+                <label>Marca</label>
+                <input type="text" class="form-control" ng-keyup="validarExitsProductoNombreCode()"
+                       ng-model="producto.marca">
+            </div>
+            <div class="col-md-3">
+                <label>Código del Producto</label>
+                <input type="text" ng-model="producto.code" ng-keyup="validarExitsProductoCode()" class="form-control"
+                       required/>
+            </div>
         </div>
         <div class="form-group">
             <label>Descripción</label>
@@ -40,17 +49,14 @@
                 <label>Precio de Venta</label>
                 <input type="text" class="form-control" ng-model="producto.precioVenta">
             </div>
-            <div class="col-md-4">
-                <label>Marca</label>
-                <input type="text" class="form-control" ng-model="producto.marca">
-            </div>
         </div>
         <div class="form-group">
             <label>Estado</label>
             <input type="checkbox" data-toggle="checkbox" ng-model="producto.estadoBoolean"/>
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-floppy-disk"></i>&nbsp;Guardar
+            <button type="submit" class="btn btn-success" ng-disabled="!estadoForm"><i
+                    class="glyphicon glyphicon-floppy-disk"></i>&nbsp;Guardar
             </button>
             <a href="#/producto" class="btn btn-primary"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancelar</a>
         </div>

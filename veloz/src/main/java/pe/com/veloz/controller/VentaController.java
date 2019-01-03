@@ -105,11 +105,27 @@ public class VentaController {
                 detalle.setPrecioUnitario(detalle.getProducto().getPrecioUnit());
             }
             if (detalle.getCantidad() >= Constants.DOCENA && detalle.getCantidad() < Constants.CINCUENTA) {
-                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioDocena() * detalle.getCantidad()));
+                int multiplo = detalle.getCantidad() / Constants.DOCENA;
+                int resto = detalle.getCantidad() % Constants.DOCENA;
+
+                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioDocena() * multiplo));
+
+                if (resto > 0) {
+                    detalle.setImporte(AppUtils.redondear(detalle.getImporte() + detalle.getProducto().getPrecioUnit() * resto));
+                }
+
                 detalle.setPrecioUnitario(detalle.getProducto().getPrecioDocena());
             }
             if (detalle.getCantidad() >= Constants.CINCUENTA && detalle.getCantidad() < Constants.CIENTO) {
-                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioCincuenta() * detalle.getCantidad()));
+                int multiplo = detalle.getCantidad() / Constants.CINCUENTA;
+                int resto = detalle.getCantidad() % Constants.CINCUENTA;
+
+                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioCincuenta() * multiplo));
+
+                if (resto > 0) {
+
+                }
+
                 detalle.setPrecioUnitario(detalle.getProducto().getPrecioCincuenta());
             }
             if (detalle.getCantidad() >= Constants.CIENTO) {

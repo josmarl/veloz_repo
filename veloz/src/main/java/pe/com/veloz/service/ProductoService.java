@@ -6,10 +6,10 @@
 package pe.com.veloz.service;
 
 import java.util.List;
+
 import pe.com.veloz.domain.Producto;
 
 /**
- *
  * @author eddy
  */
 public interface ProductoService {
@@ -27,6 +27,8 @@ public interface ProductoService {
     Producto findProductoByMarca(String marca);
 
     Producto findProductoByCode(String code);
+
+    Producto findProductoByNombreMarca(String nombre, String marca);
 
     void saveProducto(Producto producto);
 }

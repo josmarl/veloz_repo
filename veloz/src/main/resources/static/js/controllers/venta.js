@@ -69,15 +69,17 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         detalle.cantidad = $scope.cantidad;
         detalle.precioUnitario = 0;
 
+        console.log(detalle);
+
         var existe = 0;
         var nExiste = 0;
 
 
-        if ($scope.detalles.length == 0 || $scope.detalles.size == 0) {
+        if ($scope.detalles.length === 0 || $scope.detalles.size === 0) {
             $scope.detalles.push(detalle);
         } else {
             for (var i = 0; i < $scope.detalles.length; i++) {
-                if ($scope.detalles[i].producto == detalle.producto) {
+                if ($scope.detalles[i].producto === detalle.producto) {
                     $scope.detalles[i].cantidad = parseInt($scope.detalles[i].cantidad) + parseInt(detalle.cantidad);
                     existe = parseInt(existe) + 1;
                 } else {
@@ -86,7 +88,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             }
         }
 
-        if (existe == 0) {
+        if (existe === 0) {
             if (nExiste >= 1) {
                 $scope.detalles.push(detalle);
             }
@@ -94,7 +96,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
 
         for (var j = 0; j < $scope.detalles.length; j++) {
-            if ($scope.detalles[j].producto == detalle.producto) {
+            if ($scope.detalles[j].producto === detalle.producto) {
 
                 detalleTemp.producto = $scope.prod.originalObject;
                 detalleTemp.cantidad = $scope.detalles[j].cantidad;
@@ -115,7 +117,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             }
         }).success(function (data) {
 
-            if (data.object == false) {
+            if (data.object === false) {
                 for (var j = 0; j < $scope.detalles.length; j++) {
                     if ($scope.detalles[j].producto == detalle.producto) {
 

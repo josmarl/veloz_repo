@@ -6,13 +6,13 @@
 package pe.com.veloz.service;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.com.veloz.domain.Producto;
 import pe.com.veloz.mapper.ProductoMapper;
 
 /**
- *
  * @author eddy
  */
 @Service("productoService")
@@ -59,6 +59,11 @@ public class ProductoServicioImpl implements ProductoService {
     @Override
     public Producto findProductoByCode(String code) {
         return productoMapper.findProductoByCode(code);
+    }
+
+    @Override
+    public Producto findProductoByNombreMarca(String nombre, String marca) {
+        return productoMapper.findProductoByNombreMarca(nombre, marca);
     }
 
 }
