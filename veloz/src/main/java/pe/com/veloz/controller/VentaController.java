@@ -155,8 +155,8 @@ public class VentaController {
             }
 
             if (data.getTipoComprobante().getCodigo().equals(TipoComprobanteEnum.TIPO_FACTURA.getCodigo())) {
-                igv = total * Constants.IGV_ACTUAL;
-                baseImponible = total - igv;
+                baseImponible = total / 1.18;
+                igv = total - baseImponible;
             }
         }
 

@@ -36,6 +36,7 @@
             <th>#</th>
             <th>Cant.</th>
             <th>Producto</th>
+            <th>Descripción</th>
             <th>P.U</th>
             <th>Importe</th>
             <th>Elim.</th>
@@ -47,6 +48,7 @@
             <td>{{$index +1}}</td>
             <td>{{det.cantidad}}</td>
             <td>{{det.producto.nombre}}</td>
+            <td>{{det.producto.descripcion}}</td>
             <td>S/.{{det.precioUnitario}}</td>
             <td>S/.{{det.importe}}</td>
             <td>
