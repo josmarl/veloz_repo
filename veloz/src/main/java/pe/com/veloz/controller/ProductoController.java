@@ -55,8 +55,6 @@ public class ProductoController {
 
     @RequestMapping(value = "/find/name/{nombre}/{marca}", method = {RequestMethod.GET})
     public ResponseEntity<Boolean> validarExistsNombreMarcaProducto(@PathVariable String nombre, @PathVariable String marca) {
-        System.out.println(nombre);
-        System.out.println(marca);
         boolean exists = false;
         Producto producto = productoService.findProductoByNombreMarca(nombre, marca);
         exists = producto != null;

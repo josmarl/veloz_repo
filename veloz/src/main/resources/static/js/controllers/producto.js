@@ -116,7 +116,7 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
                     toastr.error('El producto ya ha sido registrado!', 'Error!');
                     $scope.estadoForm = false;
                 } else {
-                    toastr.success('El código está disponible!', 'Mensaje!');
+                    toastr.success('El producto está disponible!', 'Mensaje!');
                     $scope.estadoForm = true;
                 }
             }).error(function (err) {

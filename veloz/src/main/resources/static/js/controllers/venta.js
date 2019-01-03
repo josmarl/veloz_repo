@@ -69,8 +69,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         detalle.cantidad = $scope.cantidad;
         detalle.precioUnitario = 0;
 
-        console.log(detalle);
-
         var existe = 0;
         var nExiste = 0;
 
