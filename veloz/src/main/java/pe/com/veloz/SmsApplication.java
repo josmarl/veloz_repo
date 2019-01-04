@@ -117,6 +117,7 @@ public class SmsApplication {
                     .antMatchers("/venta/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
                     .antMatchers("/cliente/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
                     .antMatchers("/almacen/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
+                    .antMatchers("/medida/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
                     .antMatchers("/reportes/**").hasAnyRole(Roles.ADMIN.getRoleSubString())
                     .antMatchers("/app/**").hasAnyRole(Roles.USER.getRoleSubString(), Roles.ADMIN.getRoleSubString())
                     //.antMatchers("/app/**").permitAll()

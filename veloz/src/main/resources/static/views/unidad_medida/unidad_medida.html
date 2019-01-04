@@ -1,0 +1,37 @@
+<div class="container">
+    <h3>{{headingTitle}}</h3>
+    <a href="#/medida/new/" class="btn btn-primary btn-embossed"><i class="glyphicon glyphicon-plus"></i>&nbsp;Nueva
+        Unidad de Medida</a>
+    <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Descripcion</th>
+            <th>Opciones</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr ng-repeat="medida in medidas">
+            <td>{{$index+1}}</td>
+            <td>{{medida.nombre}}</td>
+            <td>{{medida.cantidad}}</td>
+            <td>{{medida.descripcion}}</td>
+            <td>
+                <div class="btn-group">
+                    <a ng-href="#/cliente/edit/{{cliente.id}}" class="btn btn-sm btn-success btn-primary"
+                       data-toggle="tooltip" title="Editar Cliente">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                    <a ng-click="confirmDeleteModalCliente(cliente.id)" class="btn btn-sm btn-danger btn-primary"
+                       data-toggle="tooltip" title="Eliminar Cliente">
+                        <span class="glyphicon glyphicon-trash"></span></a>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
