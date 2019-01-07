@@ -9,16 +9,18 @@ public class UnidadMedida implements Serializable, Cloneable {
     private int cantidad;
     private String descripcion;
     private Long estado;
+    private boolean estadoBoolean;
 
     public UnidadMedida() {
     }
 
-    public UnidadMedida(Long id, String nombre, int cantidad, String descripcion, Long estado) {
+    public UnidadMedida(Long id, String nombre, int cantidad, String descripcion, Long estado, boolean estadoBoolean) {
         this.id = id;
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.descripcion = descripcion;
         this.estado = estado;
+        this.estadoBoolean = estadoBoolean;
     }
 
     public Long getId() {
@@ -59,5 +61,13 @@ public class UnidadMedida implements Serializable, Cloneable {
 
     public void setEstado(Long estado) {
         this.estado = estado;
+    }
+
+    public boolean isEstadoBoolean() {
+        return estadoBoolean;
+    }
+
+    public void setEstadoBoolean(boolean estadoBoolean) {
+        this.estadoBoolean = estadoBoolean;
     }
 }

@@ -8,4 +8,6 @@ public interface UnidadMedidaService {
 
     public List<UnidadMedida> listaUnidadMedida();
 
+    public void saveUnidadMedida(UnidadMedida unidadMedida);
+
 }
