@@ -11,6 +11,9 @@ public interface UnidadMedidaMapper {
     @Select("select id,nombre,cantidad,estado,descripcion from unidad_medida")
     List<UnidadMedida> findAllUnidadesMedida();
 
+    @Select("select id,nombre,cantidad,estado,descripcion from unidad_medida where estado=1")
+    List<UnidadMedida> findUnidadMedidaActive();
+
     @Insert("insert into unidad_medida(nombre,cantidad,descripcion,estado) " +
             "values (#{medida.nombre}," +
             "#{medida.cantidad}," +

@@ -6,6 +6,7 @@
 package pe.com.veloz.domain;
 
 import java.io.Serializable;
+
 import pe.com.veloz.utils.AppUtils;
 
 import javax.persistence.Entity;
@@ -14,7 +15,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- *
  * @author eddy
  */
 public class Producto implements Serializable, Cloneable {
@@ -23,10 +23,6 @@ public class Producto implements Serializable, Cloneable {
     private Long id;
     private String nombre;
     private String descripcion;
-    private double precioUnit;
-    private double precioDocena;
-    private double precioCiento;
-    private double precioCincuenta;
     private double precioCompra;
     private double precioVenta;
     private Long estado;
@@ -56,38 +52,6 @@ public class Producto implements Serializable, Cloneable {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    public double getPrecioUnit() {
-        return precioUnit;
-    }
-
-    public void setPrecioUnit(double precioUnit) {
-        this.precioUnit = precioUnit;
-    }
-
-    public double getPrecioDocena() {
-        return precioDocena;
-    }
-
-    public void setPrecioDocena(double precioDocena) {
-        this.precioDocena = precioDocena;
-    }
-
-    public double getPrecioCiento() {
-        return precioCiento;
-    }
-
-    public void setPrecioCiento(double precioCiento) {
-        this.precioCiento = precioCiento;
-    }
-
-    public double getPrecioCincuenta() {
-        return precioCincuenta;
-    }
-
-    public void setPrecioCincuenta(double precioCincuenta) {
-        this.precioCincuenta = precioCincuenta;
     }
 
     public double getPrecioCompra() {
@@ -140,7 +104,16 @@ public class Producto implements Serializable, Cloneable {
 
     @Override
     public String toString() {
-        return "Producto{" + "id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", precioUnit=" + precioUnit + ", precioDocena=" + precioDocena + ", precioCiento=" + precioCiento + ", precioCincuenta=" + precioCincuenta + ", precioCompra=" + precioCompra + ", precioVenta=" + precioVenta + ", estado=" + estado + ", estadoBoolean=" + estadoBoolean + ", marca=" + marca + ", code=" + code + '}';
+        return "Producto{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", precioCompra=" + precioCompra +
+                ", precioVenta=" + precioVenta +
+                ", estado=" + estado +
+                ", estadoBoolean=" + estadoBoolean +
+                ", marca='" + marca + '\'' +
+                ", code='" + code + '\'' +
+                '}';
     }
-
 }

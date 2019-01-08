@@ -14,7 +14,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.com.veloz.domain.Producto;
+import pe.com.veloz.domain.UnidadMedida;
 import pe.com.veloz.service.ProductoService;
+import pe.com.veloz.service.UnidadMedidaService;
 
 /**
  * @author eddy
@@ -27,6 +29,8 @@ public class ProductoController {
 
     @Autowired
     private ProductoService productoService;
+    @Autowired
+    private UnidadMedidaService unidadMedidaService;
 
     @RequestMapping(value = "/all", method = RequestMethod.GET)
     public List<Producto> allProductos() {
@@ -67,6 +71,11 @@ public class ProductoController {
         Producto producto = productoService.findProductoByCode(code);
         exists = producto != null;
         return new ResponseEntity<Boolean>(exists, HttpStatus.OK);
+    }
+
+    @GetMapping("/medida/find/active")
+    public List<UnidadMedida> listUnidadMedidaActive() {
+        return unidadMedidaService.findUnidadMedidaActive();
     }
 
 }

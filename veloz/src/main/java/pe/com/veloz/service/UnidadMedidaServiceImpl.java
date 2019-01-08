@@ -19,6 +19,11 @@ public class UnidadMedidaServiceImpl implements UnidadMedidaService {
     }
 
     @Override
+    public List<UnidadMedida> findUnidadMedidaActive() {
+        return unidadMedidaMapper.findUnidadMedidaActive();
+    }
+
+    @Override
     public void saveUnidadMedida(UnidadMedida unidadMedida) {
         unidadMedidaMapper.saveUnidadMedida(unidadMedida);
     }

@@ -10,24 +10,6 @@
             <input type="text" class="form-control" ng-model="producto.descripcion"/>
         </div>
         <div class="row form-group">
-            <div class="col-md-3">
-                <label>Precio Unitario</label>
-                <input type="text" class="form-control" ng-model="producto.precioUnit"/>
-            </div>
-            <div class="col-md-3">
-                <label>Precio Docena</label>
-                <input type="text" class="form-control" ng-model="producto.precioDocena"/>
-            </div>
-            <div class="col-md-3">
-                <label>Precio Cincuenta</label>
-                <input type="text" class="form-control" ng-model="producto.precioCincuenta"/>
-            </div>
-            <div class="col-md-3">
-                <label>Precio Ciento</label>
-                <input type="text" class="form-control" ng-model="producto.precioCiento"/>
-            </div>
-        </div>
-        <div class="row form-group">
             <div class="col-md-4">
                 <label>Precio de Compra</label>
                 <input type="text" class="form-control" ng-model="producto.precioCompra">
@@ -42,8 +24,11 @@
             </div>
         </div>
         <div class="form-group">
-            <label>Estado</label>
-            <input type="checkbox" data-toggle="checkbox" ng-model="producto.estadoBoolean"/>
+            <label class="checkbox" for="productoCheckbox">
+                <input type="checkbox" data-toggle="checkbox" id="productoCheckbox"
+                       ng-model="producto.estadoBoolean">
+                Estado
+            </label>
         </div>
 
         <div class="form-group">
@@ -53,4 +38,5 @@
         </div>
     </form>
 </div>
+<script src="bower_components/flat-ui/js/radiocheck.js"></script>
 <script src="bower_components/flat-ui/docs/assets/js/application.js"></script>

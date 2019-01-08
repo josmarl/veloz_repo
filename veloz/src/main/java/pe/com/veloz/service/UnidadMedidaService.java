@@ -8,6 +8,8 @@ public interface UnidadMedidaService {
 
     public List<UnidadMedida> listaUnidadMedida();
 
+    public List<UnidadMedida> findUnidadMedidaActive();
+
     public void saveUnidadMedida(UnidadMedida unidadMedida);
 
     public UnidadMedida findById(Long id);

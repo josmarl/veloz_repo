@@ -10,9 +10,11 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
         $scope.producto = {};
         $scope.idProducto = $routeParams.id;
         $scope.estadoForm = true;
+        $scope.medidas = [];
 
         $scope.initialize = function () {
             $scope.loadData();
+            $scope.listMedidas();
             if ($scope.idProducto) {
                 $scope.findProducto();
             }
@@ -125,7 +127,6 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
         };
 
         $scope.validarExitsProductoCode = function () {
-            console.log($scope.producto.code);
             $http({
                 url: SERVER + "/producto/find/code/" + $scope.producto.code,
                 method: "GET",
@@ -153,6 +154,17 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
             });
         };
 
+        $scope.listMedidas = function () {
+            $http({
+                url: SERVER + "/producto/medida/find/active",
+                method: "GET"
+            }).success(function (response) {
+                $scope.medidas = response;
+                console.log(response);
+            }).error(function (err) {
+                console.log(err);
+            });
+        };
 
         $scope.initialize();
 

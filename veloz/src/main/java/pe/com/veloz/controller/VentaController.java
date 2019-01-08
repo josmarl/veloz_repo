@@ -101,37 +101,37 @@ public class VentaController {
         for (ProductoVentaDTO detalle : data.getDetalles()) {
 
             if (detalle.getCantidad() >= Constants.UNITARIO && detalle.getCantidad() < Constants.DOCENA) {
-                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioUnit() * detalle.getCantidad()));
-                detalle.setPrecioUnitario(detalle.getProducto().getPrecioUnit());
+//                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioUnit() * detalle.getCantidad()));
+//                detalle.setPrecioUnitario(detalle.getProducto().getPrecioUnit());
             }
             if (detalle.getCantidad() >= Constants.DOCENA && detalle.getCantidad() < Constants.CINCUENTA) {
                 int multiplo = detalle.getCantidad() / Constants.DOCENA;
                 int resto = detalle.getCantidad() % Constants.DOCENA;
 
-                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioDocena() * multiplo));
+//                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioDocena() * multiplo));
 
                 if (resto > 0) {
-                    detalle.setImporte(AppUtils.redondear(detalle.getImporte() + detalle.getProducto().getPrecioUnit() * resto));
+//                    detalle.setImporte(AppUtils.redondear(detalle.getImporte() + detalle.getProducto().getPrecioUnit() * resto));
                 }
 
-                detalle.setPrecioUnitario(detalle.getProducto().getPrecioDocena());
+//                detalle.setPrecioUnitario(detalle.getProducto().getPrecioDocena());
             }
             if (detalle.getCantidad() >= Constants.CINCUENTA && detalle.getCantidad() < Constants.CIENTO) {
                 int multiplo = detalle.getCantidad() / Constants.CINCUENTA;
                 int resto = detalle.getCantidad() % Constants.CINCUENTA;
 
-                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioCincuenta() * multiplo));
+//                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioCincuenta() * multiplo));
 
                 if (resto > 0) {
 
                 }
 
-                detalle.setPrecioUnitario(detalle.getProducto().getPrecioCincuenta());
+//                detalle.setPrecioUnitario(detalle.getProducto().getPrecioCincuenta());
             }
-            if (detalle.getCantidad() >= Constants.CIENTO) {
-                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioCiento() * detalle.getCantidad()));
-                detalle.setPrecioUnitario(detalle.getProducto().getPrecioCiento());
-            }
+//            if (detalle.getCantidad() >= Constants.CIENTO) {
+//                detalle.setImporte(AppUtils.redondear(detalle.getProducto().getPrecioCiento() * detalle.getCantidad()));
+//                detalle.setPrecioUnitario(detalle.getProducto().getPrecioCiento());
+//            }
             detalles.add(detalle);
             total = total + detalle.getImporte();
         }
