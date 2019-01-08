@@ -27,4 +27,18 @@ public class UnidadMedidaController {
         return new ResponseEntity<UnidadMedida>(unidadMedida, HttpStatus.OK);
     }
 
+    @GetMapping("/find/{id}")
+    public UnidadMedida findById(@PathVariable Long id) {
+        return unidadMedidaService.findById(id);
+    }
+
+    @PutMapping("/edit")
+    public void editUnidadMedida(@RequestBody UnidadMedida data) {
+        unidadMedidaService.updateUnidadMedida(data);
+    }
+
+    @DeleteMapping("/remove/{id}")
+    public void removeMedida(@PathVariable Long id) {
+        unidadMedidaService.removeUnidadMedida(id);
+    }
 }

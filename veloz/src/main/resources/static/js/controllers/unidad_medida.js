@@ -29,7 +29,7 @@ app.controller('unidadMedidaController', ['$scope', '$rootScope', '$http', '$loc
     };
 
     $scope.saveMedida = function () {
-        if ($scope.medida.estadoBoolean == true) {
+        if ($scope.medida.estadoBoolean) {
             $scope.medida.estado = 1;
         } else {
             $scope.medida.estado = 0;
@@ -56,30 +56,55 @@ app.controller('unidadMedidaController', ['$scope', '$rootScope', '$http', '$loc
                 'Content-Type': 'application/json; charset=UTF-8'
             }
         }).success(function (response) {
-            $scope.unidadMedida = response;
+            $scope.medida = response;
+            if ($scope.medida.estado === 1) {
+                $scope.medida.estadoBoolean = true;
+            } else {
+                $scope.medida.estadoBoolean = false;
+            }
         }).error(function (err) {
             console.log(err);
         });
     };
 
-    $scope.editProducto = function () {
-        if ($scope.producto.estadoBoolean == true) {
-            $scope.producto.estado = 1;
+    $scope.editMedida = function () {
+        if ($scope.medida.estadoBoolean) {
+            $scope.medida.estado = 1;
         } else {
-            $scope.producto.estado = 0;
+            $scope.medida.estado = 0;
         }
 
         $http({
-            url: SERVER + '/producto/edit',
-            data: $scope.producto,
-            method: "POST",
+            url: SERVER + '/medida/edit',
+            data: $scope.medida,
+            method: "PUT",
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8'
             }
         }).success(function (data) {
-            $location.path("/producto");
+            $location.path("/medida");
         }).error(function (err) {
             console.log(err);
+        });
+    };
+
+    $scope.removeMedida = function (id) {
+        $http({
+            url: SERVER + "/medida/remove/" + id,
+            method: "DELETE"
+        }).success(function (response) {
+            $scope.loadData();
+        }).error(function (err) {
+            console.log(err);
+        });
+    };
+
+    $scope.confirmDeleteModalMedida = function (id) {
+        console.log('ssssssss');
+        $('#deleteModal').modal();
+        $("#deleteButton").click(function () {
+            $scope.removeMedida(id);
+            $('#deleteModal').modal('hide');
         });
     };
 

@@ -22,4 +22,19 @@ public class UnidadMedidaServiceImpl implements UnidadMedidaService {
     public void saveUnidadMedida(UnidadMedida unidadMedida) {
         unidadMedidaMapper.saveUnidadMedida(unidadMedida);
     }
+
+    @Override
+    public UnidadMedida findById(Long id) {
+        return unidadMedidaMapper.findById(id);
+    }
+
+    @Override
+    public void updateUnidadMedida(UnidadMedida unidadMedida) {
+        unidadMedidaMapper.updateUnidadMedida(unidadMedida);
+    }
+
+    @Override
+    public void removeUnidadMedida(Long id) {
+        unidadMedidaMapper.removeUnidadMedida(id);
+    }
 }

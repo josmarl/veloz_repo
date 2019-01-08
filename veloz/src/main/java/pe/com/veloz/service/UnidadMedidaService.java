@@ -10,4 +10,10 @@ public interface UnidadMedidaService {
 
     public void saveUnidadMedida(UnidadMedida unidadMedida);
 
+    public UnidadMedida findById(Long id);
+
+    public void updateUnidadMedida(UnidadMedida unidadMedida);
+
+    public void removeUnidadMedida(Long id);
+
 }

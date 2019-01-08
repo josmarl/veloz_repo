@@ -93,6 +93,10 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($r
             templateUrl: 'views/unidad_medida/unidad_medida_form.html',
             controller: 'unidadMedidaController'
         })
+        .when('/medida/edit/:id', {
+            templateUrl: 'views/unidad_medida/unidad_medida_edit.html',
+            controller: 'unidadMedidaController'
+        })
 
         .otherwise('/login');
 
