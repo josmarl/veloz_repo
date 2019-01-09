@@ -28,10 +28,12 @@ CREATE TABLE IF NOT EXISTS `almacen` (
   KEY `ALMACEN_CLI` (`cliente`),
   CONSTRAINT `ALMACEN_CLI` FOREIGN KEY (`cliente`) REFERENCES `cliente` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `ALMACEN_USER_FK` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- Volcando datos para la tabla veloz.almacen: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `almacen` DISABLE KEYS */;
+INSERT INTO `almacen` (`id`, `nro_doc`, `usuario`, `cliente`, `fecha_reg`) VALUES
+	(1, '001-212', 1, 3, '2019-01-08');
 /*!40000 ALTER TABLE `almacen` ENABLE KEYS */;
 
 -- Volcando estructura para tabla veloz.almacen_consolidado
@@ -41,14 +43,12 @@ CREATE TABLE IF NOT EXISTS `almacen_consolidado` (
   `disponible` int(60) DEFAULT NULL,
   `vendido` int(60) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
--- Volcando datos para la tabla veloz.almacen_consolidado: ~3 rows (aproximadamente)
+-- Volcando datos para la tabla veloz.almacen_consolidado: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `almacen_consolidado` DISABLE KEYS */;
 INSERT INTO `almacen_consolidado` (`id`, `producto`, `disponible`, `vendido`) VALUES
-	(23, 5, 349, 281),
-	(24, 4, 543, 217),
-	(25, 6, 5, 95);
+	(26, 7, 2, 0);
 /*!40000 ALTER TABLE `almacen_consolidado` ENABLE KEYS */;
 
 -- Volcando estructura para tabla veloz.almacen_detalle
@@ -61,10 +61,12 @@ CREATE TABLE IF NOT EXISTS `almacen_detalle` (
   PRIMARY KEY (`id`),
   KEY `AL_DET_ALMACEN` (`almacen`) USING BTREE,
   CONSTRAINT `AL_DET_ALMACEN` FOREIGN KEY (`almacen`) REFERENCES `almacen` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=116 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- Volcando datos para la tabla veloz.almacen_detalle: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `almacen_detalle` DISABLE KEYS */;
+INSERT INTO `almacen_detalle` (`id`, `producto`, `cantidad`, `almacen`, `importe`) VALUES
+	(1, 7, 2, 1, 100);
 /*!40000 ALTER TABLE `almacen_detalle` ENABLE KEYS */;
 
 -- Volcando estructura para tabla veloz.cliente
@@ -119,46 +121,10 @@ CREATE TABLE IF NOT EXISTS `detalle_venta` (
   KEY `DET_VENT_FK` (`venta`) USING BTREE,
   CONSTRAINT `DET_PROD_FK` FOREIGN KEY (`producto`) REFERENCES `producto` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `DET_VENT_FK` FOREIGN KEY (`venta`) REFERENCES `venta` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
--- Volcando datos para la tabla veloz.detalle_venta: ~34 rows (aproximadamente)
+-- Volcando datos para la tabla veloz.detalle_venta: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `detalle_venta` DISABLE KEYS */;
-INSERT INTO `detalle_venta` (`id`, `producto`, `cantidad`, `importe`, `venta`) VALUES
-	(42, 5, 12, 24, 24),
-	(43, 4, 12, 12, 24),
-	(44, 5, 10, 20, 25),
-	(45, 5, 30, 60, 26),
-	(46, 4, 3, 3, 26),
-	(47, 6, 5, 5, 27),
-	(48, 5, 5, 10, 27),
-	(49, 5, 60, 120, 28),
-	(50, 5, 10, 20, 29),
-	(51, 4, 10, 10, 29),
-	(52, 5, 30, 60, 30),
-	(53, 4, 10, 10, 30),
-	(54, 5, 10, 20, 31),
-	(55, 5, 10, 20, 32),
-	(56, 5, 14, 28, 33),
-	(57, 4, 4, 4, 33),
-	(58, 4, 20, 20, 34),
-	(59, 5, 50, 100, 34),
-	(60, 4, 30, 30, 35),
-	(61, 6, 5, 5, 35),
-	(62, 6, 30, 30, 36),
-	(63, 4, 28, 28, 36),
-	(64, 4, 5, 5, 37),
-	(65, 5, 5, 10, 37),
-	(66, 5, 10, 20, 38),
-	(67, 4, 30, 30, 39),
-	(68, 5, 5, 10, 39),
-	(69, 5, 20, 40, 40),
-	(70, 4, 10, 10, 40),
-	(71, 6, 20, 20, 41),
-	(72, 6, 35, 35, 42),
-	(73, 4, 16, 16, 42),
-	(74, 4, 10, 10, 43),
-	(75, 4, 10, 10, 44),
-	(76, 4, 19, 25.5, 45);
 /*!40000 ALTER TABLE `detalle_venta` ENABLE KEYS */;
 
 -- Volcando estructura para tabla veloz.empresa
@@ -202,25 +168,40 @@ CREATE TABLE IF NOT EXISTS `producto` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(60) DEFAULT NULL,
   `descripcion` varchar(100) DEFAULT NULL,
-  `precio_unit` double DEFAULT NULL,
-  `precio_docena` double DEFAULT NULL,
-  `precio_ciento` double DEFAULT NULL,
-  `precio_cincuenta` double DEFAULT NULL,
   `precio_compra` double DEFAULT NULL,
   `precio_venta` double DEFAULT NULL,
   `estado` int(1) DEFAULT NULL,
   `marca` varchar(60) DEFAULT NULL,
   `code` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
--- Volcando datos para la tabla veloz.producto: ~3 rows (aproximadamente)
+-- Volcando datos para la tabla veloz.producto: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `producto` DISABLE KEYS */;
-INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precio_unit`, `precio_docena`, `precio_ciento`, `precio_cincuenta`, `precio_compra`, `precio_venta`, `estado`, `marca`, `code`) VALUES
-	(4, 'cuaderno', 'FABER CASTELL x12 TRIANGULARES CON GRIP', 1.5, 15, 13, 14, 1, 1, 1, 'loro', '001'),
-	(5, 'Lapicero', 'ok', 1, 10, 8, 9, 2, 2, 1, 'artesco', '002'),
-	(6, 'Libro', 'ok', 1, 1, 1, 1, 1, 1, 1, 'Loro', '003');
+INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precio_compra`, `precio_venta`, `estado`, `marca`, `code`) VALUES
+	(12, 'lapicero', 'oksss', NULL, NULL, 1, 'faber', '001');
 /*!40000 ALTER TABLE `producto` ENABLE KEYS */;
+
+-- Volcando estructura para tabla veloz.producto_unidad_medida
+CREATE TABLE IF NOT EXISTS `producto_unidad_medida` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `producto` int(11) NOT NULL DEFAULT '0',
+  `unidad_medida` int(11) NOT NULL DEFAULT '0',
+  `precio` double DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_producto_unidad_medida_producto` (`producto`),
+  KEY `FK_producto_unidad_medida_unidad_medida` (`unidad_medida`),
+  CONSTRAINT `FK_producto_unidad_medida_producto` FOREIGN KEY (`producto`) REFERENCES `producto` (`id`),
+  CONSTRAINT `FK_producto_unidad_medida_unidad_medida` FOREIGN KEY (`unidad_medida`) REFERENCES `unidad_medida` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+-- Volcando datos para la tabla veloz.producto_unidad_medida: ~3 rows (aproximadamente)
+/*!40000 ALTER TABLE `producto_unidad_medida` DISABLE KEYS */;
+INSERT INTO `producto_unidad_medida` (`id`, `producto`, `unidad_medida`, `precio`) VALUES
+	(5, 12, 1, 0.5),
+	(6, 12, 3, 5),
+	(7, 12, 4, 20);
+/*!40000 ALTER TABLE `producto_unidad_medida` ENABLE KEYS */;
 
 -- Volcando estructura para tabla veloz.role
 CREATE TABLE IF NOT EXISTS `role` (
@@ -254,13 +235,18 @@ CREATE TABLE IF NOT EXISTS `unidad_medida` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL DEFAULT '0',
   `cantidad` int(11) NOT NULL DEFAULT '0',
-  `estado` varchar(1) NOT NULL DEFAULT '0',
   `descripcion` varchar(200) NOT NULL DEFAULT '0',
+  `estado` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
--- Volcando datos para la tabla veloz.unidad_medida: ~0 rows (aproximadamente)
+-- Volcando datos para la tabla veloz.unidad_medida: ~4 rows (aproximadamente)
 /*!40000 ALTER TABLE `unidad_medida` DISABLE KEYS */;
+INSERT INTO `unidad_medida` (`id`, `nombre`, `cantidad`, `descripcion`, `estado`) VALUES
+	(1, 'unidad', 1, 'unidad', 1),
+	(3, 'docena', 12, 'docena', 1),
+	(4, 'cajax50', 50, 'docenax50', 1),
+	(5, 'ciento', 100, 'ciento', 1);
 /*!40000 ALTER TABLE `unidad_medida` ENABLE KEYS */;
 
 -- Volcando estructura para tabla veloz.usuario
@@ -301,33 +287,10 @@ CREATE TABLE IF NOT EXISTS `venta` (
   KEY `VENTA_CLIENTE_FK` (`cliente`),
   CONSTRAINT `VENTA_CLIENTE_FK` FOREIGN KEY (`cliente`) REFERENCES `cliente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `VENTA_USER_FK` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
--- Volcando datos para la tabla veloz.venta: ~21 rows (aproximadamente)
+-- Volcando datos para la tabla veloz.venta: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `venta` DISABLE KEYS */;
-INSERT INTO `venta` (`id`, `cliente`, `usuario`, `base_imponible`, `igv`, `total`, `fecha_reg`, `nro_doc`) VALUES
-	(24, 3, 1, 0, 0, 36, '2017-05-22', '1-237'),
-	(25, 3, 1, 16.4, 3.6, 20, '2017-06-13', '1-238'),
-	(26, 2, 1, 0, 0, 63, '2017-06-13', '1-239'),
-	(27, 4, 1, 0, 0, 15, '2017-06-13', '1-240'),
-	(28, 3, 1, 0, 0, 120, '2017-06-14', '1-241'),
-	(29, 3, 1, 0, 0, 30, '2017-06-15', '1-242'),
-	(30, 4, 1, 0, 0, 70, '2017-07-05', '1-243'),
-	(31, 3, 1, 0, 0, 20, '2017-07-05', '1-244'),
-	(32, 3, 1, 0, 0, 20, '2017-07-05', '1-245'),
-	(33, 3, 1, 0, 0, 32, '2017-07-05', '1-246'),
-	(34, 4, 1, 0, 0, 120, '2017-07-05', '1-247'),
-	(35, 3, 1, 0, 0, 35, '2017-07-05', '1-248'),
-	(36, 4, 1, 0, 0, 58, '2017-07-05', '1-249'),
-	(37, 3, 1, 12.3, 2.7, 15, '2017-07-05', '1-250'),
-	(38, 4, 1, 16.4, 3.6, 20, '2017-07-05', '1-251'),
-	(39, 3, 1, 0, 0, 40, '2017-07-05', '1-252'),
-	(40, 4, 1, 0, 0, 50, '2017-07-07', '1-253'),
-	(41, 3, 1, 0, 0, 20, '2017-07-07', '1-254'),
-	(42, 5, 1, 0, 0, 51, '2017-07-07', '1-255'),
-	(43, 6, 1, 8.2, 1.8, 10, '2017-07-07', '1-256'),
-	(44, 3, 1, 0, 0, 10, '2017-07-07', '1-257'),
-	(45, 2, 1, 21.61, 3.89, 25.5, '2019-01-03', '1-258');
 /*!40000 ALTER TABLE `venta` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

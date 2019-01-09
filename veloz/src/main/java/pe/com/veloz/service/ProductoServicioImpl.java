@@ -9,8 +9,15 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import pe.com.veloz.domain.Producto;
+import pe.com.veloz.domain.ProductoUnidadMedida;
+import pe.com.veloz.domain.UnidadMedida;
+import pe.com.veloz.domain.dto.ProductoMedidasDTO;
+import pe.com.veloz.domain.dto.UnidadMedidaPrecioDTO;
 import pe.com.veloz.mapper.ProductoMapper;
+import pe.com.veloz.mapper.ProductoUnidadMedidaMapper;
+import pe.com.veloz.mapper.UnidadMedidaMapper;
 
 /**
  * @author eddy
@@ -20,6 +27,10 @@ public class ProductoServicioImpl implements ProductoService {
 
     @Autowired
     private ProductoMapper productoMapper;
+    @Autowired
+    private UnidadMedidaMapper unidadMedidaMapper;
+    @Autowired
+    private ProductoUnidadMedidaMapper productoUnidadMedidaMapper;
 
     @Override
     public List<Producto> findAll() {
@@ -47,8 +58,20 @@ public class ProductoServicioImpl implements ProductoService {
     }
 
     @Override
-    public void saveProducto(Producto producto) {
+    @Transactional
+    public void saveProductoMedidas(ProductoMedidasDTO productoMedidasDTO) {
+        Producto producto = productoMedidasDTO.getProducto();
         productoMapper.saveProducto(producto);
+        List<UnidadMedidaPrecioDTO> medidas = productoMedidasDTO.getMedidas();
+        for (UnidadMedidaPrecioDTO unidadMedida : medidas) {
+            if (unidadMedida.getPrecio() != null) {
+                ProductoUnidadMedida productoUnidadMedida = new ProductoUnidadMedida();
+                productoUnidadMedida.setProducto(producto.getId());
+                productoUnidadMedida.setUnidadMedida(unidadMedida.getId());
+                productoUnidadMedida.setPrecio(unidadMedida.getPrecio());
+                productoUnidadMedidaMapper.saveProductoUnidadMedida(productoUnidadMedida);
+            }
+        }
     }
 
     @Override

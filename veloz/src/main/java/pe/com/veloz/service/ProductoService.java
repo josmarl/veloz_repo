@@ -8,6 +8,7 @@ package pe.com.veloz.service;
 import java.util.List;
 
 import pe.com.veloz.domain.Producto;
+import pe.com.veloz.domain.dto.ProductoMedidasDTO;
 
 /**
  * @author eddy
@@ -30,5 +31,5 @@ public interface ProductoService {
 
     Producto findProductoByNombreMarca(String nombre, String marca);
 
-    void saveProducto(Producto producto);
+    void saveProductoMedidas(ProductoMedidasDTO productoMedidasDTO);
 }

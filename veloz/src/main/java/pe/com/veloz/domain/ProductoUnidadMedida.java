@@ -7,16 +7,18 @@ public class ProductoUnidadMedida implements Serializable, Cloneable {
     private Long id;
     private Long producto;
     private Long unidadMedida;
+    private Double precio;
     private Producto productoObj;
     private UnidadMedida unidadMedidaObj;
 
     public ProductoUnidadMedida() {
     }
 
-    public ProductoUnidadMedida(Long id, Long producto, Long unidadMedida, Producto productoObj, UnidadMedida unidadMedidaObj) {
+    public ProductoUnidadMedida(Long id, Long producto, Long unidadMedida, Double precio, Producto productoObj, UnidadMedida unidadMedidaObj) {
         this.id = id;
         this.producto = producto;
         this.unidadMedida = unidadMedida;
+        this.precio = precio;
         this.productoObj = productoObj;
         this.unidadMedidaObj = unidadMedidaObj;
     }
@@ -61,12 +63,21 @@ public class ProductoUnidadMedida implements Serializable, Cloneable {
         this.unidadMedidaObj = unidadMedidaObj;
     }
 
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+
     @Override
     public String toString() {
         return "ProductoUnidadMedida{" +
                 "id=" + id +
                 ", producto=" + producto +
                 ", unidadMedida=" + unidadMedida +
+                ", precio=" + precio +
                 ", productoObj=" + productoObj +
                 ", unidadMedidaObj=" + unidadMedidaObj +
                 '}';

@@ -1,9 +1,6 @@
-package pe.com.veloz.domain;
+package pe.com.veloz.domain.dto;
 
-import java.io.Serializable;
-
-public class UnidadMedida implements Serializable, Cloneable {
-    private static final long serialVersionUID = 1L;
+public class UnidadMedidaPrecioDTO {
     private Long id;
     private String nombre;
     private int cantidad;
@@ -11,17 +8,9 @@ public class UnidadMedida implements Serializable, Cloneable {
     private Long estado;
     private boolean estadoBoolean;
     private boolean estadoCheckbox;
+    private Double precio;
 
-    public UnidadMedida() {
-    }
-
-    public UnidadMedida(Long id, String nombre, int cantidad, String descripcion, Long estado, boolean estadoBoolean) {
-        this.id = id;
-        this.nombre = nombre;
-        this.cantidad = cantidad;
-        this.descripcion = descripcion;
-        this.estado = estado;
-        this.estadoBoolean = estadoBoolean;
+    public UnidadMedidaPrecioDTO() {
     }
 
     public Long getId() {
@@ -78,5 +67,13 @@ public class UnidadMedida implements Serializable, Cloneable {
 
     public void setEstadoCheckbox(boolean estadoCheckbox) {
         this.estadoCheckbox = estadoCheckbox;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
 }

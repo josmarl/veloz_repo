@@ -83,7 +83,8 @@ html {
     text-align: center;
 }
 
-.menu li:hover {}
+.menu li:hover {
+}
 
 table {
     border-collapse: collapse;

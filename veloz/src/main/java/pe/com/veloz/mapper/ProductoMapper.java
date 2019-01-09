@@ -7,12 +7,7 @@ package pe.com.veloz.mapper;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 import pe.com.veloz.domain.Producto;
 
 /**
@@ -21,7 +16,7 @@ import pe.com.veloz.domain.Producto;
 @Mapper
 public interface ProductoMapper {
 
-    @Select("select id,nombre,descripcion,precio_compra as precioCompra,precio_venta as precioVenta,estado,marca,code from producto")
+    @Select("select id,nombre,descripcion,estado,marca,code from producto")
     List<Producto> findAll();
 
     @Delete("delete from producto where id = #{id}")
@@ -31,8 +26,6 @@ public interface ProductoMapper {
             "update producto "
                     + "set nombre=#{producto.nombre}, "
                     + "descripcion=#{producto.descripcion}, "
-                    + "precio_compra=#{producto.precioCompra}, "
-                    + "precio_venta=#{producto.precioVenta}, "
                     + "estado=#{producto.estado}, "
                     + "marca=#{producto.marca}, "
                     + "code=#{producto.code} "
@@ -41,8 +34,6 @@ public interface ProductoMapper {
     void updateProducto(@Param("producto") Producto producto);
 
     @Select("SELECT id,nombre,descripcion,"
-            + "precio_compra as precioCompra,"
-            + "precio_venta as precioVenta,"
             + "estado,marca,code FROM producto where id = #{id}")
     Producto findProductoById(@Param("id") Long id);
 
@@ -58,14 +49,13 @@ public interface ProductoMapper {
     @Select("SELECT * FROM producto where nombre = #{nombre} and marca = #{marca}")
     Producto findProductoByNombreMarca(@Param("nombre") String nombre, @Param("marca") String marca);
 
-    @Insert("insert into producto(nombre,descripcion,precio_compra,precio_venta,estado,marca,code)"
+    @Insert("insert into producto(nombre,descripcion,estado,marca,code) "
             + "values(#{producto.nombre},"
             + "#{producto.descripcion},"
-            + "#{producto.precioCompra},"
-            + "#{producto.precioVenta},"
             + "#{producto.estado},"
             + "#{producto.marca},"
             + "#{producto.code})")
+    @Options(useGeneratedKeys = true, keyProperty = "producto.id", keyColumn = "id")
     void saveProducto(@Param("producto") Producto producto);
 
 }

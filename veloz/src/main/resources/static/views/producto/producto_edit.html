@@ -1,40 +1,89 @@
 <div class="container">
     <h3>Actualización de Productos</h3>
     <form method="post" ng-submit="editProducto()">
-        <div class="form-group">
-            <label>Producto</label>
-            <input type="text" ng-model="producto.nombre" class="form-control" required/>
-        </div>
-        <div class="form-group">
-            <label>Descripción</label>
-            <input type="text" class="form-control" ng-model="producto.descripcion"/>
-        </div>
-        <div class="row form-group">
-            <div class="col-md-4">
-                <label>Precio de Compra</label>
-                <input type="text" class="form-control" ng-model="producto.precioCompra">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a data-target="#datos" aria-controls="home" role="tab"
+                   data-toggle="tab">Datos del Producto</a>
+            </li>
+            <li role="presentation">
+                <a data-target="#medida" aria-controls="profile" role="tab" data-toggle="tab">Unidades
+                    de Medida</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="datos">
+                <div class="row form-group">
+                    <div class="col-md-6">
+                        <label>Nombre del Producto</label>
+                        <input type="text" ng-model="producto.nombre" class="form-control"
+                               required/>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Marca</label>
+                        <input type="text" class="form-control" ng-keyup="validarExitsProductoNombreCode()"
+                               ng-model="producto.marca">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Código del Producto</label>
+                        <input type="text" ng-model="producto.code" ng-keyup="validarExitsProductoCode()"
+                               class="form-control"
+                               required/>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-10">
+                        <label>Descripción</label>
+                        <input type="text" class="form-control" ng-model="producto.descripcion"/>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Estado</label>
+                        <label class="checkbox" for="productoCheckbox">
+                            <input type="checkbox" data-toggle="checkbox" id="productoCheckbox"
+                                   ng-model="producto.estadoBoolean">
+                            Activo/Inactivo
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <label>Precio de Venta</label>
-                <input type="text" class="form-control" ng-model="producto.precioVenta">
+            <div role="tabpanel" class="tab-pane" id="medida">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Unidad de Medida</th>
+                            <th>Cantidad</th>
+                            <th>Descripción</th>
+                            <th>Agregar</th>
+                            <th>Precio</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="medida in medidas">
+                            <td>{{$index+1}}</td>
+                            <td>{{medida.nombre}}</td>
+                            <td>{{medida.cantidad}}</td>
+                            <td>{{medida.descripcion}}</td>
+                            <td>
+                                <label class="checkbox" for="{{medida.nombre}}">
+                                    <input type="checkbox" data-toggle="checkbox" id="{{medida.nombre}}"
+                                           ng-model="medida.estadoCheckbox">
+                                </label>
+                            </td>
+                            <td><input type="text" class="form-control" ng-model="medida.precio"
+                                       ng-disabled="!medida.estadoCheckbox"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" ng-disabled="!estadoForm"><i
+                            class="glyphicon glyphicon-floppy-disk"></i>&nbsp;Actualizar
+                    </button>
+                    <a href="#/producto" class="btn btn-primary"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancelar</a>
+                </div>
             </div>
-            <div class="col-md-4">
-                <label>Marca</label>
-                <input type="text" class="form-control" ng-model="producto.marca">
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="checkbox" for="productoCheckbox">
-                <input type="checkbox" data-toggle="checkbox" id="productoCheckbox"
-                       ng-model="producto.estadoBoolean">
-                Estado
-            </label>
-        </div>
-
-        <div class="form-group">
-            <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-refresh"></i>&nbsp;Actualizar
-            </button>
-            <a href="#/producto" class="btn btn-primary"><i class="glyphicon glyphicon-remove"></i>&nbsp;Cancelar</a>
         </div>
     </form>
 </div>

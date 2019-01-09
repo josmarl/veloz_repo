@@ -17,6 +17,7 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
             $scope.listMedidas();
             if ($scope.idProducto) {
                 $scope.findProducto();
+                $scope.listMedidasPrecio($scope.idProducto);
             }
         };
 
@@ -33,7 +34,7 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
 
         $scope.saveProducto = function () {
 
-            if ($scope.producto.estadoBoolean == true) {
+            if ($scope.producto.estadoBoolean) {
                 $scope.producto.estado = 1;
             } else {
                 $scope.producto.estado = 0;
@@ -41,7 +42,10 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
 
             $http({
                 url: SERVER + '/producto/add',
-                data: $scope.producto,
+                data: {
+                    producto: $scope.producto,
+                    medidas: $scope.medidas
+                },
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json; charset=UTF-8'
@@ -56,7 +60,7 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
 
         $scope.editProducto = function () {
 
-            if ($scope.producto.estadoBoolean == true) {
+            if ($scope.producto.estadoBoolean) {
                 $scope.producto.estado = 1;
             } else {
                 $scope.producto.estado = 0;
@@ -160,7 +164,17 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
                 method: "GET"
             }).success(function (response) {
                 $scope.medidas = response;
-                console.log(response);
+            }).error(function (err) {
+                console.log(err);
+            });
+        };
+
+        $scope.listMedidasPrecio = function (productoId) {
+            $http({
+                url: SERVER + "/producto/medida/find/precio/" + productoId,
+                method: "GET"
+            }).success(function (response) {
+                $scope.medidas = response;
             }).error(function (err) {
                 console.log(err);
             });

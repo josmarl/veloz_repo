@@ -15,6 +15,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.com.veloz.domain.Producto;
 import pe.com.veloz.domain.UnidadMedida;
+import pe.com.veloz.domain.dto.ProductoMedidasDTO;
+import pe.com.veloz.domain.dto.UnidadMedidaPrecioDTO;
 import pe.com.veloz.service.ProductoService;
 import pe.com.veloz.service.UnidadMedidaService;
 
@@ -38,8 +40,13 @@ public class ProductoController {
     }
 
     @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})
-    public void saveProducto(@RequestBody Producto data) {
-        productoService.saveProducto(data);
+    public void saveProducto(@RequestBody ProductoMedidasDTO data) {
+        try {
+            productoService.saveProductoMedidas(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error("ProductoController.saveProducto");
+        }
     }
 
     @RequestMapping(value = "/edit", method = {RequestMethod.GET, RequestMethod.POST})
@@ -76,6 +83,11 @@ public class ProductoController {
     @GetMapping("/medida/find/active")
     public List<UnidadMedida> listUnidadMedidaActive() {
         return unidadMedidaService.findUnidadMedidaActive();
+    }
+
+    @GetMapping("/medida/find/precio/{productoId}")
+    public List<UnidadMedidaPrecioDTO> listUnidadMedidaPrecio(@PathVariable Long productoId) {
+        return unidadMedidaService.findUnidadMedidaPrecio(productoId);
     }
 
 }

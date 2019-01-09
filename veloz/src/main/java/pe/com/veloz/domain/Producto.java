@@ -23,8 +23,6 @@ public class Producto implements Serializable, Cloneable {
     private Long id;
     private String nombre;
     private String descripcion;
-    private double precioCompra;
-    private double precioVenta;
     private Long estado;
     private boolean estadoBoolean;
     private String marca;
@@ -52,22 +50,6 @@ public class Producto implements Serializable, Cloneable {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    public double getPrecioCompra() {
-        return precioCompra;
-    }
-
-    public void setPrecioCompra(double precioCompra) {
-        this.precioCompra = precioCompra;
-    }
-
-    public double getPrecioVenta() {
-        return precioVenta;
-    }
-
-    public void setPrecioVenta(double precioVenta) {
-        this.precioVenta = precioVenta;
     }
 
     public Long getEstado() {
@@ -108,8 +90,6 @@ public class Producto implements Serializable, Cloneable {
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
-                ", precioCompra=" + precioCompra +
-                ", precioVenta=" + precioVenta +
                 ", estado=" + estado +
                 ", estadoBoolean=" + estadoBoolean +
                 ", marca='" + marca + '\'' +
