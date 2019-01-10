@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class ProductoUnidadMedida implements Serializable, Cloneable {
     private static final long serialVersionUID = 1L;
-    private Long id;
     private Long producto;
     private Long unidadMedida;
     private Double precio;
@@ -14,21 +13,12 @@ public class ProductoUnidadMedida implements Serializable, Cloneable {
     public ProductoUnidadMedida() {
     }
 
-    public ProductoUnidadMedida(Long id, Long producto, Long unidadMedida, Double precio, Producto productoObj, UnidadMedida unidadMedidaObj) {
-        this.id = id;
+    public ProductoUnidadMedida(Long producto, Long unidadMedida, Double precio, Producto productoObj, UnidadMedida unidadMedidaObj) {
         this.producto = producto;
         this.unidadMedida = unidadMedida;
         this.precio = precio;
         this.productoObj = productoObj;
         this.unidadMedidaObj = unidadMedidaObj;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public Long getProducto() {
@@ -74,8 +64,7 @@ public class ProductoUnidadMedida implements Serializable, Cloneable {
     @Override
     public String toString() {
         return "ProductoUnidadMedida{" +
-                "id=" + id +
-                ", producto=" + producto +
+                "producto=" + producto +
                 ", unidadMedida=" + unidadMedida +
                 ", precio=" + precio +
                 ", productoObj=" + productoObj +

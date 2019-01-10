@@ -38,13 +38,27 @@ public class ProductoServicioImpl implements ProductoService {
     }
 
     @Override
-    public void removeProducto(Long id) {
+    @Transactional
+    public void removeProductoMedidas(Long id) {
+        productoUnidadMedidaMapper.removeProductoUnidadMedida(id);
         productoMapper.removeProducto(id);
     }
 
     @Override
-    public void updateProducto(Producto producto) {
-        productoMapper.updateProducto(producto);
+    @Transactional
+    public void updateProductoMedidas(ProductoMedidasDTO productoMedidasDTO) {
+        productoMapper.updateProducto(productoMedidasDTO.getProducto());
+        productoUnidadMedidaMapper.removeProductoUnidadMedida(productoMedidasDTO.getProducto().getId());
+        List<UnidadMedidaPrecioDTO> medidas = productoMedidasDTO.getMedidas();
+        for (UnidadMedidaPrecioDTO unidadMedida : medidas) {
+            if (unidadMedida.getPrecio() != null && unidadMedida.isEstadoCheckbox()) {
+                ProductoUnidadMedida productoUnidadMedida = new ProductoUnidadMedida();
+                productoUnidadMedida.setProducto(productoMedidasDTO.getProducto().getId());
+                productoUnidadMedida.setUnidadMedida(unidadMedida.getId());
+                productoUnidadMedida.setPrecio(unidadMedida.getPrecio());
+                productoUnidadMedidaMapper.saveProductoUnidadMedida(productoUnidadMedida);
+            }
+        }
     }
 
     @Override
@@ -64,7 +78,7 @@ public class ProductoServicioImpl implements ProductoService {
         productoMapper.saveProducto(producto);
         List<UnidadMedidaPrecioDTO> medidas = productoMedidasDTO.getMedidas();
         for (UnidadMedidaPrecioDTO unidadMedida : medidas) {
-            if (unidadMedida.getPrecio() != null) {
+            if (unidadMedida.getPrecio() != null && unidadMedida.isEstadoCheckbox()) {
                 ProductoUnidadMedida productoUnidadMedida = new ProductoUnidadMedida();
                 productoUnidadMedida.setProducto(producto.getId());
                 productoUnidadMedida.setUnidadMedida(unidadMedida.getId());

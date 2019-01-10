@@ -49,14 +49,24 @@ public class ProductoController {
         }
     }
 
-    @RequestMapping(value = "/edit", method = {RequestMethod.GET, RequestMethod.POST})
-    public void editProducto(@RequestBody Producto data) {
-        productoService.updateProducto(data);
+    @PutMapping("/edit")
+    public void editProducto(@RequestBody ProductoMedidasDTO data) {
+        try {
+            productoService.updateProductoMedidas(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error("ProductoController.editProducto");
+        }
     }
 
     @RequestMapping(value = "/remove/{id}", method = RequestMethod.DELETE)
     public void removeProducto(@PathVariable Long id) {
-        productoService.removeProducto(id);
+        try {
+            productoService.removeProductoMedidas(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error("ProductoController.removeProducto");
+        }
     }
 
     @RequestMapping(value = "/find/{id}", method = {RequestMethod.GET})

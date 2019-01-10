@@ -17,9 +17,9 @@ public interface ProductoService {
 
     List<Producto> findAll();
 
-    void removeProducto(Long id);
+    void removeProductoMedidas(Long id);
 
-    void updateProducto(Producto producto);
+    void updateProductoMedidas(ProductoMedidasDTO productoMedidasDTO);
 
     Producto findProductoById(Long id);
 

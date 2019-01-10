@@ -68,8 +68,11 @@ app.controller('productoController', ['$scope', '$rootScope', '$http', '$locatio
 
             $http({
                 url: SERVER + '/producto/edit',
-                data: $scope.producto,
-                method: "POST",
+                data: {
+                    producto: $scope.producto,
+                    medidas: $scope.medidas
+                },
+                method: "PUT",
                 headers: {
                     'Content-Type': 'application/json; charset=UTF-8'
                 }

@@ -17,6 +17,6 @@ public interface ProductoUnidadMedidaMapper {
     @Delete("delete from producto_unidad_medida where producto = #{productoId}")
     void removeProductoUnidadMedida(@Param("productoId") Long productoId);
 
-    @Select("select id,producto,unidad_medida,precio as unidadMedida from producto_unidad_medida where producto=#{productoId}")
+    @Select("select producto,unidad_medida,precio as unidadMedida from producto_unidad_medida where producto=#{productoId}")
     List<ProductoUnidadMedida> findByProducto(@Param("productoId") Long productoId);
 }
