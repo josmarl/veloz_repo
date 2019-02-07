@@ -12,12 +12,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pe.com.veloz.domain.Producto;
 import pe.com.veloz.domain.ProductoUnidadMedida;
-import pe.com.veloz.domain.UnidadMedida;
 import pe.com.veloz.domain.dto.ProductoMedidasDTO;
 import pe.com.veloz.domain.dto.UnidadMedidaPrecioDTO;
 import pe.com.veloz.mapper.ProductoMapper;
 import pe.com.veloz.mapper.ProductoUnidadMedidaMapper;
-import pe.com.veloz.mapper.UnidadMedidaMapper;
 
 /**
  * @author eddy
@@ -27,8 +25,6 @@ public class ProductoServicioImpl implements ProductoService {
 
     @Autowired
     private ProductoMapper productoMapper;
-    @Autowired
-    private UnidadMedidaMapper unidadMedidaMapper;
     @Autowired
     private ProductoUnidadMedidaMapper productoUnidadMedidaMapper;
 

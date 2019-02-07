@@ -17,6 +17,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
     $scope.cliente = {};
     $scope.cliente.originalObject = {};
     $scope.total = 0;
+    $scope.medidas = [];
+    $scope.$broadcast('angucomplete:clearInput', 'ex1');
 
     $scope.initialize = function () {
         $scope.getClientes();
@@ -34,6 +36,23 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             console.log(err);
         });
     };
+
+    $scope.getUnidadesMedida = function (productoId) {
+        $http({
+            url: SERVER + "/venta/prodUnidadMed/find/" + productoId,
+            method: "GET"
+        }).success(function (response) {
+            $scope.medidas = response;
+        }).error(function (err) {
+            console.log(err);
+        });
+    };
+
+    $scope.$watch('prod', function (value) {
+        if ($scope.prod.originalObject) {
+            $scope.getUnidadesMedida($scope.prod.originalObject.id);
+        }
+    });
 
 
     $scope.getTipoComprobantes = function () {
@@ -67,6 +86,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
         detalle.producto = $scope.prod.originalObject;
         detalle.cantidad = $scope.cantidad;
+        detalle.unidadMedidadId = $scope.medida.unidadMedidaId;
         detalle.precioUnitario = 0;
 
         var existe = 0;
@@ -100,6 +120,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
                 detalleTemp.cantidad = $scope.detalles[j].cantidad;
                 detalleTemp.precioUnitario = 0;
                 detalleTemp.cantidadStock = detalle.cantidad;
+                detalleTemp.unidadMedidadId = detalle.unidadMedidadId;
                 $scope.detallesTemp.push(detalleTemp);
             }
         }
@@ -176,6 +197,7 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
 
         $scope.cliente = {};
         $scope.cliente.originalObject = {};
+        $("#ex1_value").val('');
     };
 
     $scope.deleteDetalle = function (detalle) {

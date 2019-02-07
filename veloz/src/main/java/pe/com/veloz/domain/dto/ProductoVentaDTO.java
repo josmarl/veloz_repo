@@ -8,7 +8,6 @@ package pe.com.veloz.domain.dto;
 import pe.com.veloz.domain.Producto;
 
 /**
- *
  * @author josmarl
  */
 public class ProductoVentaDTO {
@@ -17,6 +16,8 @@ public class ProductoVentaDTO {
     private int cantidad;
     private double precioUnitario;
     private double importe;
+    private Long unidadMedidadId;
+    private String unidadMedidaNombre;
     private int cantidadStock;
 
     public ProductoVentaDTO() {
@@ -62,9 +63,31 @@ public class ProductoVentaDTO {
         this.cantidadStock = cantidadStock;
     }
 
-    @Override
-    public String toString() {
-        return "ProductoVentaDTO{" + "producto=" + producto + ", cantidad=" + cantidad + ", precioUnitario=" + precioUnitario + ", importe=" + importe + ", cantidadStock=" + cantidadStock + '}';
+    public Long getUnidadMedidadId() {
+        return unidadMedidadId;
     }
 
+    public void setUnidadMedidadId(Long unidadMedidadId) {
+        this.unidadMedidadId = unidadMedidadId;
+    }
+
+    public String getUnidadMedidaNombre() {
+        return unidadMedidaNombre;
+    }
+
+    public void setUnidadMedidaNombre(String unidadMedidaNombre) {
+        this.unidadMedidaNombre = unidadMedidaNombre;
+    }
+
+    @Override
+    public String toString() {
+        return "ProductoVentaDTO{" +
+                "producto=" + producto +
+                ", cantidad=" + cantidad +
+                ", precioUnitario=" + precioUnitario +
+                ", importe=" + importe +
+                ", unidadMedidadId=" + unidadMedidadId +
+                ", cantidadStock=" + cantidadStock +
+                '}';
+    }
 }

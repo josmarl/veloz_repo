@@ -1,16 +1,14 @@
 <h3>{{headingTitle}}</h3>
 <div class="form-group">
     <div class="row">
-        <div class="col-md-2">
-            <label>Cant.</label>
-            <input type="number" class="form-control" placeholder="Cant." ng-model="cantidad" required>
-        </div>
-        <div class="col-md-9">
+
+        <div class="col-md-7">
             <label>Producto:</label>
             <angucomplete id="ex1"
                           placeholder="Buscar producto..."
                           pause="100"
                           selectedobject="prod"
+                          localsearch="localSearch"
                           localdata="productos"
                           searchfields="nombre"
                           titlefield="nombre,marca"
@@ -18,6 +16,18 @@
                           minlength="1"
                           inputclass="form-control form-control-small"
                           class="ng-isolate-scope"/>
+        </div>
+        <div class="col-md-2">
+            <label>Unidad Medida</label>
+            <select class="form-control"
+                    ng-model="medida"
+                    ng-options="medida.unidadMedidaNombre for medida in medidas">
+                <option value="">Seleccione</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label>Cant.</label>
+            <input type="number" class="form-control" placeholder="Cant." ng-model="cantidad" required>
         </div>
         <div class="col-md-1">
             <label>Opt.</label><br>
@@ -35,6 +45,7 @@
         <tr>
             <th>#</th>
             <th>Cant.</th>
+            <th>Unidad Medida</th>
             <th>Producto</th>
             <th>Descripción</th>
             <th>P.U</th>
@@ -47,6 +58,7 @@
         <tr ng-repeat="det in detallesProducto">
             <td>{{$index +1}}</td>
             <td>{{det.cantidad}}</td>
+            <td>{{det.unidadMedidaNombre}}</td>
             <td>{{det.producto.nombre}}</td>
             <td>{{det.producto.descripcion}}</td>
             <td>S/.{{det.precioUnitario}}</td>
@@ -97,7 +109,7 @@
                     </div>
                     <div class="form-group">
                         <label>Seleccione Tipo de Documento:</label>
-                        <select data-toggle="select" class="form-control"
+                        <select class="form-control"
                                 ng-model="tipoComprobante"
                                 ng-options="tipoComprobante.nombre for tipoComprobante in tipoComprobantes"
                                 ng-change="getDatosTipoComprobante()">
@@ -144,5 +156,5 @@
     </div>
 </div>
 
-<script src="bower_components/flat-ui/docs/assets/js/application.js"></script>
+
 
