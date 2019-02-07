@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="780.0" stylesheets="@../css/style.css"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.veloz.runner.controller.DashboardController">
+    <children>
+        <TabPane fx:id="tabApp" prefHeight="600.0" prefWidth="780.0" tabClosingPolicy="UNAVAILABLE"
+                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab styleClass=".not-boder" text="Configuración">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="90.0" layoutY="34.0" prefHeight="30.0" prefWidth="415.0"
+                                       text="Ubicación de la carpeta de los comprobantes :"
+                                       AnchorPane.leftAnchor="90.0"/>
+                                <Button layoutX="90.0" layoutY="266.0" mnemonicParsing="false"
+                                        onAction="#saveConfiguration" text="Guardar" AnchorPane.leftAnchor="90.0"/>
+                                <TextField fx:id="txtVeloz" layoutX="90.0" layoutY="140.0" prefHeight="44.0"
+                                           prefWidth="599.0" promptText="Ingrese ruta de veloz-1.0.jar"
+                                           AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0"/>
+                                <TextField fx:id="txtFirefox" layoutX="91.0" layoutY="81.0" prefHeight="44.0"
+                                           prefWidth="599.0" promptText="Ingrese ruta de firefox.exe"
+                                           AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0"/>
+                                <TextField fx:id="txtMysql" layoutX="91.0" layoutY="203.0" prefHeight="44.0"
+                                           prefWidth="599.0" promptText="Ingrese ruta de mysql-start.bat"
+                                           AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab styleClass="not-border" text="Ejecución">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="351.0" prefWidth="650.0">
+                            <children>
+                                <Button fx:id="button" layoutX="522.0" layoutY="455.0" onAction="#handleButtonAction"
+                                        text="Iniciar" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="180.0"/>
+                                <Label fx:id="label" layoutX="139.0" layoutY="139.0" minHeight="16" minWidth="69"/>
+                                <ProgressIndicator fx:id="loading" layoutX="350.0" layoutY="128.0"
+                                                   AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0"/>
+                                <Button fx:id="btnStop" layoutX="364.0" layoutY="455.0" mnemonicParsing="false"
+                                        onAction="#handleButtonStop" text="Parar" AnchorPane.bottomAnchor="50.0"
+                                        AnchorPane.rightAnchor="90.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

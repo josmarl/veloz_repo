@@ -1,0 +1,21 @@
+.button {
+    -fx-background-radius: 0px;
+}
+
+AnchorPane {
+
+}
+
+TabPane {
+    -fx-font-size: 20px;
+    -fx-background-radius: 0px;
+}
+
+Tab {
+    -fx-background-radius: 0px;
+}
+
+TextField {
+    -fx-background-radius: 0px;
+}
+
