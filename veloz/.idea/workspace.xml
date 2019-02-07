@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30e98505-6eba-463e-a1e5-761a8ffb67e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pe/com/veloz/domain/dto/ProductoUnidadMedidaDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pe/com/veloz/service/ProductoUnidadMedidaService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pe/com/veloz/service/ProductoUnidadMedidaServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pe/com/veloz/controller/VentaController.java" afterPath="$PROJECT_DIR$/src/main/java/pe/com/veloz/controller/VentaController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pe/com/veloz/domain/dto/ProductoVentaDTO.java" afterPath="$PROJECT_DIR$/src/main/java/pe/com/veloz/domain/dto/ProductoVentaDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pe/com/veloz/mapper/ProductoUnidadMedidaMapper.java" afterPath="$PROJECT_DIR$/src/main/java/pe/com/veloz/mapper/ProductoUnidadMedidaMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pe/com/veloz/service/ProductoServicioImpl.java" afterPath="$PROJECT_DIR$/src/main/java/pe/com/veloz/service/ProductoServicioImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/controllers/venta.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/controllers/venta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/views/venta/venta.html" afterPath="$PROJECT_DIR$/src/main/resources/static/views/venta/venta.html" />
-    </list>
+    <list default="true" id="30e98505-6eba-463e-a1e5-761a8ffb67e9" name="Default" comment="" />
     <ignored path="veloz.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -823,12 +812,12 @@
       <workItem from="1547127896731" duration="5830000" />
       <workItem from="1547237875133" duration="598000" />
       <workItem from="1549041129407" duration="163000" />
-      <workItem from="1549553348091" duration="10289000" />
+      <workItem from="1549553348091" duration="10588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129316000" />
+    <option name="totallyTimeSpent" value="129615000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
