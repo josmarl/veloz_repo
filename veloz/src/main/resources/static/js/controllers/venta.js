@@ -251,7 +251,6 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             $location.path("/venta");
         }).error(function (err) {
             $scope.clearVenta();
-            console.log(err);
             $location.path("/venta");
         });
         $scope.clearVenta();
