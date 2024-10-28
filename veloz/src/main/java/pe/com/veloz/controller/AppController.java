@@ -29,7 +29,7 @@ public class AppController {
     @RequestMapping(value = "/print", method = RequestMethod.POST)
     public ResponseDTO print(@RequestBody IpAddressDTO data) {
         SocketClient client = new SocketClient();
-        String responseSocket = client.run(data.getIp());
+        String responseSocket = client.run(data.getIp(), data.getDatos());
         ResponseDTO responseDTO = new ResponseDTO();
         responseDTO.setMsg(responseSocket);
         responseDTO.setStatus(StatusEnum.OK.getStatus());

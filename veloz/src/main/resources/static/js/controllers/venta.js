@@ -236,10 +236,10 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
         });
     }
 
-    $scope.imprimir = function () {
+    $scope.imprimir = function (datos) {
         $http({
             url: SERVER + "/app/print",
-            data: {ip: SERVER_IP},
+            data: {ip: SERVER_IP, datos:datos},
             method: "POST",
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8'
@@ -287,7 +287,8 @@ app.controller('ventaController', ['$scope', '$rootScope', '$http', '$location',
             console.log(err);
         });
 
-        $scope.imprimir();
+        var datos = "estos son mis datos";
+        $scope.imprimir(datos);
 
     }
 

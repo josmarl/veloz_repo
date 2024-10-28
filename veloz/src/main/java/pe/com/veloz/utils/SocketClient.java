@@ -25,7 +25,7 @@ public class SocketClient {
     public SocketClient() {
     }
 
-    public String run(String ipAddress) {
+    public String run(String ipAddress, String datos) {
         String msg = null;
         try {
             //1. creating a socket to connect to the server
@@ -41,7 +41,7 @@ public class SocketClient {
                     message = (String) in.readObject();
                     msg = message;
                     System.out.println("server>" + message);
-                    sendMessage("Mensaje del Cliente : Hi my server");
+                    sendMessage("cliente> : " + datos);
                     message = "bye";
                     sendMessage(message);
                 } catch (ClassNotFoundException classNot) {

@@ -12,6 +12,7 @@ package pe.com.veloz.domain.dto;
 public class IpAddressDTO {
 
     private String ip;
+    private String datos;
 
     public IpAddressDTO() {
     }
@@ -24,9 +25,19 @@ public class IpAddressDTO {
         this.ip = ip;
     }
 
-    @Override
-    public String toString() {
-        return "IpDTO{" + "ip=" + ip + '}';
+    public String getDatos() {
+        return datos;
     }
 
+    public void setDatos(String datos) {
+        this.datos = datos;
+    }
+
+    @Override
+    public String toString() {
+        return "IpAddressDTO{" +
+                "ip='" + ip + '\'' +
+                ", datos='" + datos + '\'' +
+                '}';
+    }
 }
